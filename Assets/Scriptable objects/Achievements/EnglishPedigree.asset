@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eea5730875ce8ef43a360a0e7e74015e, type: 3}
+  m_Name: EnglishPedigree
+  m_EditorClassIdentifier: 
+  trophyImage: {fileID: 21300000, guid: ce372ebb61b59384a8327ccc85fdfc67, type: 3}
+  trophyName: english pedigree
+  description: Headshot an enemy with an arrow from a distance beyond 25m

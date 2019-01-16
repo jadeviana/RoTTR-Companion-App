@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9529931f7d53b67469cc9713310373e4, type: 3}
+  m_Name: ColdDarkness
+  m_EditorClassIdentifier: 
+  addOnImage: {fileID: 0}
+  buttonImage: {fileID: 21300000, guid: 4fb2b83e8ffec6c489c589c2f8b7067c, type: 3}
+  addOnName: Cold darkness
+  summary: downloadable content
+  description: Decommissioned during the Cold War, a dormant weapons research base
+    has been breached, unleashing a mysterious affliction into the Siberian wilds
+    that transforms beasts and men into blood-thirsty, mindless killers. Lara must
+    overcome increasingly dangerous waves of these infected predators while scrounging
+    their equipment and crafting additional gear on the fly, in kill or be killed
+    survival-combat. Fight for your life against new enemies and complete new challenges,
+    while discovering a way to stop or perhaps even reverse this impending catastrophe.
+    Includes a new outfit and weapon.
+  price: 0

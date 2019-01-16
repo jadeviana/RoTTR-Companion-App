@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9529931f7d53b67469cc9713310373e4, type: 3}
+  m_Name: BabaYaga
+  m_EditorClassIdentifier: 
+  addOnImage: {fileID: 0}
+  buttonImage: {fileID: 21300000, guid: 04db86bece2447b4abd44024138aede4, type: 3}
+  addOnName: baba yaga
+  summary: downloadable content
+  description: Deep in the wilds of Siberia, there is a forbidden forest that no man
+    will enter, where a Soviet expedition vanished without a trace. Lara enters the
+    Wicked Vale in search of a missing man, but what she finds is a nightmare that
+    she cannot explain. Is the witch, Baba Yaga, truly haunting the forbidden forest?
+    Or is there more to the legend? Featuring hours of new gameplay, this adventure
+    expands the story of the main campaign with Lara facing deadly new adversaries,
+    exploring a new puzzle-filled tomb, and solving a decades old mystery, all culminating
+    in a showdown with an ancient and mythic evil. Includes a new outfit, and a new
+    bow.
+  price: 0

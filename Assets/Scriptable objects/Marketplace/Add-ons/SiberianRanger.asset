@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9529931f7d53b67469cc9713310373e4, type: 3}
+  m_Name: SiberianRanger
+  m_EditorClassIdentifier: 
+  addOnImage: {fileID: 0}
+  buttonImage: {fileID: 21300000, guid: f71782d547fc4284faa6aef4abc2f650, type: 3}
+  addOnName: Siberian Ranger
+  summary: outfit, weapon and card pack
+  description: "Includes the \u201CSiberian Ranger\u201D outfit which increases Lara\u2019s
+    carrying capacity of all special ammunition, the \u201CAccipiter Nox\u201D Semi-Automatic
+    Pistol skin, and a card pack with two guaranteed rare cards and three other cards
+    that have an increased chance at being rare."
+  price: 0

@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccfc50871a44e26458624707e38efb0c, type: 3}
   m_Name: Magnesite Ore
   m_EditorClassIdentifier: 
-  resourceImage: {fileID: 0}
+  resourceImage: {fileID: 21300000, guid: ec5ff922a46328b408567159dec1bdb3, type: 3}
   resourceName: Magnesite Ore
   playerQuantity: 12
   maximumQuantity: 20

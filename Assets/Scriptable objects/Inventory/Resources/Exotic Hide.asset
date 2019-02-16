@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccfc50871a44e26458624707e38efb0c, type: 3}
   m_Name: Exotic Hide
   m_EditorClassIdentifier: 
-  resourceImage: {fileID: 0}
+  resourceImage: {fileID: 21300000, guid: 2681b2bd1116de14895a32e510891051, type: 3}
   resourceName: Exotic Hide
   playerQuantity: 0
   maximumQuantity: 10

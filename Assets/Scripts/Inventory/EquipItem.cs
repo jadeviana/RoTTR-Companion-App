@@ -13,4 +13,5 @@ public class EquipItem : ScriptableObject {
 	
 	public equipState status;
 
+	//Upgrade cost:
 }

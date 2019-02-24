@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "ResourceItem", menuName = "Inventory/ResourceItem", order = 0)]
+[CreateAssetMenu(fileName = "ResourceItem", menuName = "Inventory/ResourceItem")]
 public class ResourceItem : ScriptableObject {
 	public Sprite resourceImage;
 	public string resourceName;

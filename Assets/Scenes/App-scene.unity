@@ -305,6 +305,10 @@ Prefab:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1035350165325376, guid: 2fff11a35dafc3d4bb68e68a5b84c6db, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fff11a35dafc3d4bb68e68a5b84c6db, type: 2}
   m_IsPrefabAsset: 0
@@ -1164,6 +1168,12 @@ Prefab:
       propertyPath: m_Name
       value: SkillButton (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114287364375273094, guid: 12eaedfaa9dd0ac46862e7a6f393c11b,
+        type: 2}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: c779dccc79c5a894dbc54461f6f685da,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12eaedfaa9dd0ac46862e7a6f393c11b, type: 2}
   m_IsPrefabAsset: 0
@@ -1381,7 +1391,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -16701,7 +16711,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -18031,6 +18041,12 @@ Prefab:
       propertyPath: m_Name
       value: SkillButton (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 114287364375273094, guid: 12eaedfaa9dd0ac46862e7a6f393c11b,
+        type: 2}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: df073e1bc6d361343aa932a7301d3253,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12eaedfaa9dd0ac46862e7a6f393c11b, type: 2}
   m_IsPrefabAsset: 0
@@ -19278,7 +19294,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -19872,6 +19888,12 @@ Prefab:
       propertyPath: m_Name
       value: SkillButton (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114287364375273094, guid: 12eaedfaa9dd0ac46862e7a6f393c11b,
+        type: 2}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: f2337d8a389d0b1498d7eeb95f5c8dc7,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12eaedfaa9dd0ac46862e7a6f393c11b, type: 2}
   m_IsPrefabAsset: 0
@@ -20885,7 +20907,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -30475,7 +30497,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -34402,6 +34424,12 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114287364375273094, guid: 12eaedfaa9dd0ac46862e7a6f393c11b,
+        type: 2}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: 70cca2f749461ec4dae60afca528d2ac,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12eaedfaa9dd0ac46862e7a6f393c11b, type: 2}
   m_IsPrefabAsset: 0
@@ -36071,6 +36099,12 @@ Prefab:
       propertyPath: m_Name
       value: SkillButton (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114287364375273094, guid: 12eaedfaa9dd0ac46862e7a6f393c11b,
+        type: 2}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: 3046e44ff9e9c5c469960f93f6b930c0,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12eaedfaa9dd0ac46862e7a6f393c11b, type: 2}
   m_IsPrefabAsset: 0
@@ -36562,7 +36596,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2066980080
 RectTransform:
   m_ObjectHideFlags: 0

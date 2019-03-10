@@ -18,6 +18,7 @@ public class Skill : ScriptableObject {
 
 	
 	//Skills requirement
-	public string requirement;
+	public bool requirement;
+	public string reqDescription;
 	public int skillCost = 1;
 }

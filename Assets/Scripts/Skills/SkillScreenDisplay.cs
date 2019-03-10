@@ -13,12 +13,35 @@ public class SkillScreenDisplay : MonoBehaviour {
 	public TextMeshProUGUI requirement; 
 	public TextMeshProUGUI cost;
 	public TextMeshProUGUI skillPoint;
+ 
+	private string reqDescription;
+
 
 	// Use this for initialization
 	void Start () {
+		//Requirements
+		if(ability.requirement == true){
+			requirement.color = new Color32(123,6,27,255);
+			Lock.gameObject.SetActive(true);
+			reqDescription = ability.reqDescription;
+		}
+		else if(ability.requirement == false){
+			reqDescription = "none";
+		}
+
+		//Top bar title
+		if((int)ability.type == 1){
+			barTitle.text = "brawler skill";
+		} else if ((int)ability.type == 2){
+			barTitle.text = "hunter skill";
+		} else if ((int)ability.type == 3){
+			barTitle.text = "survivor skill";
+		}
+
 		skillIcon.sprite = ability.skillIcon;
 		skillTitle.text = ability.skillName;
 		description.text = ability.skillDescription;
-		requirement.text = ability.requirement;
+		requirement.text = reqDescription;
+
 	}
 }

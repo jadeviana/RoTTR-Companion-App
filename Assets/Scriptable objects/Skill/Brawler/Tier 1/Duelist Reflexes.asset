@@ -18,5 +18,6 @@ MonoBehaviour:
   status: 3
   type: 1
   level: 1
-  requirement: 'skill: dodge counter'
+  requirement: 1
+  reqDescription: 'skill: dodge counter'
   skillCost: 1

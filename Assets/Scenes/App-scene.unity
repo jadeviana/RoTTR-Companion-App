@@ -307,7 +307,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1035350165325376, guid: 2fff11a35dafc3d4bb68e68a5b84c6db, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114554116624093532, guid: 2fff11a35dafc3d4bb68e68a5b84c6db,
+        type: 2}
+      propertyPath: ability
+      value: 
+      objectReference: {fileID: 11400000, guid: c779dccc79c5a894dbc54461f6f685da,
+        type: 2}
+    - target: {fileID: 224876278173538812, guid: 2fff11a35dafc3d4bb68e68a5b84c6db,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 224876278173538812, guid: 2fff11a35dafc3d4bb68e68a5b84c6db,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fff11a35dafc3d4bb68e68a5b84c6db, type: 2}
@@ -36596,7 +36612,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2066980080
 RectTransform:
   m_ObjectHideFlags: 0

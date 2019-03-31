@@ -7,6 +7,7 @@ public class SkillScreenDisplay : MonoBehaviour {
 	public Skill ability;
 	public Image skillIcon;
 	public Image Lock;
+	public Image Lock2;
 	public TextMeshProUGUI barTitle;
 	public TextMeshProUGUI skillTitle;
 	public TextMeshProUGUI description;
@@ -20,10 +21,17 @@ public class SkillScreenDisplay : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		//Requirements
-		if(ability.requirement == true){
+		if((int)ability.status == 3){
+			reqDescription = "mastered";
+		}
+		else if(ability.requirement == true){
 			requirement.color = new Color32(123,6,27,255);
 			Lock.gameObject.SetActive(true);
 			reqDescription = ability.reqDescription;
+			
+			if(ability.multiRequirement == true){
+				Lock2.gameObject.SetActive(true);
+			}
 		}
 		else if(ability.requirement == false){
 			reqDescription = "none";

@@ -9,15 +9,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bcd15e86f1ecfed4784b98c3c202f350, type: 3}
-  m_Name: Dodge Counter
+  m_Name: Field Medic
   m_EditorClassIdentifier: 
   skillIcon: {fileID: 0}
-  skillName: Dodge Counter
-  skillDescription: Incapacitate unarmored enemies while dodging with a well-timed
-    press of the [F] button.
-  status: 3
+  skillName: Field Medic
+  skillDescription: Bandage wounds more quickly. Effect is cumulative with the FAST
+    HEALER skill.
+  status: 2
   type: 1
-  level: 1
+  level: 2
   requirement: 0
   reqDescription: 
   skillCost: 1

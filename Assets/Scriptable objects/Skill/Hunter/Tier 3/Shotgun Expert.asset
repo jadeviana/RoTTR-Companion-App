@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcd15e86f1ecfed4784b98c3c202f350, type: 3}
+  m_Name: Shotgun Expert
+  m_EditorClassIdentifier: 
+  skillIcon: {fileID: 0}
+  skillName: Shotgun Expert
+  skillDescription: Execute a close-range shotgun finisher and improve chances of
+    looting incendiary shells from enemies. Press <#f7be38>[MELEE]</color> when the
+    prompt appears to finish an incapacitated enemy.
+  status: 1
+  type: 2
+  level: 3
+  requirement: 1
+  multiRequirement: 1
+  reqDescription: 'Weapon: Shotgun<br><br>Master 10 more skills in any category to
+    unlock this skill tier'
+  skillCost: 1

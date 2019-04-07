@@ -14,6 +14,10 @@ public class SkillScreenDisplay : MonoBehaviour {
 	public TextMeshProUGUI requirement; 
 	public TextMeshProUGUI cost;
 	public TextMeshProUGUI skillPoint;
+
+
+	public Button upgradeBtn;
+	public TextMeshProUGUI upgradeBtnText;
  
 	private string reqDescription;
 
@@ -21,19 +25,24 @@ public class SkillScreenDisplay : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		//Requirements
-		if((int)ability.status == 3){
+		if((int)ability.status == 3){// Skill is mastered
 			reqDescription = "mastered";
+			upgradeBtn.GetComponent<Button>().interactable = false;
+			upgradeBtnText.color = new Color32(255,255,255,125);
 		}
-		else if(ability.requirement == true){
+		else if((int)ability.status == 1){// Skill is locked
+			upgradeBtn.GetComponent<Button>().interactable = false;
+			upgradeBtnText.color = new Color32(255,255,255,125);
+
 			requirement.color = new Color32(123,6,27,255);
 			Lock.gameObject.SetActive(true);
-			reqDescription = ability.reqDescription;
+			reqDescription = ability.requirementDescription;
 			
 			if(ability.multiRequirement == true){
 				Lock2.gameObject.SetActive(true);
 			}
 		}
-		else if(ability.requirement == false){
+		else if((int)ability.status == 2){// Skill is available
 			reqDescription = "none";
 		}
 

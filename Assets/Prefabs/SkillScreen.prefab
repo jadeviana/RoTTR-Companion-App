@@ -292,7 +292,7 @@ GameObject:
   - component: {fileID: 222612187540260708}
   - component: {fileID: 114879112238560520}
   m_Layer: 5
-  m_Name: TextMeshPro Text
+  m_Name: UpgradeBtnText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -946,7 +946,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 0.49019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1198,7 +1198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dbb9ebed5335374b97c40b02a00cb28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ability: {fileID: 0}
+  ability: {fileID: 11400000, guid: 70cca2f749461ec4dae60afca528d2ac, type: 2}
   skillIcon: {fileID: 114460620065308414}
   Lock: {fileID: 114654436213650958}
   Lock2: {fileID: 114608261161738464}
@@ -1208,6 +1208,8 @@ MonoBehaviour:
   requirement: {fileID: 114712290763540600}
   cost: {fileID: 114627286880517696}
   skillPoint: {fileID: 114607834173555510}
+  upgradeBtnText: {fileID: 114879112238560520}
+  upgradeBtn: {fileID: 114254049786194030}
 --- !u!114 &114607834173555510
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1227,7 +1229,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: skill ponts
+  m_text: 2 skill points
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ba3631592be2b274d971b0aacf96a9bc, type: 2}
   m_sharedMaterial: {fileID: 21436754628778220, guid: ba3631592be2b274d971b0aacf96a9bc,
@@ -1296,10 +1298,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 114607834173555510}
-    characterCount: 11
+    characterCount: 14
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 2
+    spaceCount: 2
+    wordCount: 3
     linkCount: 0
     lineCount: 1
     pageCount: 1

@@ -11,13 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd15e86f1ecfed4784b98c3c202f350, type: 3}
   m_Name: Duelist Reflexes
   m_EditorClassIdentifier: 
-  skillIcon: {fileID: 0}
+  skillIcon: {fileID: 21300000, guid: 867791b38f9142741a2661d983f63864, type: 3}
   skillName: Duelist reflexes
   skillDescription: Increased timing window available for a DODGE COUNTER and earn
     XP when successfully performing a DODGE KILL.
   status: 3
   type: 1
   level: 1
-  requirement: 1
-  reqDescription: 'skill: dodge counter'
+  multiRequirement: 0
+  requirementDescription: 
   skillCost: 1

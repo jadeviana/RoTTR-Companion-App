@@ -11,13 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd15e86f1ecfed4784b98c3c202f350, type: 3}
   m_Name: Dodge Kill
   m_EditorClassIdentifier: 
-  skillIcon: {fileID: 0}
+  skillIcon: {fileID: 21300000, guid: be16285febcc16c48820c023e4fbe536, type: 3}
   skillName: Dodge Kill
   skillDescription: Kill unarmored enemies during a Dodge Counter with a perfectly
     timed press of the <#f7be38>[MELEE]</color> button.
   status: 2
   type: 1
   level: 2
-  requirement: 0
-  reqDescription: 
+  multiRequirement: 0
+  requirementDescription: 
   skillCost: 1

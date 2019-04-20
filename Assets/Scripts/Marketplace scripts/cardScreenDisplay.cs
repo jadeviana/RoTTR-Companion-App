@@ -14,6 +14,7 @@ public class cardScreenDisplay : MonoBehaviour {
     public TextMeshProUGUI value;
     public TextMeshProUGUI PopUpTitle;
     public TextMeshProUGUI PopUpValue;
+    public TextMeshProUGUI PopUpPlayerCredit;
 
     // Use this for initialization
     void Start () {
@@ -24,6 +25,7 @@ public class cardScreenDisplay : MonoBehaviour {
         value.text = card.credit.ToString();
         PopUpTitle.text = card.cardName;
         PopUpValue.text = card.credit.ToString();
+        //PopUpPlayerCredit.text = ;
     }
 
 }

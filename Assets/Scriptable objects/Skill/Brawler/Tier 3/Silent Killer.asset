@@ -17,8 +17,7 @@ MonoBehaviour:
   status: 1
   type: 1
   level: 3
-  requirement: 1
   multiRequirement: 1
-  reqDescription: 'Skill: Stealth Landing <br><br>Master 10 more skills in any category
-    to unlock this skill tier'
+  requirementDescription: 'Skill: Stealth Landing <br><br>Master 10 more skills in
+    any category to unlock this skill tier'
   skillCost: 1

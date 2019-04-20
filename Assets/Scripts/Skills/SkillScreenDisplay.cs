@@ -21,38 +21,51 @@ public class SkillScreenDisplay : MonoBehaviour {
  
 	private string reqDescription;
 
-
-	// Use this for initialization
 	void Start () {
-		//Requirements
-		if((int)ability.status == 3){// Skill is mastered
-			reqDescription = "mastered";
-			upgradeBtn.GetComponent<Button>().interactable = false;
-			upgradeBtnText.color = new Color32(255,255,255,125);
-		}
-		else if((int)ability.status == 1){// Skill is locked
-			upgradeBtn.GetComponent<Button>().interactable = false;
-			upgradeBtnText.color = new Color32(255,255,255,125);
 
-			requirement.color = new Color32(123,6,27,255);
-			Lock.gameObject.SetActive(true);
-			reqDescription = ability.requirementDescription;
+		//Skill status and Requirements
+		switch((int)ability.status){
+
+			case 1: // Skill is locked
+				upgradeBtn.GetComponent<Button>().interactable = false;
+				upgradeBtnText.color = new Color32(255,255,255,125);
+
+				requirement.color = new Color32(123,6,27,255);
+				Lock.gameObject.SetActive(true);
+				reqDescription = ability.requirementDescription;
 			
-			if(ability.multiRequirement == true){
-				Lock2.gameObject.SetActive(true);
-			}
-		}
-		else if((int)ability.status == 2){// Skill is available
-			reqDescription = "none";
+				if(ability.multiRequirement == true){
+					Lock2.gameObject.SetActive(true);
+				}
+			break;
+
+			case 2: // Skill is available
+				reqDescription = "none";
+			break;
+
+			case 3: // Skill is mastered
+				reqDescription = "mastered";
+				upgradeBtn.GetComponent<Button>().interactable = false;
+				upgradeBtnText.color = new Color32(255,255,255,125);
+			break;
+
 		}
 
 		//Top bar title
-		if((int)ability.type == 1){
-			barTitle.text = "brawler skill";
-		} else if ((int)ability.type == 2){
-			barTitle.text = "hunter skill";
-		} else if ((int)ability.type == 3){
-			barTitle.text = "survivor skill";
+		switch((int)ability.type){
+
+			case 1:
+				barTitle.text = "brawler skill";
+			break;
+
+			case 2:
+				barTitle.text = "hunter skill";
+			break;
+
+			case 3:
+				barTitle.text = "survivor skill";
+			break;
+
 		}
 
 		skillIcon.sprite = ability.skillIcon;

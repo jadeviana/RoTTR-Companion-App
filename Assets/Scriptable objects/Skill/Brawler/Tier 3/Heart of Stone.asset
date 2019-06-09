@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd15e86f1ecfed4784b98c3c202f350, type: 3}
   m_Name: Heart of Stone
   m_EditorClassIdentifier: 
-  skillIcon: {fileID: 0}
+  skillIcon: {fileID: 21300000, guid: 25b31afb08f49c741aed34c8b8fa927c, type: 3}
   skillName: Heart of Stone
   skillDescription: Take significantly less damage from enemy gunfire and melee attacks.
     Effect is cumulative with the THICK-SKINNED skill.

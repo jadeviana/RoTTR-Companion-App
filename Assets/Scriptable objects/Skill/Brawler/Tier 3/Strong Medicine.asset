@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd15e86f1ecfed4784b98c3c202f350, type: 3}
   m_Name: Strong Medicine
   m_EditorClassIdentifier: 
-  skillIcon: {fileID: 0}
+  skillIcon: {fileID: 21300000, guid: ad704657126c7b947a2d78b7dda18a17, type: 3}
   skillName: Strong Medicine
   skillDescription: Resist damage from enemies for a short period of time after bandaging
     wounds in combat.

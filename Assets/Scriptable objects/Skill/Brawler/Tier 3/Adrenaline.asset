@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd15e86f1ecfed4784b98c3c202f350, type: 3}
   m_Name: Adrenaline
   m_EditorClassIdentifier: 
-  skillIcon: {fileID: 0}
+  skillIcon: {fileID: 21300000, guid: fc3aad9aef0021a43840a695b274b183, type: 3}
   skillName: Adrenaline
   skillDescription: Resist damage from enemies for a short period of time after a
     successful stealth kill.

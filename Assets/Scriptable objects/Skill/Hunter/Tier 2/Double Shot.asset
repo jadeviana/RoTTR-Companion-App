@@ -11,14 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd15e86f1ecfed4784b98c3c202f350, type: 3}
   m_Name: Double Shot
   m_EditorClassIdentifier: 
-  skillIcon: {fileID: 0}
+  skillIcon: {fileID: 21300000, guid: f4aa5b537c35eac4b89b5ab13b93870d, type: 3}
   skillName: Double Shot
   skillDescription: Simultaneously fire two arrows at separate locked targets while
     zoomed in with a fully drawn bow.
   status: 2
   type: 2
   level: 2
-  requirement: 0
   multiRequirement: 0
-  reqDescription: 
+  requirementDescription: 
   skillCost: 1

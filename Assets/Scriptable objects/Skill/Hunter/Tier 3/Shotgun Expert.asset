@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd15e86f1ecfed4784b98c3c202f350, type: 3}
   m_Name: Shotgun Expert
   m_EditorClassIdentifier: 
-  skillIcon: {fileID: 0}
+  skillIcon: {fileID: 21300000, guid: 7ec516c53e9da6e4f91c27dceeb3c98d, type: 3}
   skillName: Shotgun Expert
   skillDescription: Execute a close-range shotgun finisher and improve chances of
     looting incendiary shells from enemies. Press <#f7be38>[MELEE]</color> when the
@@ -19,8 +19,6 @@ MonoBehaviour:
   status: 1
   type: 2
   level: 3
-  requirement: 1
   multiRequirement: 1
-  reqDescription: 'Weapon: Shotgun<br><br>Master 10 more skills in any category to
-    unlock this skill tier'
+  requirementDescription: 
   skillCost: 1

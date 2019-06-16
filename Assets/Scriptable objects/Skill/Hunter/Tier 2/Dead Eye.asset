@@ -11,14 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd15e86f1ecfed4784b98c3c202f350, type: 3}
   m_Name: Dead Eye
   m_EditorClassIdentifier: 
-  skillIcon: {fileID: 0}
+  skillIcon: {fileID: 21300000, guid: 1d367b3fb88c9cb46a8a59f3404143cd, type: 3}
   skillName: Dead Eye
   skillDescription: Headshot indicator will appear when successfully aimed at an enemy's
     head.
   status: 2
   type: 2
   level: 2
-  requirement: 0
   multiRequirement: 0
-  reqDescription: 
+  requirementDescription: 
   skillCost: 1

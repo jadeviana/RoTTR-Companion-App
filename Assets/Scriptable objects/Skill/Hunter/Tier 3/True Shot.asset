@@ -11,15 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd15e86f1ecfed4784b98c3c202f350, type: 3}
   m_Name: True Shot
   m_EditorClassIdentifier: 
-  skillIcon: {fileID: 0}
+  skillIcon: {fileID: 21300000, guid: d2401b35fd246084ba906d4cf3d02e37, type: 3}
   skillName: True Shot
   skillDescription: Locked shots for TRIPLE SHOT now automatically target heads instead
     of bodies.
   status: 1
   type: 2
   level: 3
-  requirement: 1
   multiRequirement: 1
-  reqDescription: 'Skill: Triple Shot<br><br>Master 10 more skills in any category
-    to unlock this skill tier'
+  requirementDescription: 
   skillCost: 1

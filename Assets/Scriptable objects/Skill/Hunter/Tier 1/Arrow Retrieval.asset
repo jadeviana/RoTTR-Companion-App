@@ -11,14 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd15e86f1ecfed4784b98c3c202f350, type: 3}
   m_Name: Arrow Retrieval
   m_EditorClassIdentifier: 
-  skillIcon: {fileID: 0}
+  skillIcon: {fileID: 21300000, guid: c8dae07577d2b1f4aa6827acc8dabafa, type: 3}
   skillName: Arrow Retrieval
   skillDescription: Gain a chance at recovering arrows when looting enemies or prey
     killed with the bow.
   status: 3
   type: 2
   level: 1
-  requirement: 0
   multiRequirement: 0
-  reqDescription: 
+  requirementDescription: 
   skillCost: 1

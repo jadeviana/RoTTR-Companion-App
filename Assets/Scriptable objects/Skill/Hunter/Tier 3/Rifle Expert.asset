@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd15e86f1ecfed4784b98c3c202f350, type: 3}
   m_Name: Rifle Expert
   m_EditorClassIdentifier: 
-  skillIcon: {fileID: 0}
+  skillIcon: {fileID: 21300000, guid: cae175702a04ef14c813172f39e4cae8, type: 3}
   skillName: Rifle Expert
   skillDescription: Execute a close-range rifle finisher and improve chances of looting
     grenades from enemies. Press <#f7be38>[MELEE]</color> when the prompt appears
@@ -19,7 +19,6 @@ MonoBehaviour:
   status: 1
   type: 2
   level: 3
-  requirement: 1
   multiRequirement: 0
-  reqDescription: Master 10 more skills in any category to unlock this skill tier
+  requirementDescription: 
   skillCost: 1

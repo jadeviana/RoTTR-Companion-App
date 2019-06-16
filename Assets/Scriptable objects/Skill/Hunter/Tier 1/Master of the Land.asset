@@ -11,14 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd15e86f1ecfed4784b98c3c202f350, type: 3}
   m_Name: Master of the Land
   m_EditorClassIdentifier: 
-  skillIcon: {fileID: 0}
+  skillIcon: {fileID: 21300000, guid: ef55819c0f9463946bb7032e88c8aeb1, type: 3}
   skillName: Master of the Land
   skillDescription: Reveals when an exotic animal is nearby and pinpoint their location
     using Survival Instinct.
   status: 1
   type: 2
   level: 1
-  requirement: 1
   multiRequirement: 0
-  reqDescription: 'Skill: Animal Instincts'
+  requirementDescription: 
   skillCost: 1

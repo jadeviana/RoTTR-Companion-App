@@ -11,13 +11,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd15e86f1ecfed4784b98c3c202f350, type: 3}
   m_Name: Breath Control
   m_EditorClassIdentifier: 
-  skillIcon: {fileID: 0}
+  skillIcon: {fileID: 21300000, guid: d58b0705821a9b84b9fb8176c0017030, type: 3}
   skillName: Breath Control
   skillDescription: Increase steady aim time on charged bow shots.
   status: 2
   type: 2
   level: 1
-  requirement: 0
   multiRequirement: 0
-  reqDescription: 
+  requirementDescription: 
   skillCost: 1

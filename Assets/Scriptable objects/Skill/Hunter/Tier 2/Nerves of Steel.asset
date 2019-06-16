@@ -11,13 +11,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd15e86f1ecfed4784b98c3c202f350, type: 3}
   m_Name: Nerves of Steel
   m_EditorClassIdentifier: 
-  skillIcon: {fileID: 0}
+  skillIcon: {fileID: 21300000, guid: c3dfa84e456451d4db5e97d8fbf81846, type: 3}
   skillName: Nerves of Steel
   skillDescription: Fully charged bow aiming remains steady for significantly longer.
   status: 1
   type: 2
   level: 2
-  requirement: 1
   multiRequirement: 0
-  reqDescription: 'skill: breath control'
+  requirementDescription: 
   skillCost: 1

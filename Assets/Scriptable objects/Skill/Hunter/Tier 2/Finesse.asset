@@ -11,14 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd15e86f1ecfed4784b98c3c202f350, type: 3}
   m_Name: Finesse
   m_EditorClassIdentifier: 
-  skillIcon: {fileID: 0}
+  skillIcon: {fileID: 21300000, guid: d4777cc1be64ebf4881293ed3bdd392c, type: 3}
   skillName: Finesse
   skillDescription: Earn bonus XP for successfully chaining headshots, stealth kills,
     and DEATH FROM ABOVE kills. Longer chains increase bonus multipliers.
   status: 2
   type: 2
   level: 2
-  requirement: 0
   multiRequirement: 0
-  reqDescription: 
+  requirementDescription: 
   skillCost: 1

@@ -11,14 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd15e86f1ecfed4784b98c3c202f350, type: 3}
   m_Name: Naturalist
   m_EditorClassIdentifier: 
-  skillIcon: {fileID: 0}
+  skillIcon: {fileID: 21300000, guid: 5de86ee96d0dd19459dd301103d128a0, type: 3}
   skillName: Naturalist
   skillDescription: Increase the amount of natural crafting resources gathered from
     each source.
   status: 2
   type: 2
   level: 2
-  requirement: 0
   multiRequirement: 0
-  reqDescription: 
+  requirementDescription: 
   skillCost: 1

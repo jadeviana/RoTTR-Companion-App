@@ -11,14 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd15e86f1ecfed4784b98c3c202f350, type: 3}
   m_Name: Animal Instincts
   m_EditorClassIdentifier: 
-  skillIcon: {fileID: 0}
+  skillIcon: {fileID: 21300000, guid: 23a99c6c6a2251648b89982b3a419491, type: 3}
   skillName: Animal Instincts
   skillDescription: Animals glow when using Survival Instinct. Larger animals leave
     footprints and blood trails that are easy to follow.
   status: 2
   type: 2
   level: 1
-  requirement: 0
   multiRequirement: 0
-  reqDescription: 
+  requirementDescription: 
   skillCost: 1

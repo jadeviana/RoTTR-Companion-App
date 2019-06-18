@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class SkillButtonDisplay : MonoBehaviour {
 
-		public Skill item;
+		public Skill skill;
 		public Image Lock;
 		public Image Check;
 		public Image skillIcon;
@@ -17,8 +17,8 @@ public class SkillButtonDisplay : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		skillIcon.sprite = item.skillIcon;
-		buttonState = (int)item.status;
+		skillIcon.sprite = skill.skillIcon;
+		buttonState = (int)skill.status;
 		
 		//if the equipment state is locked, it should change the button's colour (red) and set the lock and lock bar image to active
 		if(buttonState == 1){

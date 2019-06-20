@@ -14,7 +14,7 @@ MonoBehaviour:
   skillIcon: {fileID: 0}
   skillName: Eye for Detail
   skillDescription: Find Challenge objects more easily using Survival Instinct.
-  status: 2
+  status: 3
   type: 3
   level: 1
   multiRequirement: 0

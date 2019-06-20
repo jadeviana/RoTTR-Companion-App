@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillIcon: {fileID: 0}
   skillName: Resourceful Combatant
-  skillDescription: Enemies killed or knocked out with crafted, handheld objects yield
+  skillDescription: Enemies killed or knocked out from crafted handheld objects yield
     more XP.
   status: 2
   type: 3

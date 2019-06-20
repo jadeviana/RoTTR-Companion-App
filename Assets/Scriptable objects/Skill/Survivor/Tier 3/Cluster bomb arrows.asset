@@ -9,14 +9,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bcd15e86f1ecfed4784b98c3c202f350, type: 3}
-  m_Name: Avid Learner
+  m_Name: Cluster bomb arrows
   m_EditorClassIdentifier: 
   skillIcon: {fileID: 0}
-  skillName: Avid Learner
-  skillDescription: Earn bonus XP from Survival Caches, Documents, Relics and Challenges.
-  status: 3
+  skillName: Cluster bomb arrows
+  skillDescription: Upgrade grenade arrows to disperse additional explosives on impact.
+  status: 1
   type: 3
-  level: 1
-  multiRequirement: 0
-  requirementDescription: 
+  level: 3
+  multiRequirement: 1
+  requirementDescription: 'Skill: grenade arrow crafting<br><br>Master 10 more skills
+    in any category to unlock this skill tier'
   skillCost: 1

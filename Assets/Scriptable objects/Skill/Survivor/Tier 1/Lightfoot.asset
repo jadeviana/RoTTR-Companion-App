@@ -13,9 +13,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillIcon: {fileID: 0}
   skillName: Lightfoot
-  skillDescription: Land safely without damage from substantial heights. Press <#f7be38>[DODGE]</color>
+  skillDescription: Land safely without damage from substantial heights. Press <#f7be38>[DROP/DODGE]</color>
     to roll when landing.
-  status: 2
+  status: 3
   type: 3
   level: 1
   multiRequirement: 0

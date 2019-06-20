@@ -9,14 +9,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bcd15e86f1ecfed4784b98c3c202f350, type: 3}
-  m_Name: Avid Learner
+  m_Name: Intuitive
   m_EditorClassIdentifier: 
   skillIcon: {fileID: 0}
-  skillName: Avid Learner
-  skillDescription: Earn bonus XP from Survival Caches, Documents, Relics and Challenges.
-  status: 3
+  skillName: Intuitive
+  skillDescription: Survival instincts shows nearby relics, docs, monoliths and strongboxes
+    - even through solid walls. Crypt entrances are revealed on the map.
+  status: 1
   type: 3
-  level: 1
+  level: 3
   multiRequirement: 0
-  requirementDescription: 
+  requirementDescription: Master 10 more skills in any category to unlock this skill
+    tier
   skillCost: 1

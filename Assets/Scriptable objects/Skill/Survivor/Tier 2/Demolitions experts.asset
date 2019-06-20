@@ -9,14 +9,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bcd15e86f1ecfed4784b98c3c202f350, type: 3}
-  m_Name: Avid Learner
+  m_Name: Demolitions experts
   m_EditorClassIdentifier: 
   skillIcon: {fileID: 0}
-  skillName: Avid Learner
-  skillDescription: Earn bonus XP from Survival Caches, Documents, Relics and Challenges.
-  status: 3
+  skillName: Demolitions experts
+  skillDescription: Advanced techniques give all crafted handheld items an increased
+    detonation radius.
+  status: 2
   type: 3
-  level: 1
+  level: 2
   multiRequirement: 0
   requirementDescription: 
   skillCost: 1

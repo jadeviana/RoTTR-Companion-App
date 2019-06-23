@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd15e86f1ecfed4784b98c3c202f350, type: 3}
   m_Name: Hollow-point bullets
   m_EditorClassIdentifier: 
-  skillIcon: {fileID: 0}
+  skillIcon: {fileID: 21300000, guid: 0bc8eaab986b27241b4eecc7b43a6617, type: 3}
   skillName: Hollow-point bullets
   skillDescription: Craft high-damage pistol bullets that expand on impact for increased
     lethality.

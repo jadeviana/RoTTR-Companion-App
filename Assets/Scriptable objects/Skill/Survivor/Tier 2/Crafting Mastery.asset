@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd15e86f1ecfed4784b98c3c202f350, type: 3}
   m_Name: Crafting Mastery
   m_EditorClassIdentifier: 
-  skillIcon: {fileID: 0}
+  skillIcon: {fileID: 21300000, guid: 15862ca300c44c6428e9165842ec1a6c, type: 3}
   skillName: Crafting Mastery
   skillDescription: Craft large capacity ammo and resource pouches at base camps and
     increase the amount of ammo crafted on the run.

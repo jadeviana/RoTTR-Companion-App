@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd15e86f1ecfed4784b98c3c202f350, type: 3}
   m_Name: Grenadier
   m_EditorClassIdentifier: 
-  skillIcon: {fileID: 0}
+  skillIcon: {fileID: 21300000, guid: 225ff684bf4ca614088d2f0628b6d33c, type: 3}
   skillName: Grenadier
   skillDescription: Craft explosive grenades for the rifle grenade launcher that inflict
     heavy damage and destroy metal barriers.

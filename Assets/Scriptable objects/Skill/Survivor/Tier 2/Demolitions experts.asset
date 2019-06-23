@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd15e86f1ecfed4784b98c3c202f350, type: 3}
   m_Name: Demolitions experts
   m_EditorClassIdentifier: 
-  skillIcon: {fileID: 0}
+  skillIcon: {fileID: 21300000, guid: 872af6c39c8957a448904d04f5f83ced, type: 3}
   skillName: Demolitions experts
   skillDescription: Advanced techniques give all crafted handheld items an increased
     detonation radius.

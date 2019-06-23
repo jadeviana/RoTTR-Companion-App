@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd15e86f1ecfed4784b98c3c202f350, type: 3}
   m_Name: Dragonfire shells
   m_EditorClassIdentifier: 
-  skillIcon: {fileID: 0}
+  skillIcon: {fileID: 21300000, guid: fae7b40b60dcb8744b7623ebf7a49cfa, type: 3}
   skillName: Dragonfire shells
   skillDescription: Craft incendiary shotgun shells that wreak havoc by lighting enemies
     on fire and igniting other flammable objects.

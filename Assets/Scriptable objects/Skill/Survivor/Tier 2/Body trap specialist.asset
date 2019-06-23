@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd15e86f1ecfed4784b98c3c202f350, type: 3}
   m_Name: Body trap specialist
   m_EditorClassIdentifier: 
-  skillIcon: {fileID: 0}
+  skillIcon: {fileID: 21300000, guid: 54facbabd74cc6049a3f82a1faf6985d, type: 3}
   skillName: Body trap specialist
   skillDescription: Craft traps on enemy corpses that detonate a deadly poison gas
     cloud when investigated.

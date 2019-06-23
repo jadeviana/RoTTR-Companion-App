@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd15e86f1ecfed4784b98c3c202f350, type: 3}
   m_Name: Incendiary Bombs
   m_EditorClassIdentifier: 
-  skillIcon: {fileID: 0}
+  skillIcon: {fileID: 21300000, guid: 70c36a01e24348843bfb7a53c5376373, type: 3}
   skillName: Incendiary Bombs
   skillDescription: Craft explosive bombs from red gas cans and deadly proximity mines
     from enemy radios.

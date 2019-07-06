@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd15e86f1ecfed4784b98c3c202f350, type: 3}
   m_Name: Cluster bomb arrows
   m_EditorClassIdentifier: 
-  skillIcon: {fileID: 0}
+  skillIcon: {fileID: 21300000, guid: cdc69c0e553760a49a0c6ca0127bafaa, type: 3}
   skillName: Cluster bomb arrows
   skillDescription: Upgrade grenade arrows to disperse additional explosives on impact.
   status: 1

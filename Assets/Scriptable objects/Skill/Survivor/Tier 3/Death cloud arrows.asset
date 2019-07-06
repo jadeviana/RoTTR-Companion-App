@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd15e86f1ecfed4784b98c3c202f350, type: 3}
   m_Name: Death cloud arrows
   m_EditorClassIdentifier: 
-  skillIcon: {fileID: 0}
+  skillIcon: {fileID: 21300000, guid: e4158b9cff1a3134d8193c47b996170a, type: 3}
   skillName: Death cloud arrows
   skillDescription: Increase the size and duration of the poisonous cloud created
     by poison arrows.

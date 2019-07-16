@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 222796515829953042}
   - component: {fileID: 114261319639581162}
   - component: {fileID: 114113698235616140}
+  - component: {fileID: 114348642705244896}
   m_Layer: 5
   m_Name: Btn-weapon
   m_TagString: Untagged
@@ -145,7 +146,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114261319639581162}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114261319639581162
@@ -175,6 +198,21 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114348642705244896
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1413032241678182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bf72ca03c0f7ad49a5507e90d4ee130, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon: {fileID: 0}
+  weaponIcon: {fileID: 114108337135102146}
+  weaponTitle: {fileID: 114869587809264906}
+  availability: {fileID: 114455213467135410}
 --- !u!114 &114455213467135410
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -194,7 +232,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 6/10 available
+  m_text: X/Y found
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ba3631592be2b274d971b0aacf96a9bc, type: 2}
   m_sharedMaterial: {fileID: 21436754628778220, guid: ba3631592be2b274d971b0aacf96a9bc,
@@ -263,7 +301,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 114455213467135410}
-    characterCount: 14
+    characterCount: 9
     spriteCount: 0
     spaceCount: 1
     wordCount: 3
@@ -308,7 +346,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: outfits
+  m_text: type
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ba3631592be2b274d971b0aacf96a9bc, type: 2}
   m_sharedMaterial: {fileID: 21436754628778220, guid: ba3631592be2b274d971b0aacf96a9bc,
@@ -377,7 +415,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 114869587809264906}
-    characterCount: 7
+    characterCount: 4
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -447,10 +485,10 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 340, y: -728}
-  m_SizeDelta: {x: 320, y: 344}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &224520536863181266
 RectTransform:

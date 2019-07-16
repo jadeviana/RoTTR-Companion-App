@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+
 public class SkillScreenDisplay : MonoBehaviour {
 	public Skill ability;
 	public Image skillIcon;

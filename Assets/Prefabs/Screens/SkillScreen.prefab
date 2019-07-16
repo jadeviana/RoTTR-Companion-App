@@ -1208,8 +1208,8 @@ MonoBehaviour:
   requirement: {fileID: 114712290763540600}
   cost: {fileID: 114627286880517696}
   skillPoint: {fileID: 114607834173555510}
-  upgradeBtnText: {fileID: 114879112238560520}
   upgradeBtn: {fileID: 114254049786194030}
+  upgradeBtnText: {fileID: 114879112238560520}
 --- !u!114 &114607834173555510
 MonoBehaviour:
   m_ObjectHideFlags: 1

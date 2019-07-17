@@ -90,13 +90,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224821419309040570}
+  - component: {fileID: 114805711641967598}
   m_Layer: 5
   m_Name: WCategoryScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1724248827660970
 GameObject:
   m_ObjectHideFlags: 1
@@ -108,7 +109,7 @@ GameObject:
   - component: {fileID: 222642448934599920}
   - component: {fileID: 114630969140786352}
   m_Layer: 5
-  m_Name: MissionName
+  m_Name: WeaponAvailability
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -475,11 +476,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -589,11 +590,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -677,6 +678,20 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114805711641967598
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1519475597647314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d224e1194db3e74e88b0d72eccf1766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon: {fileID: 11400000, guid: def0c5a87c4486546bf947ea0f9f73f2, type: 2}
+  barTitle: {fileID: 114635846349348762}
+  weaponAvailability: {fileID: 114630969140786352}
 --- !u!114 &114871824060107074
 MonoBehaviour:
   m_ObjectHideFlags: 1

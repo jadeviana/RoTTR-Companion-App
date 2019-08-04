@@ -13,6 +13,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponTypeIcon: {fileID: 21300000, guid: 68ffedd3f0f297941b0e3dc48d0fe0af, type: 3}
   weaponTypeName: Handguns
-  weaponTypeFound: 1
+  weaponTypeFound: 2
   weaponTypeTotal: 4
   textDisplayed: 1

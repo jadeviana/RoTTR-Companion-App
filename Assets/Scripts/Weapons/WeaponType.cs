@@ -4,7 +4,7 @@ using UnityEngine;
 
 public enum textDisplay {found = 1, available = 2};
 
-[CreateAssetMenu(fileName = "WeaponType", menuName = "Weapon Type")]
+[CreateAssetMenu(fileName = "WeaponType", menuName = "Weapon/Weapon Type")]
 public class WeaponType : ScriptableObject {
 	public Sprite weaponTypeIcon;
 	public string weaponTypeName;

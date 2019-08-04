@@ -13,6 +13,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponTypeIcon: {fileID: 21300000, guid: 6983e5f945c9dd142af00e7f61e430b7, type: 3}
   weaponTypeName: Shotguns
-  weaponTypeFound: 1
+  weaponTypeFound: 0
   weaponTypeTotal: 4
   textDisplayed: 1

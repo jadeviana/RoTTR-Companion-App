@@ -5,26 +5,32 @@ using UnityEngine.UI;
 using TMPro;
 
 public class WeaponTypeButton : MonoBehaviour {
-	public WeaponType weapon;
+	public WeaponType weaponType;
 	public Image weaponIcon;
 	public TextMeshProUGUI weaponTitle;
 	public TextMeshProUGUI availability;
 
 	void Start () {
 
-		weaponIcon.sprite = weapon.weaponTypeIcon;
-		weaponTitle.text = weapon.weaponTypeName;
+		weaponIcon.sprite = weaponType.weaponTypeIcon;
+		weaponTitle.text = weaponType.weaponTypeName;
 
-		switch((int)weapon.textDisplayed){
+		switch((int)weaponType.textDisplayed){
 			case 1:
-				availability.text = weapon.weaponTypeFound.ToString() + "/" + weapon.weaponTypeTotal.ToString() + " found";
+				availability.text = weaponType.weaponTypeFound.ToString() + "/" + weaponType.weaponTypeTotal.ToString() + " found";
 			break;
 
 			case 2:
-				availability.text = weapon.weaponTypeFound.ToString() + "/" + weapon.weaponTypeTotal.ToString() + " available";
+				availability.text = weaponType.weaponTypeFound.ToString() + "/" + weaponType.weaponTypeTotal.ToString() + " available";
 			break;
 		}
 
+		if(weaponType.weaponTypeFound == 0){
+			GetComponent<Button>().interactable = false;
+			weaponIcon.color = new Color32(255,255,255,125);
+			weaponTitle.color = new Color32(255,255,255,125);
+			availability.color = new Color32(255,255,255,125);
+		}
 	}
 
 }

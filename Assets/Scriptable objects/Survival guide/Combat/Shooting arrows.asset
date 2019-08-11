@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d89353a453edba943aba912b7b9cf914, type: 3}
+  m_Name: Shooting arrows
+  m_EditorClassIdentifier: 
+  ItemName: Shooting arrows
+  description: PRESS <#f7be38>[L MOUSE]</color> while aiming to SHOOT silent arrows.
+    Hold <#f7be38>[L MOUSE]</color> to CHARGE shot for extra damage.

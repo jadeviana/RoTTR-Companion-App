@@ -9,8 +9,8 @@ public class ScoreDataDisplay : MonoBehaviour {
 	[SerializeField] private TextMeshProUGUI PlayerRank;
 	[SerializeField] private TextMeshProUGUI PlayerName;
 	[SerializeField] private TextMeshProUGUI PlayerPoints;
-	public void Initialise (PlayerScore playerEntry) {
-		//PlayerRank.text = playerEntry.PlayerName;
+	public void Initialise (PlayerScore playerEntry, int index) {
+		PlayerRank.text = index.ToString();
 		PlayerName.text = playerEntry.PlayerName;
 		PlayerPoints.text = playerEntry.score.ToString();
 	}

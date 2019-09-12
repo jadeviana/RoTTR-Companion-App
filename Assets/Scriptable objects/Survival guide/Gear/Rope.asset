@@ -15,5 +15,5 @@ MonoBehaviour:
   description: A length of sturdy rope that can be attached to arrows to make ROPE
     ARROWS. Rope arrows can be shot into anchored rope coils to create zip lines,
     attached to objects to pull them around, or fired into dangling bundles of rope
-    to swing across large gaps.<br><br>Rope arrows are automtically selected when
+    to swing across large gaps.<br><br>Rope arrows are automatically selected when
     targeting rope coils.

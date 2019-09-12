@@ -74,6 +74,7 @@ GameObject:
   - component: {fileID: 114931282449955364}
   - component: {fileID: 114544597547941426}
   - component: {fileID: 114311496352531000}
+  - component: {fileID: 114832360046783886}
   m_Layer: 5
   m_Name: Btn-AddOn
   m_TagString: Untagged
@@ -449,6 +450,25 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114832360046783886
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1367867988419894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1679637790, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: 660
+  m_PreferredHeight: 154
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
 --- !u!114 &114931282449955364
 MonoBehaviour:
   m_ObjectHideFlags: 1

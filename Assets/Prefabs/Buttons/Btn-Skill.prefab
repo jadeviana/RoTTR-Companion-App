@@ -72,6 +72,7 @@ GameObject:
   - component: {fileID: 224477510469534392}
   - component: {fileID: 114432626885111874}
   - component: {fileID: 114287364375273094}
+  - component: {fileID: 114808077627537856}
   m_Layer: 5
   m_Name: Btn-Skill
   m_TagString: Untagged
@@ -324,6 +325,25 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114808077627537856
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1616094105103428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1679637790, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: 144
+  m_PreferredHeight: 114
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
 --- !u!114 &114925514625235370
 MonoBehaviour:
   m_ObjectHideFlags: 1

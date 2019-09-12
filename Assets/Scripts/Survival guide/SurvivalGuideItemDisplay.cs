@@ -7,11 +7,16 @@ using TMPro;
 public class SurvivalGuideItemDisplay : MonoBehaviour {
 
 	public SurvivalGuideItem listItem;
-	public TextMeshProUGUI guideItemTitle;
+	[SerializeField] private TextMeshProUGUI guideItemTitle;
+
+	public GuideManager manager;
 
 	// Use this for initialization
 	void Start () {
 		guideItemTitle.text = listItem.ItemName;
 	}
 
+	public void SetPopUpContent(){
+		manager.OpenPopUp(listItem.ItemName, listItem.description);
+	}
 }

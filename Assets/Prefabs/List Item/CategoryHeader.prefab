@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 222121032070551700}
   - component: {fileID: 114460263742642022}
   m_Layer: 5
-  m_Name: Div (1)
+  m_Name: DivTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 222142699308810402}
   - component: {fileID: 114380945146236778}
   m_Layer: 5
-  m_Name: Div
+  m_Name: DivBottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -491,7 +491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []

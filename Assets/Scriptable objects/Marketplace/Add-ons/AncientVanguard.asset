@@ -13,10 +13,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   addOnImage: {fileID: 0}
   buttonImage: {fileID: 21300000, guid: 90bedb3f82b19944584ef1ea9b17deb4, type: 3}
-  addOnName: ancient vanguard
+  addOnName: Ancient Vanguard
   summary: outfit, weapon and card pack
   description: "Includes the \u201CAncient Vanguard\u201D outfit that reduces the
     delay before Lara regenerates her health, the \u201CGuiding Light\u201D Bow skin
     and a card pack with two guaranteed rare cards and three other cards that have
     an increased chance at being rare."
-  price: 0
+  price: 2.99

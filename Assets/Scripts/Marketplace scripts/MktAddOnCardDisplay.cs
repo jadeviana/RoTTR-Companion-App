@@ -5,21 +5,21 @@ using UnityEngine.UI;
 using TMPro;
 
 public class MktAddOnCardDisplay : MonoBehaviour {
-
     public MKTAddOn addon;
+    [SerializeField] private Image btnImage;
+    [SerializeField] private TextMeshProUGUI addOnTitle;
+    [SerializeField] private TextMeshProUGUI addOnSummary;
 
-    public Image btnImage;
+    public MarketplaceManager manager;
 
-    public TextMeshProUGUI addOnTitle;
-    public TextMeshProUGUI addOnSummary;
-
-    // Use this for initialization
     void Start () {
-
         btnImage.sprite = addon.buttonImage;
-
         addOnTitle.text = addon.addOnName;
         addOnSummary.text = addon.summary;
+    }
+
+    public void SetAddOnScreen(){
+        manager.OpenAddOnScreen(addon.addOnImage,addon.addOnName,addon.description,addon.price);
     }
 	
 }

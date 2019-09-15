@@ -501,7 +501,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224496474193572658}
-  - component: {fileID: 114742678565960866}
   m_Layer: 5
   m_Name: CardScreen
   m_TagString: Untagged
@@ -2424,25 +2423,6 @@ MonoBehaviour:
   - {fileID: 0}
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &114742678565960866
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1859586480799092}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2219e4d20bce114f99a1626d30a67c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  card: {fileID: 0}
-  screenImage: {fileID: 114870581996150668}
-  title: {fileID: 114132639202807288}
-  description: {fileID: 114540717720971640}
-  value: {fileID: 114211858819865420}
-  PopUpTitle: {fileID: 114536066447654552}
-  PopUpValue: {fileID: 114940591295585326}
-  PopUpPlayerCredit: {fileID: 114966761247421292}
 --- !u!114 &114789975363135052
 MonoBehaviour:
   m_ObjectHideFlags: 1

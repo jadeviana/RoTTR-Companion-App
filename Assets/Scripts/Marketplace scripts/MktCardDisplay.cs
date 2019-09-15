@@ -5,20 +5,20 @@ using UnityEngine.UI;
 using TMPro;
 
 public class MktCardDisplay : MonoBehaviour {
-
     public MKTCard card;
+    [SerializeField] private Image cardPack;
+    [SerializeField] private TextMeshProUGUI cardTitle;
+    [SerializeField] private TextMeshProUGUI cardValue;
 
-    public Image cardPack;
+    public MarketplaceManager manager;
 
-    public TextMeshProUGUI cardTitle;
-    public TextMeshProUGUI cardValue;
-
-	// Use this for initialization
 	void Start () {
-
         cardPack.sprite = card.cardImage;
         cardTitle.text = card.cardName;
-        cardValue.text = card.credit.ToString();
-        
+        cardValue.text = card.credit.ToString(); 
+    }
+
+    public void SetCardScreen(){
+        manager.OpenCardScreen(card.cardImage,card.cardName,card.description,card.credit);
     }
 }

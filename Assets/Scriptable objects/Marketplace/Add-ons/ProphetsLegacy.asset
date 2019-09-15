@@ -13,10 +13,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   addOnImage: {fileID: 0}
   buttonImage: {fileID: 21300000, guid: 13f6a575ca1638b40915300d05d987f6, type: 3}
-  addOnName: prophet's legacy
+  addOnName: Prophet's Legacy
   summary: outfit, weapon and card pack
   description: "Includes the \u201CImmortal Guardian\u201D outfit that reduces Lara\u2019s
     damage from Greek Fire, the \u201CPiercing Truth\u201D dagger and a card pack
     with two guaranteed rare cards and three other cards that have an increased chance
     at being rare."
-  price: 0
+  price: 2.99

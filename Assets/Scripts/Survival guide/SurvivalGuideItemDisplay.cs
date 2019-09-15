@@ -11,7 +11,6 @@ public class SurvivalGuideItemDisplay : MonoBehaviour {
 
 	public GuideManager manager;
 
-	// Use this for initialization
 	void Start () {
 		guideItemTitle.text = listItem.ItemName;
 	}

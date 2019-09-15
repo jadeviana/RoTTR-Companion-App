@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9529931f7d53b67469cc9713310373e4, type: 3}
   m_Name: ColdDarkness
   m_EditorClassIdentifier: 
-  addOnImage: {fileID: 0}
+  addOnImage: {fileID: 21300000, guid: eb00baa63e9baf9409e3d897c96c7eca, type: 3}
   buttonImage: {fileID: 21300000, guid: 4fb2b83e8ffec6c489c589c2f8b7067c, type: 3}
   addOnName: Cold darkness
   summary: downloadable content

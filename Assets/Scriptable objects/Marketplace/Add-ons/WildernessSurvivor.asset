@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9529931f7d53b67469cc9713310373e4, type: 3}
   m_Name: WildernessSurvivor
   m_EditorClassIdentifier: 
-  addOnImage: {fileID: 0}
+  addOnImage: {fileID: 21300000, guid: 486e342dfae4aeb44bf9a95d18f40026, type: 3}
   buttonImage: {fileID: 21300000, guid: c9923494036f3d84f8db96c7ed4c982c, type: 3}
   addOnName: Wilderness Survivor
   summary: outfit, weapon and card pack

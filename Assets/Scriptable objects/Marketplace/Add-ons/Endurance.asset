@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9529931f7d53b67469cc9713310373e4, type: 3}
   m_Name: Endurance
   m_EditorClassIdentifier: 
-  addOnImage: {fileID: 0}
+  addOnImage: {fileID: 21300000, guid: 320578ef96f748f46ba6d553408eac4f, type: 3}
   buttonImage: {fileID: 21300000, guid: 2c8a024a92008f34285b2a8fd8134ed2, type: 3}
   addOnName: Endurance mode
   summary: downloadable content

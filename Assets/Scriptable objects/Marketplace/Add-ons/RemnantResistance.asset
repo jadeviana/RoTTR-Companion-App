@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9529931f7d53b67469cc9713310373e4, type: 3}
   m_Name: RemnantResistance
   m_EditorClassIdentifier: 
-  addOnImage: {fileID: 0}
+  addOnImage: {fileID: 21300000, guid: dcd5509e18b5f034dbbfe184d4c22c06, type: 3}
   buttonImage: {fileID: 21300000, guid: cc871d33cdc5b8d47ac7497d42d7be0b, type: 3}
   addOnName: Remnant Resistance
   summary: outfit, weapon and card pack

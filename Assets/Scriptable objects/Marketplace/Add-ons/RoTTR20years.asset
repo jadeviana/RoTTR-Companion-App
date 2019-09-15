@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9529931f7d53b67469cc9713310373e4, type: 3}
   m_Name: RoTTR20years
   m_EditorClassIdentifier: 
-  addOnImage: {fileID: 0}
+  addOnImage: {fileID: 21300000, guid: 0d04eb3aa1afb8740b8ec4e34248d134, type: 3}
   buttonImage: {fileID: 21300000, guid: a9c168ade0962874e9d5ec27568607f7, type: 3}
   addOnName: 20 Year Celebration
   summary: downloadable content
@@ -22,8 +22,8 @@ MonoBehaviour:
     of the undead overrun Croft Manor, and Lara must defend it before the nightmare
     overwhelms her! \u201CBlood Ties\u201D includes over an hour of additional single
     player story, as well as community challenges with card modifiers that allow you
-    to compete against your friends\u2019 scores in \u201CLara\u2019s Nightmare\u201D.
-    This pack also includes five classic Lara Croft skins, an outfit and weapon inspired
+    to compete against your friends\u2019 scores in \u201CLara\u2019s Nightmare\u201D.<br><br>This
+    pack also includes five classic Lara Croft skins, an outfit and weapon inspired
     by Tomb Raider III, and the new \u201CExtreme Survivor\u201D difficulty setting
     for the main campaign. With over an hour of new story, a replayable combat mode,
     classic skins, a new outfit and weapon, and a new difficulty mode, this is the

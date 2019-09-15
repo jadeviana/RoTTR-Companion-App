@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9529931f7d53b67469cc9713310373e4, type: 3}
   m_Name: SiberianRanger
   m_EditorClassIdentifier: 
-  addOnImage: {fileID: 0}
+  addOnImage: {fileID: 21300000, guid: 30d7aac6790e1054590e5c095c005bd2, type: 3}
   buttonImage: {fileID: 21300000, guid: f71782d547fc4284faa6aef4abc2f650, type: 3}
   addOnName: Siberian Ranger
   summary: outfit, weapon and card pack

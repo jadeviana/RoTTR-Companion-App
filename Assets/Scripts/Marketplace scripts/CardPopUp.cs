@@ -1,19 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
 
-public class GuideManager : MonoBehaviour {
+public class CardPopUp : MonoBehaviour {
 	[SerializeField] private GameObject PopUpObject;
 	[SerializeField] private CanvasGroup PopUp;
-	[SerializeField] private TextMeshProUGUI PopUpTitle;
-	[SerializeField] private TextMeshProUGUI PopUpDescription;
 
-	public void OpenPopUp(string title, string description){
+	public void OpenPopUp(){
 		StartCoroutine(FadeIn(PopUp, PopUp.alpha, 1));
-		PopUpTitle.text = title;
-		PopUpDescription.text = description;
 	}
 	public void ClosePopUp(){
 		StartCoroutine(FadeOut(PopUp, PopUp.alpha, 0));
@@ -37,7 +31,6 @@ public class GuideManager : MonoBehaviour {
 			yield return new WaitForEndOfFrame();	
 		}
 	}
-
 	public IEnumerator FadeOut(CanvasGroup modal, float start, float end, float lerpTime = 0.15f){
 		float _timeStartedLerping = Time.time;
 		float timeSinceStarted;
@@ -54,6 +47,6 @@ public class GuideManager : MonoBehaviour {
 
 			yield return new WaitForEndOfFrame();	
 		}
-		PopUpObject.gameObject.SetActive(false);
+		PopUpObject.gameObject.SetActive(false);	
 	}
 }

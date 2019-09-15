@@ -11,6 +11,10 @@ public class MarketplaceManager : MonoBehaviour {
 	[SerializeField] private GameObject CardScreenObject;
 	[SerializeField] private GameObject AddOnScreenObject;
 
+    //Marketplace elements
+    [SerializeField] private int PlayerCredits;
+    [SerializeField] private TextMeshProUGUI Credits;
+
 	//Card Screen elements
 	[SerializeField] private Image CardScreenImage;
     [SerializeField] private TextMeshProUGUI CSTitle;
@@ -26,6 +30,10 @@ public class MarketplaceManager : MonoBehaviour {
     [SerializeField] private TextMeshProUGUI AddOnDescription;
     [SerializeField] private TextMeshProUGUI AddOnValue;
 
+    private void Start() {
+        Credits.text = "Credits: " + PlayerCredits.ToString();
+    }
+
 	public void OpenCardScreen(Sprite cardImage, string cardTitle, string cardDescription, int cardValue){
 		MarketplaceScreenObject.gameObject.SetActive(false);
 
@@ -36,6 +44,7 @@ public class MarketplaceManager : MonoBehaviour {
 
         PopUpTitle.text = cardTitle;
         PopUpValue.text = cardValue.ToString();
+        PopUpPlayerCredit.text = PlayerCredits.ToString();
 
 		CardScreenObject.gameObject.SetActive(true);
 	}

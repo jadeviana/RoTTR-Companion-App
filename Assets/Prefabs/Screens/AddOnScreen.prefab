@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 222351297225430828}
   - component: {fileID: 114833539048410782}
   m_Layer: 5
-  m_Name: Credits
+  m_Name: PlatformLogo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

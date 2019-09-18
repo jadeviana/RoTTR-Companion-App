@@ -19,7 +19,7 @@ public class MktAddOnCardDisplay : MonoBehaviour {
     }
 
     public void SetAddOnScreen(){
-        manager.OpenAddOnScreen(addon.addOnImage,addon.addOnName,addon.description,addon.price);
+        manager.OpenAddOnScreen(addon);
     }
 	
 }

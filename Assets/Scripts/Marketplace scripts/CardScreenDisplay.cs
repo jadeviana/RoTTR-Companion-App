@@ -1,10 +1,38 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
-public class CardPopUp : MonoBehaviour {
+public class CardScreenDisplay : MonoBehaviour {
+	
 	[SerializeField] private GameObject PopUpObject;
 	[SerializeField] private CanvasGroup PopUp;
+
+
+    [SerializeField] private TextMeshProUGUI PopUpQuantity;
+
+	
+	private int quantity = 1;
+    [SerializeField] private Button increase;
+	[SerializeField] private Button decrease;
+
+	private void Update() {
+		PopUpQuantity.text = quantity.ToString();
+        if(quantity <=1){
+			decrease.interactable = false;
+		} else {
+			decrease.interactable = true;
+		}
+    }
+
+    public void decreaseQuantity(){
+        --quantity;
+    }
+    public void increaseQuantity(){
+        ++quantity;
+    }
+
 
 	public void OpenPopUp(){
 		StartCoroutine(FadeIn(PopUp, PopUp.alpha, 1));
@@ -47,6 +75,8 @@ public class CardPopUp : MonoBehaviour {
 
 			yield return new WaitForEndOfFrame();	
 		}
-		PopUpObject.gameObject.SetActive(false);	
+		
+		PopUpObject.gameObject.SetActive(false);
+		quantity = 1;	
 	}
 }

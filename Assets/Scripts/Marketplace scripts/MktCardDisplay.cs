@@ -19,6 +19,6 @@ public class MktCardDisplay : MonoBehaviour {
     }
 
     public void SetCardScreen(){
-        manager.OpenCardScreen(card.cardImage,card.cardName,card.description,card.credit);
+        manager.OpenCardScreen(card);
     }
 }

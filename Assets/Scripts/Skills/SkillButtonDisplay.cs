@@ -6,12 +6,14 @@ using UnityEngine.UI;
 public class SkillButtonDisplay : MonoBehaviour {
 
 		public Skill skill;
-		public Image Lock;
-		public Image Check;
-		public Image skillIcon;
-		public Image background;
-		public Image div;
-		public Image lockedBar;
+		[SerializeField] private Image Lock;
+		[SerializeField] private Image Check;
+		[SerializeField] private Image skillIcon;
+		[SerializeField] private Image background;
+		[SerializeField] private Image div;
+		[SerializeField] private Image lockedBar;
+
+		public SkillManager manager;
 
 	// Use this for initialization
 	void Start () {
@@ -36,5 +38,7 @@ public class SkillButtonDisplay : MonoBehaviour {
 			Check.gameObject.SetActive(true);
 		}
 	}
-
+	public void SetCardScreen(){
+		manager.OpenSkillScreen(skill);
+	}
 }

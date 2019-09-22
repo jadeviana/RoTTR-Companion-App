@@ -19,5 +19,6 @@ MonoBehaviour:
   type: 3
   level: 2
   multiRequirement: 0
-  requirementDescription: 'Upgrade: Grenade launcher'
+  requirementDescription1: 'Upgrade: Grenade launcher'
+  requirementDescription2: 
   skillCost: 1

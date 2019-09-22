@@ -19,5 +19,6 @@ MonoBehaviour:
   type: 1
   level: 3
   multiRequirement: 1
-  requirementDescription: 'Combat Knife <br><br>Skill: Dodge Kill'
+  requirementDescription1: Combat Knife
+  requirementDescription2: 'Skill: Dodge Kill'
   skillCost: 1

@@ -18,6 +18,7 @@ MonoBehaviour:
   type: 3
   level: 3
   multiRequirement: 1
-  requirementDescription: 'Skill: grenade arrow crafting<br><br>Master 10 more skills
-    in any category to unlock this skill tier'
+  requirementDescription1: 'Skill: grenade arrow crafting'
+  requirementDescription2: Master 10 more skills in any category to unlock this skill
+    tier
   skillCost: 1

@@ -20,5 +20,7 @@ MonoBehaviour:
   type: 2
   level: 3
   multiRequirement: 1
-  requirementDescription: 
+  requirementDescription1: 'Weapon: any shotgun'
+  requirementDescription2: Master 10 more skills in any category to unlock this skill
+    tier
   skillCost: 1

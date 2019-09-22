@@ -19,6 +19,7 @@ public class Skill : ScriptableObject {
 	
 	//Skills requirement
 	public bool multiRequirement;
-	public string requirementDescription;
+	public string requirementDescription1;
+	public string requirementDescription2;
 	public int skillCost = 1;
 }

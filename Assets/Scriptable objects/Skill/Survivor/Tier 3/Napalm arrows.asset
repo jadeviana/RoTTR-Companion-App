@@ -19,6 +19,7 @@ MonoBehaviour:
   type: 3
   level: 3
   multiRequirement: 1
-  requirementDescription: 'Skill: fire arrows<br><br>Master 10 more skills in any
-    category to unlock this skill tier'
+  requirementDescription1: 'Skill: fire arrows'
+  requirementDescription2: Master 10 more skills in any category to unlock this skill
+    tier
   skillCost: 1

@@ -19,5 +19,6 @@ MonoBehaviour:
   type: 3
   level: 2
   multiRequirement: 0
-  requirementDescription: Pump-action shotgun
+  requirementDescription1: Pump-action shotgun
+  requirementDescription2: 
   skillCost: 1

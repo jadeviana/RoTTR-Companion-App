@@ -19,5 +19,6 @@ MonoBehaviour:
   type: 1
   level: 2
   multiRequirement: 0
-  requirementDescription: Combat knife
+  requirementDescription1: Combat knife
+  requirementDescription2: 
   skillCost: 1

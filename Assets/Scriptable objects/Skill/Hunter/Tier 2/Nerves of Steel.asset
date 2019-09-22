@@ -14,7 +14,7 @@ MonoBehaviour:
   skillIcon: {fileID: 21300000, guid: c3dfa84e456451d4db5e97d8fbf81846, type: 3}
   skillName: Nerves of Steel
   skillDescription: Fully charged bow aiming remains steady for significantly longer.
-  status: 1
+  status: 2
   type: 2
   level: 2
   multiRequirement: 0

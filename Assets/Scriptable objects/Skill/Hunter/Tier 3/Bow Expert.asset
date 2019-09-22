@@ -19,6 +19,8 @@ MonoBehaviour:
   status: 1
   type: 2
   level: 3
-  multiRequirement: 1
-  requirementDescription: 
+  multiRequirement: 0
+  requirementDescription1: Master 10 more skills in any category to unlock this skill
+    tier
+  requirementDescription2: 
   skillCost: 1

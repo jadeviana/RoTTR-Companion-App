@@ -15,7 +15,7 @@ MonoBehaviour:
   skillName: Master of the Land
   skillDescription: Reveals when an exotic animal is nearby and pinpoint their location
     using Survival Instinct.
-  status: 1
+  status: 2
   type: 2
   level: 1
   multiRequirement: 0

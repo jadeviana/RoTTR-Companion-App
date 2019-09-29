@@ -17,3 +17,7 @@ MonoBehaviour:
   ammoDescription: Standard arrows that kill silently
   playerAmmoQnty: 25
   maxAmmo: 25
+  firstItem: {fileID: 11400000, guid: 080746514dce1d84dbed06476392485b, type: 2}
+  firstItemCost: 1
+  secondItem: {fileID: 11400000, guid: 04c24c69c710d6c4e80ec6db0a6d0685, type: 2}
+  secondItemCost: 2

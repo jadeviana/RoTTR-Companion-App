@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum ammoState{locked = 1, available = 2, full = 3};
+public enum ammoState{unavailable = 1, available = 2, full = 3};
 
 [CreateAssetMenu(fileName = "AmmoItem", menuName = "Inventory/AmmoItem")]
 public class AmmoItem : ScriptableObject {
@@ -12,17 +12,21 @@ public class AmmoItem : ScriptableObject {
 	public string ammoDescription;
 	public int playerAmmoQnty;
 	public int maxAmmo;
-	public ammoState status;
+	private ammoState status;
 
-	void ammoStatus(){
-		//If item quantity is full
+	public ResourceItem firstItem;
+	public int firstItemCost;
+	public ResourceItem secondItem;
+	public int secondItemCost;
+
+	public void ammoStatus(){
 		if(playerAmmoQnty == maxAmmo){
 			status = ammoState.full;
+		} else if (firstItem.playerQuantity < firstItemCost && secondItem.playerQuantity < secondItemCost){
+			status = ammoState.unavailable;
+		} else {
+			status = ammoState.available;
 		}
-		//If skill is locked
-		//else if(){}
 	}
-
-	//craft cost:
 }
 

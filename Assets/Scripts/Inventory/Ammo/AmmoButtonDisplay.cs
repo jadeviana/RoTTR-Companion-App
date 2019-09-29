@@ -7,16 +7,17 @@ using TMPro;
 
 public class AmmoButtonDisplay : MonoBehaviour {
 		public AmmoItem item;
-		public Image ammoIcon;
-		public Image buttonImage;
+		[SerializeField] private Image ammoIcon;
+		[SerializeField] private Image buttonImage;
 
-		public TextMeshProUGUI ammoName;
-		public TextMeshProUGUI ammoQnty;
-		public GameObject Warning;
-		public GameObject Lock;
+		[SerializeField] private TextMeshProUGUI ammoName;
+		[SerializeField] private TextMeshProUGUI ammoQnty;
+		[SerializeField] private GameObject Warning;
+		[SerializeField] private GameObject Lock;
 
-		
-	// Use this for initialization
+		public AmmoManager manager;
+
+
 	void Start () {
 		ammoIcon.sprite = item.ammoIcon;
 		ammoName.text = item.ammoName;
@@ -32,7 +33,7 @@ public class AmmoButtonDisplay : MonoBehaviour {
 			Warning.gameObject.SetActive(true);
 		}
 
-		//If skill required is locked
+		//If not enough items to craft
 		//else if (){
 		//	ammoQnty.color = new Color32(180,29,29,255);
 		//	ammoName.color = new Color32(180,29,29,255);
@@ -41,6 +42,10 @@ public class AmmoButtonDisplay : MonoBehaviour {
 
 		//	Lock.gameObject.SetActive(true);		
 		//}
+	}
+
+	public void SetAmmoScreen(){
+		
 	}
 
 }

@@ -268,6 +268,7 @@ MonoBehaviour:
   ammoQnty: {fileID: 114547883581400268}
   Warning: {fileID: 1540364231595328}
   Lock: {fileID: 1042387970710396}
+  manager: {fileID: 0}
 --- !u!114 &114457281452262962
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -729,7 +730,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114008313781540716}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1148795978891402}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114800181225899442

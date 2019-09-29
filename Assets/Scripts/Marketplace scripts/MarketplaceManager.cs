@@ -19,8 +19,6 @@ public class MarketplaceManager : MonoBehaviour {
     [Space(18)] 
 
     //Card Screen elements
-
-    CardScreenDisplay CScreen;
     [SerializeField] private Image CardScreenImage;
     [SerializeField] private TextMeshProUGUI CardScreenTitle;
     [SerializeField] private TextMeshProUGUI CardScreenDescription;

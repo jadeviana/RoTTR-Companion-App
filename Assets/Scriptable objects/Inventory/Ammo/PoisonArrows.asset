@@ -18,3 +18,10 @@ MonoBehaviour:
     CLOUD ARROWS skill is known, crafting yields upgraded arrow type
   playerAmmoQnty: 2
   maxAmmo: 5
+  status: 0
+  firstItem: {fileID: 0}
+  firstItemCost: 2
+  secondItem: {fileID: 11400000, guid: 98a3dca138dc9b34e99ae1f5a3b91a42, type: 2}
+  secondItemCost: 1
+  thirdItem: {fileID: 11400000, guid: bede1f158e5ab284daec46afe1f8e0ca, type: 2}
+  thirdItemCost: 3

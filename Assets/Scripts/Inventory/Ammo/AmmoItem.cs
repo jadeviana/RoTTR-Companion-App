@@ -12,12 +12,15 @@ public class AmmoItem : ScriptableObject {
 	public string ammoDescription;
 	public int playerAmmoQnty;
 	public int maxAmmo;
-	private ammoState status;
+	public ammoState status;
 
 	public ResourceItem firstItem;
 	public int firstItemCost;
 	public ResourceItem secondItem;
 	public int secondItemCost;
+
+	public ResourceItem thirdItem = null;
+	public int thirdItemCost;
 
 	public void ammoStatus(){
 		if(playerAmmoQnty == maxAmmo){

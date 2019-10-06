@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-
+public enum ammoState{unavailable = 1, available = 2, full = 3};
 public class AmmoButtonDisplay : MonoBehaviour {
 		public AmmoItem item;
 		[SerializeField] private Image ammoIcon;
@@ -15,6 +15,7 @@ public class AmmoButtonDisplay : MonoBehaviour {
 		[SerializeField] private GameObject Warning;
 		[SerializeField] private GameObject Lock;
 
+		public ammoState status;
 		public AmmoManager manager;
 
 
@@ -23,8 +24,10 @@ public class AmmoButtonDisplay : MonoBehaviour {
 		ammoName.text = item.ammoName;
 		ammoQnty.text = "your inventory: " + item.playerAmmoQnty + "/" + item.maxAmmo;
 
+		ammoStatus();
+
 		//If inventory is full
-		if(item.playerAmmoQnty == item.maxAmmo){
+		if((int)status == 3){
 			ammoQnty.color = new Color32(180,29,29,255);
 			ammoName.color = new Color32(180,29,29,255);
 			ammoIcon.color = new Color32(180,29,29,255);
@@ -34,14 +37,40 @@ public class AmmoButtonDisplay : MonoBehaviour {
 		}
 
 		//If not enough items to craft
-		// else if(item.firstItem.playerQuantity < item.firstItemCost && item.secondItem.playerQuantity < item.secondItemCost){
-		// 	ammoQnty.color = new Color32(180,29,29,255);
-		// 	ammoName.color = new Color32(180,29,29,255);
-		// 	ammoIcon.color = new Color32(180,29,29,255);
-		// 	buttonImage.color = new Color32(180,29,29,255);
+		else if((int)status == 1){
+			ammoQnty.color = new Color32(180,29,29,255);
+			ammoName.color = new Color32(180,29,29,255);
+			ammoIcon.color = new Color32(180,29,29,255);
+			buttonImage.color = new Color32(180,29,29,255);
 
-		// 	Lock.gameObject.SetActive(true);		
-		// }
+			Lock.gameObject.SetActive(true);		
+		}
+	}
+
+	public void ammoStatus(){
+
+		if(item.playerAmmoQnty == item.maxAmmo){
+			status = ammoState.full;
+		}
+		else if(item.hasRequirement == true){
+			status = ammoState.unavailable;
+		}
+		else if(item.thirdItem != null){
+			if (item.firstItem.playerQuantity < item.firstItemCost || item.secondItem.playerQuantity < item.secondItemCost || item.thirdItem.playerQuantity < item.thirdItemCost){
+				status = ammoState.unavailable;
+			} 
+		} 
+		else if (item.thirdItem = null){
+			if (item.firstItem.playerQuantity < item.firstItemCost || item.secondItem.playerQuantity < item.secondItemCost){
+				status = ammoState.unavailable;
+			} 
+		}
+
+		else {
+			status = ammoState.available;
+		}
+
+		Debug.Log("ammo status for " +item.ammoName + " is " + status);
 	}
 
 	public void SetAmmoScreen(){

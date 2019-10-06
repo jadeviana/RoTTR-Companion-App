@@ -18,7 +18,7 @@ public class AmmoManager : MonoBehaviour {
     [SerializeField] private TextMeshProUGUI AmmoName;
     [SerializeField] private TextMeshProUGUI AmmoDescription;
     [SerializeField] private TextMeshProUGUI AmmoRequirement;
-    [SerializeField] private GameObject Lock;
+    [SerializeField] private Image Lock;
     [SerializeField] private TextMeshProUGUI AmmoQuantity;
 
     [Space(18)]
@@ -52,10 +52,12 @@ public class AmmoManager : MonoBehaviour {
         //If an ammo has a skill (or other) requirement or not
         if (selectedAmmo.hasRequirement == true){
             AmmoRequirement.text  = selectedAmmo.ammoRequirement;
-            Lock.gameObject.SetActive(true);
+            AmmoRequirement.color = new Color32(123,6,27,255);    
+            Lock.color = new Color32(255,255,255,255);
         } else{
-            AmmoRequirement.text  = "none";    
-            Lock.gameObject.SetActive(false);
+            AmmoRequirement.text  = "none";
+            AmmoRequirement.color = new Color32(255,255,255,255);    
+            Lock.color = new Color32(255,255,255,0);
         }
 
         firstItemImage.sprite = selectedAmmo.firstItem.resourceImage;
@@ -83,9 +85,17 @@ public class AmmoManager : MonoBehaviour {
         AmmoQuantity.text = selectedAmmo.playerAmmoQnty + "/" + selectedAmmo.maxAmmo;
 
         //Craft button interactable or not
-        if (selectedAmmo.hasRequirement == false && selectedAmmo.firstItem.playerQuantity > selectedAmmo.firstItemCost && selectedAmmo.secondItem.playerQuantity > selectedAmmo.secondItemCost && selectedAmmo.thirdItem.playerQuantity > selectedAmmo.thirdItemCost){
-            CraftButton.GetComponent<Button>().interactable = true;
-        } else{
+        if(selectedAmmo.thirdItem != null){
+            if (selectedAmmo.hasRequirement == false && selectedAmmo.firstItem.playerQuantity > selectedAmmo.firstItemCost && selectedAmmo.secondItem.playerQuantity > selectedAmmo.secondItemCost && selectedAmmo.thirdItem.playerQuantity > selectedAmmo.thirdItemCost){
+                CraftButton.GetComponent<Button>().interactable = true;
+            }
+        } 
+        else if (selectedAmmo.thirdItem = null){
+            if (selectedAmmo.hasRequirement == false && selectedAmmo.firstItem.playerQuantity > selectedAmmo.firstItemCost && selectedAmmo.secondItem.playerQuantity > selectedAmmo.secondItemCost){
+                CraftButton.GetComponent<Button>().interactable = true;
+            }
+        }
+        else {
             CraftButton.GetComponent<Button>().interactable = false;
         }
 

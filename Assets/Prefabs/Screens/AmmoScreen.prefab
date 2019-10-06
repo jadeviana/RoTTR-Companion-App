@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 222853112250857560}
   - component: {fileID: 114012669138097082}
   m_Layer: 5
-  m_Name: ItemIcon
+  m_Name: ItemIcon3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 222212371104243976}
   - component: {fileID: 114692571497465024}
   m_Layer: 5
-  m_Name: ItemCost
+  m_Name: ItemCost3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -191,7 +191,7 @@ GameObject:
   - component: {fileID: 222447201918363684}
   - component: {fileID: 114856751234428682}
   m_Layer: 5
-  m_Name: ItemCost
+  m_Name: ItemCost1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -381,7 +381,7 @@ GameObject:
   - component: {fileID: 222073182413821356}
   - component: {fileID: 114464538256817938}
   m_Layer: 5
-  m_Name: ItemIcon
+  m_Name: ItemIcon1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -433,7 +433,7 @@ GameObject:
   - component: {fileID: 114664345902725700}
   - component: {fileID: 114349849038291534}
   m_Layer: 5
-  m_Name: FirstRequirement
+  m_Name: RequirementTextImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -703,7 +703,7 @@ GameObject:
   - component: {fileID: 222186997810663142}
   - component: {fileID: 114682294978389878}
   m_Layer: 5
-  m_Name: ItemIcon
+  m_Name: ItemIcon2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -925,7 +925,7 @@ GameObject:
   - component: {fileID: 222026694972174944}
   - component: {fileID: 114738563929582022}
   m_Layer: 5
-  m_Name: ItemCost
+  m_Name: ItemCost2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3236,7 +3236,7 @@ MonoBehaviour:
   m_MinWidth: -1
   m_MinHeight: -1
   m_PreferredWidth: 1
-  m_PreferredHeight: 374
+  m_PreferredHeight: 452
   m_FlexibleWidth: -1
   m_FlexibleHeight: 1
   m_LayoutPriority: 1

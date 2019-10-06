@@ -40,7 +40,11 @@ public class AmmoManager : MonoBehaviour {
     [SerializeField] private Image thirdItemImage;
     [SerializeField] private TextMeshProUGUI thirdItemCost;
     [SerializeField] private TextMeshProUGUI thirdItemQuantity;
+
+    [Space(18)]
+
     [SerializeField] private Button CraftButton;
+    [SerializeField] private TextMeshProUGUI CraftButtonText;
 
 	public void OpenAmmoScreen(AmmoItem selectedAmmo){
         InventoryScreenObject.gameObject.SetActive(false);
@@ -64,6 +68,7 @@ public class AmmoManager : MonoBehaviour {
         firstItemCost.text = selectedAmmo.firstItemCost.ToString();
         firstItemQuantity.text = selectedAmmo.firstItem.playerQuantity.ToString();
 
+        
         secondItemImage.sprite = selectedAmmo.secondItem.resourceImage;
         secondItemCost.text = selectedAmmo.secondItemCost.ToString();
         secondItemQuantity.text = selectedAmmo.secondItem.playerQuantity.ToString();
@@ -88,15 +93,18 @@ public class AmmoManager : MonoBehaviour {
         if(selectedAmmo.thirdItem != null){
             if (selectedAmmo.hasRequirement == false && selectedAmmo.firstItem.playerQuantity > selectedAmmo.firstItemCost && selectedAmmo.secondItem.playerQuantity > selectedAmmo.secondItemCost && selectedAmmo.thirdItem.playerQuantity > selectedAmmo.thirdItemCost){
                 CraftButton.GetComponent<Button>().interactable = true;
+                CraftButtonText.color = new Color32(255,255,255,255);
             }
         } 
         else if (selectedAmmo.thirdItem = null){
             if (selectedAmmo.hasRequirement == false && selectedAmmo.firstItem.playerQuantity > selectedAmmo.firstItemCost && selectedAmmo.secondItem.playerQuantity > selectedAmmo.secondItemCost){
                 CraftButton.GetComponent<Button>().interactable = true;
+                CraftButtonText.color = new Color32(255,255,255,255);
             }
         }
         else {
             CraftButton.GetComponent<Button>().interactable = false;
+            CraftButtonText.color = new Color32(255,255,255,125);
         }
 
         AmmoScreenObject.gameObject.SetActive(true);

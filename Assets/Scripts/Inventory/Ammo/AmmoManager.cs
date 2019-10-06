@@ -17,15 +17,29 @@ public class AmmoManager : MonoBehaviour {
 	[SerializeField] private Image AmmoIcon;
     [SerializeField] private TextMeshProUGUI AmmoName;
     [SerializeField] private TextMeshProUGUI AmmoDescription;
+    [SerializeField] private TextMeshProUGUI AmmoRequirement;
+    [SerializeField] private GameObject Lock;
     [SerializeField] private TextMeshProUGUI AmmoQuantity;
+
+    [Space(18)]
 
     [SerializeField] private Image firstItemImage;
     [SerializeField] private TextMeshProUGUI firstItemCost;
     [SerializeField] private TextMeshProUGUI firstItemQuantity;
 
+    [Space(18)]
+
     [SerializeField] private Image secondItemImage;
     [SerializeField] private TextMeshProUGUI secondItemCost;
     [SerializeField] private TextMeshProUGUI secondItemQuantity;
+
+    [Space(18)]
+
+    [SerializeField] private GameObject thirdItemCostDisplay;
+    [SerializeField] private GameObject thirdItemQuantityDisplay;
+    [SerializeField] private Image thirdItemImage;
+    [SerializeField] private TextMeshProUGUI thirdItemCost;
+    [SerializeField] private TextMeshProUGUI thirdItemQuantity;
     [SerializeField] private Button CraftButton;
 
 	public void OpenAmmoScreen(AmmoItem selectedAmmo){
@@ -35,6 +49,15 @@ public class AmmoManager : MonoBehaviour {
         AmmoName.text = selectedAmmo.ammoName;
         AmmoDescription.text  = selectedAmmo.ammoDescription;
 
+        //If an ammo has a skill (or other) requirement or not
+        if (selectedAmmo.hasRequirement == true){
+            AmmoRequirement.text  = selectedAmmo.ammoRequirement;
+            Lock.gameObject.SetActive(true);
+        } else{
+            AmmoRequirement.text  = "none";    
+            Lock.gameObject.SetActive(false);
+        }
+
         firstItemImage.sprite = selectedAmmo.firstItem.resourceImage;
         firstItemCost.text = selectedAmmo.firstItemCost.ToString();
         firstItemQuantity.text = selectedAmmo.firstItem.playerQuantity.ToString();
@@ -43,8 +66,28 @@ public class AmmoManager : MonoBehaviour {
         secondItemCost.text = selectedAmmo.secondItemCost.ToString();
         secondItemQuantity.text = selectedAmmo.secondItem.playerQuantity.ToString();
 
+        //If an ammo requires or not a third item to craft
+        if (selectedAmmo.thirdItem != null){
+            thirdItemCostDisplay.gameObject.SetActive(true);
+            thirdItemQuantityDisplay.gameObject.SetActive(true);
+
+            thirdItemImage.sprite = selectedAmmo.thirdItem.resourceImage;
+            thirdItemCost.text = selectedAmmo.thirdItemCost.ToString();
+            thirdItemQuantity.text = selectedAmmo.thirdItem.playerQuantity.ToString();
+        } else{
+            thirdItemCostDisplay.gameObject.SetActive(false);
+            thirdItemQuantityDisplay.gameObject.SetActive(false);
+        }
+
         AmmoIcon.sprite = selectedAmmo.ammoIcon;
         AmmoQuantity.text = selectedAmmo.playerAmmoQnty + "/" + selectedAmmo.maxAmmo;
+
+        //Craft button interactable or not
+        if (selectedAmmo.hasRequirement == false && selectedAmmo.firstItem.playerQuantity > selectedAmmo.firstItemCost && selectedAmmo.secondItem.playerQuantity > selectedAmmo.secondItemCost && selectedAmmo.thirdItem.playerQuantity > selectedAmmo.thirdItemCost){
+            CraftButton.GetComponent<Button>().interactable = true;
+        } else{
+            CraftButton.GetComponent<Button>().interactable = false;
+        }
 
         AmmoScreenObject.gameObject.SetActive(true);
 	}

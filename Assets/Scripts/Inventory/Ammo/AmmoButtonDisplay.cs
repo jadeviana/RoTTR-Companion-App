@@ -34,14 +34,14 @@ public class AmmoButtonDisplay : MonoBehaviour {
 		}
 
 		//If not enough items to craft
-		else if(item.firstItem.playerQuantity < item.firstItemCost && item.secondItem.playerQuantity < item.secondItemCost){
-			ammoQnty.color = new Color32(180,29,29,255);
-			ammoName.color = new Color32(180,29,29,255);
-			ammoIcon.color = new Color32(180,29,29,255);
-			buttonImage.color = new Color32(180,29,29,255);
+		// else if(item.firstItem.playerQuantity < item.firstItemCost && item.secondItem.playerQuantity < item.secondItemCost){
+		// 	ammoQnty.color = new Color32(180,29,29,255);
+		// 	ammoName.color = new Color32(180,29,29,255);
+		// 	ammoIcon.color = new Color32(180,29,29,255);
+		// 	buttonImage.color = new Color32(180,29,29,255);
 
-			Lock.gameObject.SetActive(true);		
-		}
+		// 	Lock.gameObject.SetActive(true);		
+		// }
 	}
 
 	public void SetAmmoScreen(){

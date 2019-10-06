@@ -10,6 +10,8 @@ public class AmmoItem : ScriptableObject {
 	public Sprite ammoImage;
 	public string ammoName;
 	public string ammoDescription;
+	public bool hasRequirement;
+	public string ammoRequirement;
 	public int playerAmmoQnty;
 	public int maxAmmo;
 	public ammoState status;
@@ -18,7 +20,6 @@ public class AmmoItem : ScriptableObject {
 	public int firstItemCost;
 	public ResourceItem secondItem;
 	public int secondItemCost;
-
 	public ResourceItem thirdItem = null;
 	public int thirdItemCost;
 

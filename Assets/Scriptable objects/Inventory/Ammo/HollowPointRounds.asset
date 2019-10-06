@@ -15,5 +15,14 @@ MonoBehaviour:
   ammoImage: {fileID: 0}
   ammoName: Hollow-point rounds
   ammoDescription: Fragmenting pistol rounds that do increased damage
+  hasRequirement: 1
+  ammoRequirement: 'Skill: Hollow-point bullets'
   playerAmmoQnty: 0
   maxAmmo: 10
+  status: 0
+  firstItem: {fileID: 0}
+  firstItemCost: 5
+  secondItem: {fileID: 11400000, guid: fb05fd19f16da354184d0f3b01a2687b, type: 2}
+  secondItemCost: 3
+  thirdItem: {fileID: 0}
+  thirdItemCost: 0

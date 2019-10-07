@@ -17237,6 +17237,12 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
+--- !u!114 &612228179 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114738563929582022, guid: 4cd5cac4bc6143e4ca3712f8c4914013,
+    type: 2}
+  m_PrefabInternal: {fileID: 356161859}
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
 --- !u!1 &612515764
 GameObject:
   m_ObjectHideFlags: 0
@@ -52263,7 +52269,7 @@ MonoBehaviour:
   firstItemCost: {fileID: 594065158}
   firstItemQuantity: {fileID: 594065157}
   secondItemImage: {fileID: 603131166}
-  secondItemCost: {fileID: 594065155}
+  secondItemCost: {fileID: 612228179}
   secondItemQuantity: {fileID: 594065154}
   thirdItemCostDisplay: {fileID: 356161862}
   thirdItemQuantityDisplay: {fileID: 356161861}

@@ -86,6 +86,50 @@ public class AmmoManager : MonoBehaviour {
             thirdItemQuantityDisplay.gameObject.SetActive(false);
         }
 
+        //If ammo cost is higher then player quantity
+        if (selectedAmmo.thirdItem != null){
+
+            if (selectedAmmo.firstItemCost > selectedAmmo.firstItem.playerQuantity){
+                firstItemImage.color = new Color32(123,6,27,255);
+                firstItemCost.color = new Color32(123,6,27,255);
+            }
+            if (selectedAmmo.secondItemCost > selectedAmmo.secondItem.playerQuantity){
+                secondItemImage.color = new Color32(123,6,27,255);
+                secondItemCost.color = new Color32(123,6,27,255);
+            }
+            if (selectedAmmo.thirdItemCost > selectedAmmo.thirdItem.playerQuantity){
+                thirdItemImage.color = new Color32(123,6,27,255);
+                thirdItemCost.color = new Color32(123,6,27,255);
+            } else{
+                firstItemImage.color = new Color32(255,255,255,255);
+                firstItemCost.color = new Color32(255,255,255,255);
+
+                secondItemImage.color = new Color32(255,255,255,255);
+                secondItemCost.color = new Color32(255,255,255,255);
+
+                thirdItemImage.color = new Color32(255,255,255,255);
+                thirdItemCost.color = new Color32(255,255,255,255);
+            }
+
+        } else{
+
+            if (selectedAmmo.firstItemCost > selectedAmmo.firstItem.playerQuantity){
+                firstItemImage.color = new Color32(123,6,27,255);
+                firstItemCost.color = new Color32(123,6,27,255);
+            }
+            if (selectedAmmo.secondItemCost > selectedAmmo.secondItem.playerQuantity){
+                secondItemImage.color = new Color32(123,6,27,255);
+                secondItemCost.color = new Color32(123,6,27,255);
+            }else{
+                firstItemImage.color = new Color32(255,255,255,255);
+                firstItemCost.color = new Color32(255,255,255,255);
+
+                secondItemImage.color = new Color32(255,255,255,255);
+                secondItemCost.color = new Color32(255,255,255,255);
+            }
+
+        }
+
         AmmoIcon.sprite = selectedAmmo.ammoIcon;
         AmmoQuantity.text = selectedAmmo.playerAmmoQnty + "/" + selectedAmmo.maxAmmo;
 

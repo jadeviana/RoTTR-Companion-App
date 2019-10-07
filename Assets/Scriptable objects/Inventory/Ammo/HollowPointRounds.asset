@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: HollowPointRounds
   m_EditorClassIdentifier: 
   ammoIcon: {fileID: 21300000, guid: 9fcd3aaa0a12bb14ba831c264294720b, type: 3}
-  ammoImage: {fileID: 0}
+  ammoImage: {fileID: 21300000, guid: bcec6e2d0b16c7e49970c55e688e4ae3, type: 3}
   ammoName: Hollow-point rounds
   ammoDescription: Fragmenting pistol rounds that do increased damage
   hasRequirement: 1

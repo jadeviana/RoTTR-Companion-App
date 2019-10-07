@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccfc50871a44e26458624707e38efb0c, type: 3}
   m_Name: Pistol Rounds
   m_EditorClassIdentifier: 
-  resourceImage: {fileID: 0}
+  resourceImage: {fileID: 21300000, guid: c90705725349043428b8537e187a2fe6, type: 3}
   resourceName: Pistol rounds
   playerQuantity: 51
   maximumQuantity: 100

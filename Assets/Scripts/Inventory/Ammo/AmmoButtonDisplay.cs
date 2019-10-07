@@ -70,7 +70,7 @@ public class AmmoButtonDisplay : MonoBehaviour {
 			status = ammoState.available;
 		}
 
-		Debug.Log("ammo status for " +item.ammoName + " is " + status);
+		//Debug.Log("ammo status for " +item.ammoName + " is " + status);
 	}
 
 	public void SetAmmoScreen(){

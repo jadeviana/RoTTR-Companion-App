@@ -12,12 +12,16 @@ MonoBehaviour:
   m_Name: SilentArrows
   m_EditorClassIdentifier: 
   ammoIcon: {fileID: 21300000, guid: 90ae85bfc6cca7a4e8361fee237ac87d, type: 3}
-  ammoImage: {fileID: 0}
+  ammoImage: {fileID: 21300000, guid: ddffa9335b3229842a517eb793f0304c, type: 3}
   ammoName: Silent arrows
   ammoDescription: Standard arrows that kill silently
+  hasRequirement: 0
+  ammoRequirement: 
   playerAmmoQnty: 25
   maxAmmo: 25
   firstItem: {fileID: 11400000, guid: 080746514dce1d84dbed06476392485b, type: 2}
   firstItemCost: 1
   secondItem: {fileID: 11400000, guid: 04c24c69c710d6c4e80ec6db0a6d0685, type: 2}
   secondItemCost: 2
+  thirdItem: {fileID: 0}
+  thirdItemCost: 0

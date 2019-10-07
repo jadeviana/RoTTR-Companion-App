@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: PoisonArrows
   m_EditorClassIdentifier: 
   ammoIcon: {fileID: 21300000, guid: 3ffbf4cd8552eb747bb0392050957ac6, type: 3}
-  ammoImage: {fileID: 0}
+  ammoImage: {fileID: 21300000, guid: d25d4d18f29db4b409785769c67d8b4a, type: 3}
   ammoName: Poison arrows
   ammoDescription: Arrows that deploy a cloud of lethal poison on impact. If DEATH
     CLOUD ARROWS skill is known, crafting yields upgraded arrow type

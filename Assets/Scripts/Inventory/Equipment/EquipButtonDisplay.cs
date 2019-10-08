@@ -3,40 +3,96 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum equipState {locked = 1, unavailable = 2, available = 3, upgraded = 4};
 public class EquipButtonDisplay : MonoBehaviour {
 
 		public EquipItem item;
-		public Image Lock;
-		public Image Check;
-		public Image equipIcon;
-		public Image background;
-		public Image div;
-		public Image lockedBar;
+		[SerializeField] private Image Lock;
+		[SerializeField] private Image Check;
+		[SerializeField] private Image equipIcon;
+		[SerializeField] private Image background;
+		[SerializeField] private Image div;
+		[SerializeField] private Image lockedBar;
 
-		private int buttonState;
+		private equipState status;
+
+		//public EquipManager manager;
+
 
 	// Use this for initialization
 	void Start () {
+		SetEquipStatus();
 		equipIcon.sprite = item.equipIcon;
-		buttonState = (int)item.status;
+		Debug.Log(item.equipName + " is " + status);
 		
-		//if the equipment state is locked, it should change the button's colour (red) and set the lock and lock bar image to active
-		if(buttonState == 1){
-			div.color = new Color32(123,6,27,255);
-			background.color = new Color32(123,6,27,255);
-			equipIcon.color = new Color32(123,6,27,255);
-			Lock.gameObject.SetActive(true);
-			lockedBar.gameObject.SetActive(true);
+		switch((int)status){
+
+			case 1: //Equipment is locked
+				div.color = new Color32(123,6,27,255);
+				background.color = new Color32(123,6,27,255);
+				equipIcon.color = new Color32(123,6,27,255);
+
+				Lock.gameObject.SetActive(true);
+				lockedBar.gameObject.SetActive(true);
+				Check.gameObject.SetActive(false);
+			break;
+
+			case 2: //Equipment is unavailable
+				div.color = new Color32(123,6,27,255);
+				background.color = new Color32(123,6,27,255);
+				equipIcon.color = new Color32(123,6,27,255);
+
+				Lock.gameObject.SetActive(false);
+				lockedBar.gameObject.SetActive(false);
+				Check.gameObject.SetActive(false);
+			break;
+
+			case 3: //Equipment is available
+				div.color = new Color32(255,255,255,255);
+				background.color = new Color32(255,255,255,255);
+				equipIcon.color = new Color32(255,255,255,255);
+
+				Lock.gameObject.SetActive(false);
+				lockedBar.gameObject.SetActive(false);
+				Check.gameObject.SetActive(false);
+			break;
+
+			case 4: //Equipment is upgraded
+				div.color = new Color32(101,101,101,255);
+				background.color = new Color32(101,101,101,255);
+				equipIcon.color = new Color32(101,101,101,255);
+
+				Lock.gameObject.SetActive(false);
+				lockedBar.gameObject.SetActive(false);
+				Check.gameObject.SetActive(true);
+			break;
+
 		}
 
-		//if the equipment state is upgrade, it should change the button's colour (grey) and set the check image to active
-		else if (buttonState == 3)
-		{
-			div.color = new Color32(101,101,101,255);
-			background.color = new Color32(101,101,101,255);
-			equipIcon.color = new Color32(101,101,101,255);
-			Check.gameObject.SetActive(true);
-		}
 	}
 	
+	void SetEquipStatus(){
+		if (item.firstRequirement != null || item.firstRequirement != "" || item.secondRequirement != null || item.secondRequirement != ""){
+			status = equipState.locked;
+		}
+		else if(item.thirdItem != null){
+			if (item.firstItemCost > item.firstItem.playerQuantity || item.secondItemCost > item.secondItem.playerQuantity || item.thirdItemCost > item.thirdItem.playerQuantity){
+				status = equipState.unavailable;
+			} 
+		} else if(item.thirdItem = null){
+			if (item.firstItemCost > item.firstItem.playerQuantity){
+				status = equipState.unavailable;
+			} 
+		}
+		else if (item.isUpgraded == true){
+			status = equipState.upgraded;
+		}
+		else{
+			status = equipState.available;
+		}		
+	}
+
+	void SetEquipScreen(){
+		//manager.OpenEquipScreen(item);
+	}
 }

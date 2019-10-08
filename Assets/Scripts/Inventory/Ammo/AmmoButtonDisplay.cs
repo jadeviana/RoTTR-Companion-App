@@ -26,25 +26,40 @@ public class AmmoButtonDisplay : MonoBehaviour {
 
 		ammoStatus();
 
-		//If inventory is full
-		if((int)status == 3){
-			ammoQnty.color = new Color32(180,29,29,255);
-			ammoName.color = new Color32(180,29,29,255);
-			ammoIcon.color = new Color32(180,29,29,255);
-			buttonImage.color = new Color32(180,29,29,255);
+		switch((int)status){
 
-			Warning.gameObject.SetActive(true);
+			case 1: //Ammo is unavailable to craft
+				ammoQnty.color = new Color32(180,29,29,255);
+				ammoName.color = new Color32(180,29,29,255);
+				ammoIcon.color = new Color32(180,29,29,255);
+				buttonImage.color = new Color32(180,29,29,255);
+
+				Lock.gameObject.SetActive(true);
+				Warning.gameObject.SetActive(false);		
+			break;
+
+			case 2: //Ammo is available
+				ammoQnty.color = new Color32(255,255,255,255);
+				ammoName.color = new Color32(255,255,255,255);
+				ammoIcon.color = new Color32(255,255,255,255);
+				buttonImage.color = new Color32(255,255,255,255);
+
+				Lock.gameObject.SetActive(false);		
+				Warning.gameObject.SetActive(false);
+			break;
+
+			case 3: //Ammo is full
+				ammoQnty.color = new Color32(180,29,29,255);
+				ammoName.color = new Color32(180,29,29,255);
+				ammoIcon.color = new Color32(180,29,29,255);
+				buttonImage.color = new Color32(180,29,29,255);
+
+				Lock.gameObject.SetActive(false);
+				Warning.gameObject.SetActive(true);
+			break;
+
 		}
 
-		//If not enough items to craft
-		else if((int)status == 1){
-			ammoQnty.color = new Color32(180,29,29,255);
-			ammoName.color = new Color32(180,29,29,255);
-			ammoIcon.color = new Color32(180,29,29,255);
-			buttonImage.color = new Color32(180,29,29,255);
-
-			Lock.gameObject.SetActive(true);		
-		}
 	}
 
 	public void ammoStatus(){

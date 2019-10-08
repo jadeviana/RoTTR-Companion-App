@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9d540e709194b14b8027e364e2e78ca, type: 3}
+  m_Name: Hunters Quiver
+  m_EditorClassIdentifier: 
+  equipIcon: {fileID: 0}
+  equipImage: {fileID: 0}
+  equipName: Hunter's Quiver
+  equipDescription: Medium-sized, sturdy hide quiver that increases carrying capacity
+    for all arrow types.
+  firstRequirement: 
+  secondRequirement: 
+  multipleRequirement: 0
+  isUpgraded: 0
+  firstItem: {fileID: 11400000, guid: 98a3dca138dc9b34e99ae1f5a3b91a42, type: 2}
+  firstItemCost: 10
+  secondItem: {fileID: 11400000, guid: 04c24c69c710d6c4e80ec6db0a6d0685, type: 2}
+  secondItemCost: 4
+  thirdItem: {fileID: 11400000, guid: f6056261d459670418b7fdb0ad2d0b8f, type: 2}
+  thirdItemCost: 1

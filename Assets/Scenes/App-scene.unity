@@ -539,6 +539,12 @@ Prefab:
       propertyPath: m_Name
       value: Btn-Equipment 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114258909468039038, guid: 70515c079ace9724487fcf7fe3818ea1,
+        type: 2}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: 9e886cc2eedc23347b1be86cae20c855,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70515c079ace9724487fcf7fe3818ea1, type: 2}
   m_IsPrefabAsset: 0
@@ -7457,6 +7463,12 @@ Prefab:
       propertyPath: m_Name
       value: Btn-Equipment 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114258909468039038, guid: 70515c079ace9724487fcf7fe3818ea1,
+        type: 2}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: c8745d7849f612942aec8866b32e1955,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70515c079ace9724487fcf7fe3818ea1, type: 2}
   m_IsPrefabAsset: 0
@@ -9535,6 +9547,12 @@ Prefab:
       propertyPath: m_Name
       value: Btn-Equipment 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114258909468039038, guid: 70515c079ace9724487fcf7fe3818ea1,
+        type: 2}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: 1bb6ae509ab3d2746889062eccfd59dc,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70515c079ace9724487fcf7fe3818ea1, type: 2}
   m_IsPrefabAsset: 0
@@ -10768,6 +10786,12 @@ Prefab:
       propertyPath: m_Name
       value: Btn-Equipment 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114258909468039038, guid: 70515c079ace9724487fcf7fe3818ea1,
+        type: 2}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: 66887346f35939a418121e05a77d2203,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70515c079ace9724487fcf7fe3818ea1, type: 2}
   m_IsPrefabAsset: 0
@@ -14023,6 +14047,12 @@ Prefab:
       propertyPath: m_Name
       value: Btn-Equipment 10
       objectReference: {fileID: 0}
+    - target: {fileID: 114258909468039038, guid: 70515c079ace9724487fcf7fe3818ea1,
+        type: 2}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: 0704a7a3aae1bcf42b281e0f2141c0f8,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70515c079ace9724487fcf7fe3818ea1, type: 2}
   m_IsPrefabAsset: 0
@@ -14667,6 +14697,12 @@ Prefab:
       propertyPath: m_Name
       value: Btn-Equipment 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114258909468039038, guid: 70515c079ace9724487fcf7fe3818ea1,
+        type: 2}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: ca1b874ff79eb5044919c966ad5e4209,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70515c079ace9724487fcf7fe3818ea1, type: 2}
   m_IsPrefabAsset: 0
@@ -25179,6 +25215,12 @@ Prefab:
       propertyPath: m_Name
       value: Btn-Equipment 7
       objectReference: {fileID: 0}
+    - target: {fileID: 114258909468039038, guid: 70515c079ace9724487fcf7fe3818ea1,
+        type: 2}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: 752ef2f049844234cb3de9fb2fc8cbbb,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70515c079ace9724487fcf7fe3818ea1, type: 2}
   m_IsPrefabAsset: 0
@@ -32777,6 +32819,12 @@ Prefab:
       propertyPath: m_Name
       value: Btn-Equipment 12
       objectReference: {fileID: 0}
+    - target: {fileID: 114258909468039038, guid: 70515c079ace9724487fcf7fe3818ea1,
+        type: 2}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: f660a3a99265af448b8649933a147a82,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70515c079ace9724487fcf7fe3818ea1, type: 2}
   m_IsPrefabAsset: 0
@@ -36235,6 +36283,12 @@ Prefab:
       propertyPath: m_Name
       value: Btn-Equipment 8
       objectReference: {fileID: 0}
+    - target: {fileID: 114258909468039038, guid: 70515c079ace9724487fcf7fe3818ea1,
+        type: 2}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: b9687f36b7ede1c459c599fb39aca05e,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70515c079ace9724487fcf7fe3818ea1, type: 2}
   m_IsPrefabAsset: 0
@@ -39520,6 +39574,12 @@ Prefab:
       propertyPath: m_Name
       value: Btn-Equipment 6
       objectReference: {fileID: 0}
+    - target: {fileID: 114258909468039038, guid: 70515c079ace9724487fcf7fe3818ea1,
+        type: 2}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: 48a1ea1eb5ba538419f24f23b3940b93,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70515c079ace9724487fcf7fe3818ea1, type: 2}
   m_IsPrefabAsset: 0
@@ -45273,6 +45333,12 @@ Prefab:
       propertyPath: m_Name
       value: Btn-Equipment 9
       objectReference: {fileID: 0}
+    - target: {fileID: 114258909468039038, guid: 70515c079ace9724487fcf7fe3818ea1,
+        type: 2}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: 294c71ee85917b84388b5337c7a93a0e,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70515c079ace9724487fcf7fe3818ea1, type: 2}
   m_IsPrefabAsset: 0
@@ -52002,6 +52068,12 @@ Prefab:
       propertyPath: m_Name
       value: Btn-Equipment 11
       objectReference: {fileID: 0}
+    - target: {fileID: 114258909468039038, guid: 70515c079ace9724487fcf7fe3818ea1,
+        type: 2}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: 7c044d9c7c1e29e4ab794701e5d0e3ff,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70515c079ace9724487fcf7fe3818ea1, type: 2}
   m_IsPrefabAsset: 0

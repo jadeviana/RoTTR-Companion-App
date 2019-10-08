@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9d540e709194b14b8027e364e2e78ca, type: 3}
+  m_Name: Rope
+  m_EditorClassIdentifier: 
+  equipIcon: {fileID: 0}
+  equipImage: {fileID: 0}
+  equipName: Rope
+  equipDescription: Coil of braided rope. Used for making rope lines and swinging
+    across large gaps.
+  firstRequirement: 
+  secondRequirement: 
+  isUpgraded: 1
+  firstItem: {fileID: 0}
+  firstItemCost: 0
+  secondItem: {fileID: 0}
+  secondItemCost: 0
+  thirdItem: {fileID: 0}
+  thirdItemCost: 0

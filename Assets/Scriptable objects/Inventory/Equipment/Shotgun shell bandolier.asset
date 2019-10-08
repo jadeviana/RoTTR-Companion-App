@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9d540e709194b14b8027e364e2e78ca, type: 3}
+  m_Name: Shotgun shell bandolier
+  m_EditorClassIdentifier: 
+  equipIcon: {fileID: 0}
+  equipImage: {fileID: 0}
+  equipName: Shotgun shell bandolier
+  equipDescription: Leather sling that significantly increases the amount of shotgun
+    shells that can be carried.
+  firstRequirement: 'Skill: Crafting mastery'
+  secondRequirement: 'Gear: Stock-mounted shell holder'
+  isUpgraded: 0
+  firstItem: {fileID: 11400000, guid: 98a3dca138dc9b34e99ae1f5a3b91a42, type: 2}
+  firstItemCost: 9
+  secondItem: {fileID: 11400000, guid: 8e115f423285ef247aeca832e5ce1e27, type: 2}
+  secondItemCost: 20
+  thirdItem: {fileID: 11400000, guid: f6056261d459670418b7fdb0ad2d0b8f, type: 2}
+  thirdItemCost: 2

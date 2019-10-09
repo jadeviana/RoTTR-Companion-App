@@ -10,8 +10,8 @@ public class EquipItem : ScriptableObject {
 	public string equipName;
 	public string equipDescription;
 
-	public string firstRequirement = null;
-	public string secondRequirement = null;
+	public string firstRequirement;
+	public string secondRequirement;
 	public bool isUpgraded;
 
 	//Upgrade cost:

@@ -72,7 +72,7 @@ public class EquipButtonDisplay : MonoBehaviour {
 	}
 	
 	void SetEquipStatus(){
-		if (item.firstRequirement != null || item.firstRequirement != "" || item.secondRequirement != null || item.secondRequirement != ""){
+		if (item.firstRequirement != "" || item.secondRequirement != ""){
 			status = equipState.locked;
 		}
 		else if(item.thirdItem != null){

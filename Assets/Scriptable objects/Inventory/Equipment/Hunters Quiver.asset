@@ -11,14 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9d540e709194b14b8027e364e2e78ca, type: 3}
   m_Name: Hunters Quiver
   m_EditorClassIdentifier: 
-  equipIcon: {fileID: 0}
+  equipIcon: {fileID: 21300000, guid: f40249aa6e47ded4da97532c95dd2d4d, type: 3}
   equipImage: {fileID: 0}
   equipName: Hunter's Quiver
   equipDescription: Medium-sized, sturdy hide quiver that increases carrying capacity
     for all arrow types.
   firstRequirement: 
   secondRequirement: 
-  multipleRequirement: 0
   isUpgraded: 0
   firstItem: {fileID: 11400000, guid: 98a3dca138dc9b34e99ae1f5a3b91a42, type: 2}
   firstItemCost: 10

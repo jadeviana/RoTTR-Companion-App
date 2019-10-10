@@ -23,7 +23,6 @@ public class EquipButtonDisplay : MonoBehaviour {
 	void Start () {
 		SetEquipStatus();
 		equipIcon.sprite = item.equipIcon;
-		Debug.Log(item.equipName + " is " + status);
 		
 		switch((int)status){
 

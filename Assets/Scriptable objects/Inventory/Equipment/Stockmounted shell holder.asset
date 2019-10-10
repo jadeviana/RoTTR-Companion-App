@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Stockmounted shell holder
   m_EditorClassIdentifier: 
   equipIcon: {fileID: 21300000, guid: 940e96683a5a6dc4e92d7c60d01c16ce, type: 3}
-  equipImage: {fileID: 0}
+  equipImage: {fileID: 21300000, guid: b6d1c59a32a37fe47b3f0fe30c0aa37e, type: 3}
   equipName: Stock-mounted shell holder
   equipDescription: Weapon-mounted shell holder increases the amount of shotgun shells
     that can be carried.

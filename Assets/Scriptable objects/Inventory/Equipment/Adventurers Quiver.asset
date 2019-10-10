@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Adventurers Quiver
   m_EditorClassIdentifier: 
   equipIcon: {fileID: 21300000, guid: 0656326ce950ab9438e238f730c55969, type: 3}
-  equipImage: {fileID: 0}
+  equipImage: {fileID: 21300000, guid: 3b9bf6ec5a850a143abdf8e905b2d229, type: 3}
   equipName: Adventurer's quiver
   equipDescription: Large fur-lined quiver that significantly increases carrying capacity
     for all arrow types.

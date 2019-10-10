@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Shotgun shell bandolier
   m_EditorClassIdentifier: 
   equipIcon: {fileID: 21300000, guid: 1721e01ced594b04f92b5f83d99a749e, type: 3}
-  equipImage: {fileID: 0}
+  equipImage: {fileID: 21300000, guid: 56f2ab36b27d64249987c685474b451a, type: 3}
   equipName: Shotgun shell bandolier
   equipDescription: Leather sling that significantly increases the amount of shotgun
     shells that can be carried.

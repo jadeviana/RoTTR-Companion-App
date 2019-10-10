@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Rucksack
   m_EditorClassIdentifier: 
   equipIcon: {fileID: 21300000, guid: 6e8c713cbd0d50d4a811a94836e48ac1, type: 3}
-  equipImage: {fileID: 0}
+  equipImage: {fileID: 21300000, guid: f527e5391473df6439f9c886c658d043, type: 3}
   equipName: Rucksack
   equipDescription: Large insulated storage pack that significantly increases resource
     carrying capacity.

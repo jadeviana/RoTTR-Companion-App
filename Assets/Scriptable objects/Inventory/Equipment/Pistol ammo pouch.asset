@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Pistol ammo pouch
   m_EditorClassIdentifier: 
   equipIcon: {fileID: 21300000, guid: 38eb441579fb4624a96d3102725ba238, type: 3}
-  equipImage: {fileID: 0}
+  equipImage: {fileID: 21300000, guid: 375205bca1da33d429a10b9d7710b71b, type: 3}
   equipName: Pistol ammo pouch
   equipDescription: Small hide pouch that increases carrying capacity for pistol ammunition.
   firstRequirement: 

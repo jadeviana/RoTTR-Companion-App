@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9d540e709194b14b8027e364e2e78ca, type: 3}
   m_Name: Rope
   m_EditorClassIdentifier: 
-  equipIcon: {fileID: 0}
-  equipImage: {fileID: 0}
+  equipIcon: {fileID: 21300000, guid: fd3eceeb400d3c245b92074a30b366a3, type: 3}
+  equipImage: {fileID: 21300000, guid: 192769ecdb8b1ce42b986c795b9a9c01, type: 3}
   equipName: Rope
   equipDescription: Coil of braided rope. Used for making rope lines and swinging
     across large gaps.

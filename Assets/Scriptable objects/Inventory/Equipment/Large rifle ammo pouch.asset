@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Large rifle ammo pouch
   m_EditorClassIdentifier: 
   equipIcon: {fileID: 21300000, guid: 382c7a4676c84644da2212927fa22efd, type: 3}
-  equipImage: {fileID: 0}
+  equipImage: {fileID: 21300000, guid: 7e6abfa763df9a14cb3551ed41052445, type: 3}
   equipName: Large rifle ammo pouch
   equipDescription: Large hide storage pouch with individual round slots. Significantly
     increases carrying capacity for rifle ammunition.

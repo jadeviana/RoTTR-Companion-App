@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Rifle ammo pouch
   m_EditorClassIdentifier: 
   equipIcon: {fileID: 21300000, guid: 8bb3e82de1e595943b5817d311eaed02, type: 3}
-  equipImage: {fileID: 0}
+  equipImage: {fileID: 21300000, guid: 92ac97363e1781f49a0a74348a7b266d, type: 3}
   equipName: Rifle ammo pouch
   equipDescription: Latched hide pouch that holds many rounds. Increases carrying
     capacity for rifle ammunition.

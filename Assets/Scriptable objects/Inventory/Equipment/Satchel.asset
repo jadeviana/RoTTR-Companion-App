@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Satchel
   m_EditorClassIdentifier: 
   equipIcon: {fileID: 21300000, guid: 7e445fbb0ab8f5846a8b77113521d911, type: 3}
-  equipImage: {fileID: 0}
+  equipImage: {fileID: 21300000, guid: add4db5de0866614b9c7cc78dbb8405e, type: 3}
   equipName: Satchel
   equipDescription: Compact hide pouch that increases resource storage capacity.
   firstRequirement: 

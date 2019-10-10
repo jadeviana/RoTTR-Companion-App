@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Large pistol ammo pouch
   m_EditorClassIdentifier: 
   equipIcon: {fileID: 21300000, guid: 17aa9138921b889478fe8a01ed7d180f, type: 3}
-  equipImage: {fileID: 0}
+  equipImage: {fileID: 21300000, guid: 8ae68aeed0982cd458d5652e7ab2c5b9, type: 3}
   equipName: Large pistol ammo pouch
   equipDescription: Large, reinforced pouch that significantly increases carrying
     capacity for pistol ammunition.

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Hunters Quiver
   m_EditorClassIdentifier: 
   equipIcon: {fileID: 21300000, guid: f40249aa6e47ded4da97532c95dd2d4d, type: 3}
-  equipImage: {fileID: 0}
+  equipImage: {fileID: 21300000, guid: 7b78f8e7ed71e61448d0bcba23f5d6e3, type: 3}
   equipName: Hunter's Quiver
   equipDescription: Medium-sized, sturdy hide quiver that increases carrying capacity
     for all arrow types.

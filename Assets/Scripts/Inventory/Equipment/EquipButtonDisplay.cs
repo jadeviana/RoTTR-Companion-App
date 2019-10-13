@@ -16,7 +16,7 @@ public class EquipButtonDisplay : MonoBehaviour {
 
 		private equipState status;
 
-		//public EquipManager manager;
+		public EquipManager manager;
 
 
 	// Use this for initialization
@@ -74,24 +74,28 @@ public class EquipButtonDisplay : MonoBehaviour {
 		if (item.firstRequirement != "" || item.secondRequirement != ""){
 			status = equipState.locked;
 		}
-		else if(item.thirdItem != null){
-			if (item.firstItemCost > item.firstItem.playerQuantity || item.secondItemCost > item.secondItem.playerQuantity || item.thirdItemCost > item.thirdItem.playerQuantity){
-				status = equipState.unavailable;
-			} 
-		} else if(item.thirdItem = null){
-			if (item.firstItemCost > item.firstItem.playerQuantity){
-				status = equipState.unavailable;
-			} 
-		}
 		else if (item.isUpgraded == true){
 			status = equipState.upgraded;
 		}
-		else{
-			status = equipState.available;
-		}		
+		else if(item.thirdItem == null){
+			if (item.firstItemCost < item.firstItem.playerQuantity && item.secondItemCost < item.secondItem.playerQuantity){
+				status = equipState.available;
+			} 
+			else{
+				status = equipState.unavailable;
+			}		
+		}
+		else if(item.thirdItem != null){
+			if (item.firstItemCost < item.firstItem.playerQuantity && item.secondItemCost < item.secondItem.playerQuantity && item.thirdItemCost < item.thirdItem.playerQuantity){
+				status = equipState.available;
+			} 
+			else{
+				status = equipState.unavailable;
+			}		
+		} 
 	}
 
-	void SetEquipScreen(){
-		//manager.OpenEquipScreen(item);
+	public void SetEquipScreen(){
+		manager.OpenEquipScreen(item);
 	}
 }

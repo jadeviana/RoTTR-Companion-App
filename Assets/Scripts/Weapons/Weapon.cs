@@ -11,7 +11,6 @@ public class Weapon : ScriptableObject {
 	public string weaponName;
 	public string weaponDescription;
 
-	public bool attachmentsAvailable;
 	public string attachmentDescription;
 	
 	public int weaponUpgrades;
@@ -19,6 +18,7 @@ public class Weapon : ScriptableObject {
 
 
 	//Weapon Stats
+
 
 	//Weapon Upgrades
 }

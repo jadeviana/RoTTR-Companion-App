@@ -52091,6 +52091,21 @@ MonoBehaviour:
   barTitle: {fileID: 0}
   weaponTitle: {fileID: 0}
   description: {fileID: 0}
+  FirstStatObject: {fileID: 0}
+  FirstStatTitle: {fileID: 0}
+  FirstStatSlider: {fileID: 0}
+  SecondStatObject: {fileID: 0}
+  SecondStatTitle: {fileID: 0}
+  SecondStatSlider: {fileID: 0}
+  ThirdStatObject: {fileID: 0}
+  ThirdStatTitle: {fileID: 0}
+  ThirdStatSlider: {fileID: 0}
+  FourthStatObject: {fileID: 0}
+  FourthStatTitle: {fileID: 0}
+  FourthStatSlider: {fileID: 0}
+  FifthStatObject: {fileID: 0}
+  FifthStatTitle: {fileID: 0}
+  FifthStatSlider: {fileID: 0}
   attachment1: {fileID: 0}
   firstAttachmentName: {fileID: 0}
   attachment2: {fileID: 0}

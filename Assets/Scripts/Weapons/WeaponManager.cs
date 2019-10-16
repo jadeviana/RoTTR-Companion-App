@@ -22,12 +22,33 @@ public class WeaponManager : MonoBehaviour {
 	[SerializeField] private TextMeshProUGUI weaponTitle;
 	[SerializeField] private TextMeshProUGUI description;
 
+	[Space(18)]
+
+	[SerializeField] private GameObject FirstStatObject;
+	[SerializeField] private TextMeshProUGUI FirstStatTitle;
+	public Slider FirstStatSlider;
+	[SerializeField] private GameObject SecondStatObject;
+	[SerializeField] private TextMeshProUGUI SecondStatTitle;
+	public Slider SecondStatSlider;
+	[SerializeField] private GameObject ThirdStatObject;
+	[SerializeField] private TextMeshProUGUI ThirdStatTitle;
+	public Slider ThirdStatSlider;
+	[SerializeField] private GameObject FourthStatObject;
+	[SerializeField] private TextMeshProUGUI FourthStatTitle;
+	public Slider FourthStatSlider;
+	[SerializeField] private GameObject FifthStatObject;
+	[SerializeField] private TextMeshProUGUI FifthStatTitle;
+	public Slider FifthStatSlider;
+
+	[Space(18)]
+
 	[SerializeField] private GameObject attachment1; 
 	[SerializeField] private TextMeshProUGUI firstAttachmentName;
 	[SerializeField] private GameObject attachment2; 
 	[SerializeField] private TextMeshProUGUI secondAttachmentName;
 	[SerializeField] private GameObject attachment3; 
 	[SerializeField] private TextMeshProUGUI thirdAttachmentName;
+
 
 	void Update () {
 		if (BowsList.activeSelf)

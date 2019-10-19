@@ -27,11 +27,11 @@ public class ChallengeItemDisplay : MonoBehaviour {
 		isComplete = (float)item.playerStat / (float)item.maxStat;
 		if(isComplete == 1){
 			strikethrough.gameObject.SetActive(true);
-			arrow.color = new Color32(151,151,151,255);
-			cTitle.color = new Color32(151,151,151,255);
-			cDescription.color = new Color32(151,151,151,255);
-			stats.color = new Color32(151,151,151,255);
-			sliderFill.color = new Color32(151,151,151,255);
+			arrow.color = new Color32(255,255,255,125);
+			cTitle.color = new Color32(255,255,255,125);
+			cDescription.color = new Color32(255,255,255,125);
+			stats.color = new Color32(255,255,255,125);
+			sliderFill.color = new Color32(255,255,255,125);
 		}
 	}
 }

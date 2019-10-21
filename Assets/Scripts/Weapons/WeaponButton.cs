@@ -10,6 +10,8 @@ public class WeaponButton : MonoBehaviour {
 	public TextMeshProUGUI weaponTitle;
 	public TextMeshProUGUI completion;
 
+	public WeaponManager manager;
+
 
 	// Use this for initialization
 	void Start () {
@@ -19,4 +21,7 @@ public class WeaponButton : MonoBehaviour {
 		completion.text = ((weapon.weaponUpgrades*100)/weapon.upgradesTotal).ToString() + "% complete";
 	}
 	
+	public void SetWeaponScreen(){
+		manager.OpenWeaponScreen();
+	}
 }

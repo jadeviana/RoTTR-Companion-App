@@ -422,9 +422,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 114746026997679286}
+        m_MethodName: SetWeaponScreen
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -450,6 +450,7 @@ MonoBehaviour:
   weaponIcon: {fileID: 114390298343465942}
   weaponTitle: {fileID: 114062962841426552}
   completion: {fileID: 114463478371982816}
+  manager: {fileID: 0}
 --- !u!222 &222196858454672460
 CanvasRenderer:
   m_ObjectHideFlags: 1

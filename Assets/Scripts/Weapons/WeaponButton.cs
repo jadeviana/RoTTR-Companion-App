@@ -22,6 +22,6 @@ public class WeaponButton : MonoBehaviour {
 	}
 	
 	public void SetWeaponScreen(){
-		manager.OpenWeaponScreen();
+		manager.OpenWeaponScreen(weapon);
 	}
 }

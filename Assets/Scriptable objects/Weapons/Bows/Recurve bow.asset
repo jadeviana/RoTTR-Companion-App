@@ -15,7 +15,8 @@ MonoBehaviour:
   weaponImage: {fileID: 0}
   weaponName: Recurve bow
   weaponDescription: A hand-crafted bow balanced for effectiveness in all situations.
-  attachmentsAvailable: 0
-  attachmentDescription: 
+  attachmentDescription1: 
+  attachmentDescription2: 
+  attachmentDescription3: 
   weaponUpgrades: 3
   upgradesTotal: 9

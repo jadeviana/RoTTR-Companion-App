@@ -11,7 +11,9 @@ public class Weapon : ScriptableObject {
 	public string weaponName;
 	public string weaponDescription;
 
-	public string attachmentDescription;
+	public string attachmentDescription1;
+	public string attachmentDescription2;
+	public string attachmentDescription3;
 	
 	public int weaponUpgrades;
 	public int upgradesTotal;

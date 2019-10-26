@@ -45,6 +45,7 @@ public class WeaponManager : MonoBehaviour {
 	[SerializeField] private TextMeshProUGUI secondAttachment;
 	[SerializeField] private TextMeshProUGUI thirdAttachment;
 
+	[SerializeField] private TextMeshProUGUI UpgradeNumbers;
 
 	void Update () {
 		if (BowsList.activeSelf)
@@ -72,7 +73,26 @@ public class WeaponManager : MonoBehaviour {
 		}
 	}
 
-	public void OpenWeaponScreen(){
+	public void OpenWeaponScreen(Weapon selectedWeapon){
+		barTitle.text = selectedWeapon.weaponName;
+		weaponImage.sprite = selectedWeapon.weaponImage;
+		weaponTitle.text = selectedWeapon.weaponName;
+		description.text = selectedWeapon.weaponDescription;
+
+		//Stats states
+
+		//Attachments
+		if(selectedWeapon.attachmentDescription1 == "" && selectedWeapon.attachmentDescription2 == "" && selectedWeapon.attachmentDescription3 == ""){
+			firstAttachment.text = "no attachments available";
+		} else{			
+			firstAttachment.text = selectedWeapon.attachmentDescription1;
+			secondAttachment.text = selectedWeapon.attachmentDescription2;
+			thirdAttachment.text = selectedWeapon.attachmentDescription3;
+		}
+
+
+		UpgradeNumbers.text = selectedWeapon.weaponUpgrades + "/" + selectedWeapon.upgradesTotal;
+
 		lastWeaponList.gameObject.SetActive(false);
 		WeaponScreen.gameObject.SetActive(true);
 	}

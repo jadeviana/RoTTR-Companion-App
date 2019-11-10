@@ -11,11 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce37fa7d826632d4b8a0ad51c6b7cf92, type: 3}
   m_Name: Compound bow
   m_EditorClassIdentifier: 
+  weaponType: 1
   weaponIcon: {fileID: 21300000, guid: 664cff129ca04184e898225cecc6e8ef, type: 3}
   weaponImage: {fileID: 0}
   weaponName: Compound bow
   weaponDescription: A technically advanced bow focused on high damage.
-  attachmentsAvailable: 0
-  attachmentDescription: 
+  attachmentDescription1: 
+  attachmentDescription2: 
+  attachmentDescription3: 
   weaponUpgrades: 1
   upgradesTotal: 11

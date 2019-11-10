@@ -11,12 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce37fa7d826632d4b8a0ad51c6b7cf92, type: 3}
   m_Name: Assault rifle
   m_EditorClassIdentifier: 
+  weaponType: 2
   weaponIcon: {fileID: 21300000, guid: 3ba7df622aa58ab44b051ec6d6342cf1, type: 3}
   weaponImage: {fileID: 0}
   weaponName: Assault rifle
   weaponDescription: A balanced, dependable rifle for any scenario.
-  attachmentsAvailable: 1
-  attachmentDescription: unknown attachment<br><br>unknown attachment<br><br>unknown
-    attachment
+  attachmentDescription1: 
+  attachmentDescription2: 
+  attachmentDescription3: 
   weaponUpgrades: 1
   upgradesTotal: 14

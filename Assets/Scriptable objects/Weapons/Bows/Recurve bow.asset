@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce37fa7d826632d4b8a0ad51c6b7cf92, type: 3}
   m_Name: Recurve bow
   m_EditorClassIdentifier: 
+  weaponType: 1
   weaponIcon: {fileID: 21300000, guid: a121a5a8208b48741a261df4991b7ed5, type: 3}
   weaponImage: {fileID: 0}
   weaponName: Recurve bow

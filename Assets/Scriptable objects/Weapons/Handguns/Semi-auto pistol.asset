@@ -11,11 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce37fa7d826632d4b8a0ad51c6b7cf92, type: 3}
   m_Name: Semi-auto pistol
   m_EditorClassIdentifier: 
+  weaponType: 2
   weaponIcon: {fileID: 21300000, guid: dedcfe848e265744c9f11d4ab0a81249, type: 3}
   weaponImage: {fileID: 0}
   weaponName: Semi-auto pistol
   weaponDescription: Standard issue pistol focused on rapid firing speed.
-  attachmentsAvailable: 1
-  attachmentDescription: Pistol suppressor
+  attachmentDescription1: 
+  attachmentDescription2: 
+  attachmentDescription3: 
   weaponUpgrades: 4
   upgradesTotal: 13

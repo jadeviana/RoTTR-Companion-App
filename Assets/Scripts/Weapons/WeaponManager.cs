@@ -80,6 +80,22 @@ public class WeaponManager : MonoBehaviour {
 		description.text = selectedWeapon.weaponDescription;
 
 		//Stats states
+		switch((int)selectedWeapon.weaponType){
+			case 1: //weapon is a bow
+			BowStats.gameObject.SetActive(true);
+			GunStats.gameObject.SetActive(false);
+			break;
+
+			case 2: //weapon is a gun
+			BowStats.gameObject.SetActive(false);
+			GunStats.gameObject.SetActive(true);
+			break;
+
+			case 3: //weapon is an axe
+			BowStats.gameObject.SetActive(false);
+			GunStats.gameObject.SetActive(false);
+			break;
+		}
 
 		//Attachments
 		if(selectedWeapon.attachmentDescription1 == "" && selectedWeapon.attachmentDescription2 == "" && selectedWeapon.attachmentDescription3 == ""){

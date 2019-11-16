@@ -11,11 +11,10 @@ public class CardScreenDisplay : MonoBehaviour {
 
 
     [SerializeField] private TextMeshProUGUI PopUpQuantity;
-
-	
 	private int quantity = 1;
     [SerializeField] private Button increase;
 	[SerializeField] private Button decrease;
+
 
 	private void Update() {
 		PopUpQuantity.text = quantity.ToString();

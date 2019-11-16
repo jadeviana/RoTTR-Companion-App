@@ -59,6 +59,7 @@ public class MarketplaceManager : MonoBehaviour {
 		CardScreenObject.gameObject.SetActive(true);
 	}
 
+
     //Add-On Screen methods
 	public void OpenAddOnScreen(MKTAddOn selectedAddOn){
 		MarketplaceScreenObject.gameObject.SetActive(false);

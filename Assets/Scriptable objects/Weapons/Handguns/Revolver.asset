@@ -16,8 +16,8 @@ MonoBehaviour:
   weaponImage: {fileID: 0}
   weaponName: Revolver
   weaponDescription: An older pistol balanced for a variety of situations.
-  attachmentDescription1: 
-  attachmentDescription2: 
+  attachmentDescription1: Unknown attachment
+  attachmentDescription2: Pistol suppressor
   attachmentDescription3: 
   weaponUpgrades: 3
   upgradesTotal: 8

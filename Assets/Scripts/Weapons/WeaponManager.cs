@@ -6,7 +6,7 @@ using TMPro;
 
 public class WeaponManager : MonoBehaviour {
 
-	//Screens
+	[Header ("Screens")]
 	private GameObject lastWeaponList;
 	[SerializeField] private GameObject WeaponScreen;
 	[SerializeField] private GameObject BowsList;
@@ -16,7 +16,7 @@ public class WeaponManager : MonoBehaviour {
 
 	[Space(18)]
 
-	//Weapon Screen Elements
+	[Header ("Image and Text Elements")]
 	[SerializeField] private Image weaponImage;
 	[SerializeField] private TextMeshProUGUI barTitle;
 	[SerializeField] private TextMeshProUGUI weaponTitle;
@@ -24,6 +24,7 @@ public class WeaponManager : MonoBehaviour {
 
 	[Space(18)]
 
+	[Header ("Bow Stat Sliders")]
 	[SerializeField] private GameObject BowStats;
 	public Slider BowDamageSlider;	
 	public Slider DrawSpeedSlider;
@@ -32,6 +33,7 @@ public class WeaponManager : MonoBehaviour {
 
 	[Space(18)]
 
+	[Header ("Gun Stat Sliders")]
 	[SerializeField] private GameObject GunStats;
 	public Slider GunDamageSlider;	
 	public Slider RecoilSlider;
@@ -41,6 +43,7 @@ public class WeaponManager : MonoBehaviour {
 
 	[Space(18)]
 
+	[Header ("Attachments")]
 	[SerializeField] private TextMeshProUGUI firstAttachment;
 	[SerializeField] private TextMeshProUGUI secondAttachment;
 	[SerializeField] private TextMeshProUGUI thirdAttachment;
@@ -100,6 +103,8 @@ public class WeaponManager : MonoBehaviour {
 		//Attachments
 		if(selectedWeapon.attachmentDescription1 == "" && selectedWeapon.attachmentDescription2 == "" && selectedWeapon.attachmentDescription3 == ""){
 			firstAttachment.text = "no attachments available";
+			secondAttachment.text = "";
+			thirdAttachment.text = "";
 		} else{			
 			firstAttachment.text = selectedWeapon.attachmentDescription1;
 			secondAttachment.text = selectedWeapon.attachmentDescription2;

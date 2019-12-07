@@ -14,26 +14,20 @@ public class WeaponManager : MonoBehaviour {
 	[SerializeField] private GameObject RiflesList;
 	[SerializeField] private GameObject AxeList;
 
-	[Space(18)]
-
-	[Header ("Image and Text Elements")]
+	[Space(18)][Header ("Image and Text Elements")]
 	[SerializeField] private Image weaponImage;
 	[SerializeField] private TextMeshProUGUI barTitle;
 	[SerializeField] private TextMeshProUGUI weaponTitle;
 	[SerializeField] private TextMeshProUGUI description;
 
-	[Space(18)]
-
-	[Header ("Bow Stat Sliders")]
+	[Space(18)][Header ("Bow Stat Sliders")]
 	[SerializeField] private GameObject BowStats;
 	public Slider BowDamageSlider;	
 	public Slider DrawSpeedSlider;
 	public Slider HoldTimeSlider;
 	public Slider BowRateFireSlider;
 
-	[Space(18)]
-
-	[Header ("Gun Stat Sliders")]
+	[Space(18)][Header ("Gun Stat Sliders")]
 	[SerializeField] private GameObject GunStats;
 	public Slider GunDamageSlider;	
 	public Slider RecoilSlider;
@@ -41,14 +35,18 @@ public class WeaponManager : MonoBehaviour {
 	public Slider AmmoCapacitySlider;
 	public Slider GunRateFireSlider;
 
-	[Space(18)]
-
-	[Header ("Attachments")]
+	[Space(18)][Header ("Attachments")]
 	[SerializeField] private TextMeshProUGUI firstAttachment;
 	[SerializeField] private TextMeshProUGUI secondAttachment;
 	[SerializeField] private TextMeshProUGUI thirdAttachment;
 
+	[Space(18)][Header ("Upgrades")]
 	[SerializeField] private TextMeshProUGUI UpgradeNumbers;
+	[SerializeField] private GameObject upgButton;
+	[SerializeField] private Transform Upgrade1Tier;
+	[SerializeField] private Transform Upgrade2Tier;
+	[SerializeField] private Transform Upgrade3Tier;
+	[SerializeField] private Transform Upgrade4Tier;
 
 	void Update () {
 		if (BowsList.activeSelf)
@@ -111,8 +109,19 @@ public class WeaponManager : MonoBehaviour {
 			thirdAttachment.text = selectedWeapon.attachmentDescription3;
 		}
 
-
 		UpgradeNumbers.text = selectedWeapon.weaponUpgrades + "/" + selectedWeapon.upgradesTotal;
+		// for(int i = 0; i < selectedWeapon.upg1Tier; i++){
+		// 	Instantiate(upgButton,Upgrade1Tier).GetComponent<>();
+		// }
+		// for(int i = 0; i < selectedWeapon.upg2Tier; i++){
+
+		// }
+		// for(int i = 0; i < selectedWeapon.upg3Tier; i++){
+
+		// }
+		// for(int i = 0; i < selectedWeapon.upg4Tier; i++){
+
+		// }
 
 		lastWeaponList.gameObject.SetActive(false);
 		WeaponScreen.gameObject.SetActive(true);

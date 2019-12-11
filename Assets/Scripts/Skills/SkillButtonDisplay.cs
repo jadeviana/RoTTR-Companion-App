@@ -29,7 +29,7 @@ public class SkillButtonDisplay : MonoBehaviour {
 			lockedBar.gameObject.SetActive(true);
 		}
 
-		//if the equipment state is upgrade, it should change the button's colour (grey) and set the check image to active
+		//if the equipment state is upgraded, it should change the button's colour (grey) and set the check image to active
 		else if ((int)skill.status == 3)
 		{
 			div.color = new Color32(101,101,101,255);

@@ -8,6 +8,7 @@ public class MarketplaceManager : MonoBehaviour {
     //Marketplace elements
     public int PlayerCredits;
     [SerializeField] private TextMeshProUGUI Credits;
+    [SerializeField] private MKTCard cardDisplayed;
 
     [Space(18)] 
 
@@ -27,9 +28,14 @@ public class MarketplaceManager : MonoBehaviour {
     [Space(18)]
 
     //Card Pop-up elements
+    [SerializeField] private GameObject PopUpObject;
     [SerializeField] private TextMeshProUGUI PopUpTitle;
     [SerializeField] private TextMeshProUGUI PopUpValue;
     [SerializeField] private TextMeshProUGUI PopUpPlayerCredit;
+    [SerializeField] private TextMeshProUGUI PopUpQuantity;
+	private int quantity = 1;
+    [SerializeField] private Button increase;
+	[SerializeField] private Button decrease;
 
     [Space(18)]
 
@@ -39,12 +45,15 @@ public class MarketplaceManager : MonoBehaviour {
     [SerializeField] private TextMeshProUGUI AddOnDescription;
     [SerializeField] private TextMeshProUGUI AddOnValue;
 
-    private void Start() {
+    public void Start() {
         Credits.text = "Credits: " + PlayerCredits.ToString();
     }
 
+
     //Card Screen methods
 	public void OpenCardScreen(MKTCard selectedCard){
+        cardDisplayed = selectedCard;
+
 		MarketplaceScreenObject.gameObject.SetActive(false);
 
         CardScreenImage.sprite = selectedCard.cardImage;
@@ -58,6 +67,30 @@ public class MarketplaceManager : MonoBehaviour {
 
 		CardScreenObject.gameObject.SetActive(true);
 	}
+    public void decreaseQuantity(){
+        --quantity;
+        calculator();
+    }
+    public void increaseQuantity(){
+        ++quantity;
+        calculator();
+    }
+
+    public void calculator(){
+        PopUpQuantity.text = quantity.ToString();
+        PopUpValue.text = (cardDisplayed.credit*quantity).ToString();
+        if(quantity <=1){
+			decrease.interactable = false;
+		} else {
+			decrease.interactable = true;
+		}
+        if(cardDisplayed.credit*(quantity+1) > PlayerCredits){
+			increase.interactable = false;
+		} else {
+			increase.interactable = true;
+		}
+    }
+
 
 
     //Add-On Screen methods

@@ -10,27 +10,27 @@ public class CardScreenDisplay : MonoBehaviour {
 	[SerializeField] private CanvasGroup PopUp;
 
 
-    [SerializeField] private TextMeshProUGUI PopUpQuantity;
-	private int quantity = 1;
-    [SerializeField] private Button increase;
-	[SerializeField] private Button decrease;
+    // [SerializeField] private TextMeshProUGUI PopUpQuantity;
+	// private int quantity = 1;
+    // [SerializeField] private Button increase;
+	// [SerializeField] private Button decrease;
 
 
-	private void Update() {
-		PopUpQuantity.text = quantity.ToString();
-        if(quantity <=1){
-			decrease.interactable = false;
-		} else {
-			decrease.interactable = true;
-		}
-    }
+	// private void Update() {
+	// 	PopUpQuantity.text = quantity.ToString();
+    //     if(quantity <=1){
+	// 		decrease.interactable = false;
+	// 	} else {
+	// 		decrease.interactable = true;
+	// 	}
+    // }
 
-    public void decreaseQuantity(){
-        --quantity;
-    }
-    public void increaseQuantity(){
-        ++quantity;
-    }
+    // public void decreaseQuantity(){
+    //     --quantity;
+    // }
+    // public void increaseQuantity(){
+    //     ++quantity;
+    // }
 
 
 	public void OpenPopUp(){
@@ -76,6 +76,6 @@ public class CardScreenDisplay : MonoBehaviour {
 		}
 		
 		PopUpObject.gameObject.SetActive(false);
-		quantity = 1;	
+		//quantity = 1;	
 	}
 }

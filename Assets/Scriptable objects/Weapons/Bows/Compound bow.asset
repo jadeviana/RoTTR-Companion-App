@@ -19,5 +19,10 @@ MonoBehaviour:
   attachmentDescription1: 
   attachmentDescription2: 
   attachmentDescription3: 
+  stats: []
   weaponUpgrades: 1
   upgradesTotal: 11
+  upg1Tier: []
+  upg2Tier: []
+  upg3Tier: []
+  upg4Tier: []

@@ -4,6 +4,17 @@ using UnityEngine;
 
 public enum weaponType {bow = 1, gun = 2, axe = 3};
 
+[System.Serializable]
+public class Stat{
+	public string key = "";
+	public int value = 0;
+}
+
+[System.Serializable]
+public class Upgrade{
+	public WeaponUpgrade upgrades;
+}
+
 [CreateAssetMenu(fileName = "Weapon", menuName = "Weapon/Weapon Item")]
 public class Weapon : ScriptableObject {
 
@@ -22,14 +33,16 @@ public class Weapon : ScriptableObject {
 
 	
 	[Space(10)][Header ("Stats")][Space(4)]
-	
+	public List<Stat> stats = new List<Stat>();
+
 
 	[Space(10)][Header ("Upgrades")][Space(4)]
 	public int weaponUpgrades;
 	public int upgradesTotal;
-	public int upg1Tier;
-	public int upg2Tier;
-	public int upg3Tier;
-	public int upg4Tier;
+
+	public List<Upgrade> upg1Tier = new List<Upgrade>();
+	public List<Upgrade> upg2Tier = new List<Upgrade>();
+	public List<Upgrade> upg3Tier = new List<Upgrade>();
+	public List<Upgrade> upg4Tier = new List<Upgrade>();
 
 }

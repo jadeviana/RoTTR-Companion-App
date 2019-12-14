@@ -8,10 +8,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce37fa7d826632d4b8a0ad51c6b7cf92, type: 3}
+  m_Script: {fileID: 11500000, guid: 713540b23d86895499eb55778230c23d, type: 3}
   m_Name: Revolver
   m_EditorClassIdentifier: 
-  weaponType: 2
   weaponIcon: {fileID: 21300000, guid: d1e750ca95187a346afa41f6589a3d7d, type: 3}
   weaponImage: {fileID: 0}
   weaponName: Revolver
@@ -21,3 +20,12 @@ MonoBehaviour:
   attachmentDescription3: 
   weaponUpgrades: 3
   upgradesTotal: 8
+  upgradeTier1: []
+  upgradeTier2: []
+  upgradeTier3: []
+  upgradeTier4: []
+  damage: 0
+  accuracy: 0
+  reloadSpeed: 0
+  ammoCapacity: 0
+  rateOfFire: 0

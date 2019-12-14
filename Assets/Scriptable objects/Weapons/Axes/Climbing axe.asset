@@ -8,10 +8,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce37fa7d826632d4b8a0ad51c6b7cf92, type: 3}
-  m_Name: Climbing axe
+  m_Script: {fileID: 11500000, guid: a8587a42f5f753e4989f44817feedf02, type: 3}
+  m_Name: Climbing Axe
   m_EditorClassIdentifier: 
-  weaponType: 3
   weaponIcon: {fileID: 21300000, guid: cb8004ed06a61b34fb1de1b9be11c890, type: 3}
   weaponImage: {fileID: 0}
   weaponName: Climbing axe
@@ -21,3 +20,7 @@ MonoBehaviour:
   attachmentDescription3: 
   weaponUpgrades: 1
   upgradesTotal: 4
+  upgradeTier1: []
+  upgradeTier2: []
+  upgradeTier3: []
+  upgradeTier4: []

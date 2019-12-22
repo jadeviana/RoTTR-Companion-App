@@ -12,13 +12,37 @@ public class WeaponButton : MonoBehaviour {
 
 	public WeaponManager manager;
 
+	private int wUpgradesTotal;
+	private int wUpgradesDone = 0;
 
-	// Use this for initialization
 	void Start () {
 		weaponIcon.sprite = weapon.weaponIcon;
 		weaponTitle.text = weapon.weaponName;
 
-		completion.text = ((weapon.weaponUpgrades*100)/weapon.upgradesTotal).ToString() + "% complete";
+		for (int i = 0; i < weapon.upgradeTier1.Count; i++){
+			if((int)weapon.upgradeTier1[i].upgrades.upgradeStatus == 4){
+				wUpgradesDone++;
+			}
+		}
+		for (int i = 0; i < weapon.upgradeTier2.Count; i++){
+			if((int)weapon.upgradeTier2[i].upgrades.upgradeStatus == 4){
+				wUpgradesDone++;
+			}
+		}
+		for (int i = 0; i < weapon.upgradeTier3.Count; i++){
+			if((int)weapon.upgradeTier3[i].upgrades.upgradeStatus == 4){
+				wUpgradesDone++;
+			}
+		}
+		for (int i = 0; i < weapon.upgradeTier4.Count; i++){
+			if((int)weapon.upgradeTier4[i].upgrades.upgradeStatus == 4){
+				wUpgradesDone++;
+			}
+		}
+		wUpgradesTotal = weapon.upgradeTier1.Count + weapon.upgradeTier2.Count + weapon.upgradeTier3.Count + weapon.upgradeTier4.Count;
+		Debug.Log(weapon.weaponName + " upgrades done are: " + wUpgradesDone.ToString() + " and total upgrades are: " + wUpgradesTotal.ToString());
+
+		completion.text = ((weapon.weaponUpgrades*100)/wUpgradesTotal).ToString() + "% complete";
 	}
 	
 	public void SetWeaponScreen(){

@@ -48,6 +48,9 @@ public class WeaponManager : MonoBehaviour {
 	[SerializeField] private Transform Upgrade3Tier;
 	[SerializeField] private Transform Upgrade4Tier;
 
+	private int UpgradesTotal = 0;
+	private int UpgradesDone = 0;
+
 	void Update () {
 		if (BowsList.activeSelf)
 		{
@@ -103,19 +106,30 @@ public class WeaponManager : MonoBehaviour {
 			thirdAttachment.text = selectedWeapon.attachmentDescription3;
 		}
 
-		UpgradeNumbers.text = selectedWeapon.weaponUpgrades + "/" + selectedWeapon.upgradesTotal;
-		// for(int i = 0; i < selectedWeapon.upg1Tier; i++){
-		// 	Instantiate(upgButton,Upgrade1Tier).GetComponent<>();
-		// }
-		// for(int i = 0; i < selectedWeapon.upg2Tier; i++){
 
-		// }
-		// for(int i = 0; i < selectedWeapon.upg3Tier; i++){
+		for (int i = 0; i < selectedWeapon.upgradeTier1.Count; i++){
+			if((int)selectedWeapon.upgradeTier1[i].upgrades.upgradeStatus == 4){
+				UpgradesDone++;
+			}
+		}
+		for (int i = 0; i < selectedWeapon.upgradeTier2.Count; i++){
+			if((int)selectedWeapon.upgradeTier2[i].upgrades.upgradeStatus == 4){
+				UpgradesDone++;
+			}
+		}
+		for (int i = 0; i < selectedWeapon.upgradeTier3.Count; i++){
+			if((int)selectedWeapon.upgradeTier3[i].upgrades.upgradeStatus == 4){
+				UpgradesDone++;
+			}
+		}
+		for (int i = 0; i < selectedWeapon.upgradeTier4.Count; i++){
+			if((int)selectedWeapon.upgradeTier4[i].upgrades.upgradeStatus == 4){
+				UpgradesDone++;
+			}
+		}
 
-		// }
-		// for(int i = 0; i < selectedWeapon.upg4Tier; i++){
-
-		// }
+		UpgradesTotal = selectedWeapon.upgradeTier1.Count + selectedWeapon.upgradeTier2.Count + selectedWeapon.upgradeTier3.Count + selectedWeapon.upgradeTier4.Count;
+		UpgradeNumbers.text = UpgradesDone + "/" + UpgradesTotal;
 
 		lastWeaponList.gameObject.SetActive(false);
 		WeaponScreen.gameObject.SetActive(true);

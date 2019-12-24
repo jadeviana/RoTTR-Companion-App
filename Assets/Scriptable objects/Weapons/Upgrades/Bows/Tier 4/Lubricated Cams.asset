@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: Lubricated Cams
   m_EditorClassIdentifier: 
   upgradeIcon: {fileID: 0}
-  upgradeName: 
-  upgradeDescription: 
-  upgradeStatus: 0
+  upgradeName: Lubricated Cams
+  upgradeDescription: Cams are lubricated for smoother operation which makes firing
+    smoother and faster. Applied to all compound bows.
+  upgradeStatus: 1

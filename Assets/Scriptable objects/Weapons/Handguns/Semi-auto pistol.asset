@@ -18,12 +18,23 @@ MonoBehaviour:
   attachmentDescription1: 
   attachmentDescription2: 
   attachmentDescription3: 
-  weaponUpgrades: 4
-  upgradesTotal: 13
-  upgradeTier1: []
-  upgradeTier2: []
-  upgradeTier3: []
-  upgradeTier4: []
+  upgradeTier1:
+  - upgrades: {fileID: 11400000, guid: 4036390b68a540e40b85931f4dd7200e, type: 2}
+  - upgrades: {fileID: 11400000, guid: 2f50c888cd2e60b4b8ef1759290b8b0d, type: 2}
+  - upgrades: {fileID: 11400000, guid: 6dcfdc28c26201d44aac71b940a86d43, type: 2}
+  - upgrades: {fileID: 11400000, guid: 5f46809e1a406d8438eb44b4d2e9fbbe, type: 2}
+  - upgrades: {fileID: 11400000, guid: 58e899f32cc1dec40afc117642d6b206, type: 2}
+  upgradeTier2:
+  - upgrades: {fileID: 11400000, guid: ac6b8afee3aace44c81a50d8c72710c7, type: 2}
+  - upgrades: {fileID: 11400000, guid: 26b8d4a9adec14e48904d5cba631f7b5, type: 2}
+  - upgrades: {fileID: 11400000, guid: d5a9c6aade22be14e8105f091f158203, type: 2}
+  upgradeTier3:
+  - upgrades: {fileID: 11400000, guid: 041391c522a68c545a3a2d4647db8137, type: 2}
+  - upgrades: {fileID: 11400000, guid: 16be27c0acddca24abfd85989de6751f, type: 2}
+  - upgrades: {fileID: 11400000, guid: 39a8e6b439d0e50498f7ea5ee7fdd984, type: 2}
+  - upgrades: {fileID: 11400000, guid: e131c623268d47e42b86b6ee8f459dfd, type: 2}
+  upgradeTier4:
+  - upgrades: {fileID: 11400000, guid: d83bfb6d21a58ee449c7935c1e9846c6, type: 2}
   damage: 0
   accuracy: 0
   reloadSpeed: 0

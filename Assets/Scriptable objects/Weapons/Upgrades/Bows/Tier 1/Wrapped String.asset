@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: Wrapped String
   m_EditorClassIdentifier: 
   upgradeIcon: {fileID: 0}
-  upgradeName: 
-  upgradeDescription: 
-  upgradeStatus: 0
+  upgradeName: Wrapped String
+  upgradeDescription: Hide wrapped bow string around the nock decreases finger tension
+    for additional hold time. Applied to all bows.
+  upgradeStatus: 4

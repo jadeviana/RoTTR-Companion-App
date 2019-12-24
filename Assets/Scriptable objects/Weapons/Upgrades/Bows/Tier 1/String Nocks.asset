@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: String Nocks
   m_EditorClassIdentifier: 
   upgradeIcon: {fileID: 0}
-  upgradeName: 
-  upgradeDescription: 
-  upgradeStatus: 0
+  upgradeName: String Nocks
+  upgradeDescription: Arrow nocks on the bow string allow for quicker loading of arrows
+    and a faster fire rate. Applied to all bows.
+  upgradeStatus: 4

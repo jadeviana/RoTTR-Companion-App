@@ -18,12 +18,19 @@ MonoBehaviour:
   attachmentDescription1: Unknown attachment
   attachmentDescription2: Unknown attachment
   attachmentDescription3: Unknown attachment
-  weaponUpgrades: 1
-  upgradesTotal: 9
-  upgradeTier1: []
-  upgradeTier2: []
-  upgradeTier3: []
-  upgradeTier4: []
+  upgradeTier1:
+  - upgrades: {fileID: 11400000, guid: f583f702d3b321643a0d1864c3a16b57, type: 2}
+  - upgrades: {fileID: 11400000, guid: a91a9cfb0edc30a4b90a153b48ca21ee, type: 2}
+  upgradeTier2:
+  - upgrades: {fileID: 11400000, guid: 47b1c2938f89bea49ac50d49b4118ff5, type: 2}
+  - upgrades: {fileID: 11400000, guid: 4824cdda2e070bf418b2f164b6ecc8d0, type: 2}
+  - upgrades: {fileID: 11400000, guid: 5f615c12a5f0cb243b81ea1ab0ad146d, type: 2}
+  upgradeTier3:
+  - upgrades: {fileID: 11400000, guid: 3f298b55cfa5bff4a947230d4bbe950e, type: 2}
+  - upgrades: {fileID: 11400000, guid: 2aefc250fa646804caec8c612517823c, type: 2}
+  upgradeTier4:
+  - upgrades: {fileID: 11400000, guid: 18266838e63d6174283ef90a9f2256ef, type: 2}
+  - upgrades: {fileID: 11400000, guid: b92822af24f20d04d8379a14cef4e5e9, type: 2}
   damage: 0
   accuracy: 0
   reloadSpeed: 0

@@ -20,10 +20,19 @@ MonoBehaviour:
   attachmentDescription3: 
   weaponUpgrades: 3
   upgradesTotal: 9
-  upgradeTier1: []
-  upgradeTier2: []
-  upgradeTier3: []
-  upgradeTier4: []
+  upgradeTier1:
+  - upgrades: {fileID: 11400000, guid: e5a5477782cf87640991220db46b1efe, type: 2}
+  - upgrades: {fileID: 11400000, guid: 8aa9e0ffe103e6340a83cb9523ea1d0e, type: 2}
+  - upgrades: {fileID: 11400000, guid: f2b6cb451fcfa014797c1a5e885196b0, type: 2}
+  - upgrades: {fileID: 11400000, guid: b9d6d3fbdaf3fd845a389844eb99a073, type: 2}
+  upgradeTier2:
+  - upgrades: {fileID: 11400000, guid: cb86694f263173c4a8cc79586ecb2bc9, type: 2}
+  - upgrades: {fileID: 11400000, guid: f2d5e1132a149894ebc1e75ceb270a6f, type: 2}
+  upgradeTier3:
+  - upgrades: {fileID: 11400000, guid: 8c6bb1a8cdc3bee40b69c8fd44a3cf57, type: 2}
+  - upgrades: {fileID: 11400000, guid: 74594a9010276644cb83a59ef10f0d32, type: 2}
+  upgradeTier4:
+  - upgrades: {fileID: 11400000, guid: c41279136a5e49b44be96b60b37c2914, type: 2}
   damage: 0
   drawSpeed: 0
   holdTime: 0

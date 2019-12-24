@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: Shooting Glove
   m_EditorClassIdentifier: 
   upgradeIcon: {fileID: 0}
-  upgradeName: 
-  upgradeDescription: 
-  upgradeStatus: 0
+  upgradeName: Shooting Glove
+  upgradeDescription: Soft hide glove decreases finger tension on a fully drawn string,
+    increasing hold time. Applied to all recurve and horn bows.
+  upgradeStatus: 1

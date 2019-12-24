@@ -18,12 +18,18 @@ MonoBehaviour:
   attachmentDescription1: Unknown attachment
   attachmentDescription2: Pistol suppressor
   attachmentDescription3: 
-  weaponUpgrades: 3
-  upgradesTotal: 8
-  upgradeTier1: []
-  upgradeTier2: []
-  upgradeTier3: []
-  upgradeTier4: []
+  upgradeTier1:
+  - upgrades: {fileID: 11400000, guid: 4036390b68a540e40b85931f4dd7200e, type: 2}
+  - upgrades: {fileID: 11400000, guid: 2f50c888cd2e60b4b8ef1759290b8b0d, type: 2}
+  - upgrades: {fileID: 11400000, guid: 6dcfdc28c26201d44aac71b940a86d43, type: 2}
+  upgradeTier2:
+  - upgrades: {fileID: 11400000, guid: ac6b8afee3aace44c81a50d8c72710c7, type: 2}
+  - upgrades: {fileID: 11400000, guid: 38bbcbe4ba22f214e83dd7368398b27e, type: 2}
+  upgradeTier3:
+  - upgrades: {fileID: 11400000, guid: 041391c522a68c545a3a2d4647db8137, type: 2}
+  - upgrades: {fileID: 11400000, guid: 9fde85da5bda02e4a96d5de6c6771624, type: 2}
+  upgradeTier4:
+  - upgrades: {fileID: 11400000, guid: a8a780f8e244d814884fa286454be6f5, type: 2}
   damage: 0
   accuracy: 0
   reloadSpeed: 0

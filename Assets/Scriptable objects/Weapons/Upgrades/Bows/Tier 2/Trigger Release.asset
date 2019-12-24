@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: Trigger Release
   m_EditorClassIdentifier: 
   upgradeIcon: {fileID: 0}
-  upgradeName: 
-  upgradeDescription: 
-  upgradeStatus: 0
+  upgradeName: Trigger Release
+  upgradeDescription: A custom release makes holding a fully drawn string much easier,
+    increasing hold time. Applied to all compound bows.
+  upgradeStatus: 1

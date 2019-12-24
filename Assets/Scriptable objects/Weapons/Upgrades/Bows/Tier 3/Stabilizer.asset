@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: Stabilizer
   m_EditorClassIdentifier: 
   upgradeIcon: {fileID: 0}
-  upgradeName: 
-  upgradeDescription: 
-  upgradeStatus: 0
+  upgradeName: Stabilizer
+  upgradeDescription: Stabilizer equalizes bow weight balance and drift after firing,
+    allowing for faster redraw and firing. Applied to all compound bows.
+  upgradeStatus: 1

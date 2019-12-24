@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: Waxed String
   m_EditorClassIdentifier: 
   upgradeIcon: {fileID: 0}
-  upgradeName: 
-  upgradeDescription: 
-  upgradeStatus: 0
+  upgradeName: Waxed String
+  upgradeDescription: Wax creates a more flexible string which makes drawing smoother
+    and faster. Applied to all bows.
+  upgradeStatus: 1

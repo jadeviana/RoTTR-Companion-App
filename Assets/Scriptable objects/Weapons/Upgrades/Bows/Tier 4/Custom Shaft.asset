@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: Custom Shaft
   m_EditorClassIdentifier: 
   upgradeIcon: {fileID: 0}
-  upgradeName: 
-  upgradeDescription: 
-  upgradeStatus: 0
+  upgradeName: Custom Shaft
+  upgradeDescription: Forming improvements increase shaft strength allowing for increased
+    hold time. Applied to all recurve bows.
+  upgradeStatus: 1

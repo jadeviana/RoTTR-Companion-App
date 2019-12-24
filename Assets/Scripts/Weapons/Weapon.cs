@@ -23,8 +23,6 @@ public class Weapon : ScriptableObject {
 	public string attachmentDescription3;
 
 	[Space(10)][Header ("Upgrades")][Space(4)]
-	public int weaponUpgrades;
-	public int upgradesTotal;
 
 	public List<Upgrade> upgradeTier1;
 	public List<Upgrade> upgradeTier2;

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: Notched Rest
   m_EditorClassIdentifier: 
   upgradeIcon: {fileID: 0}
-  upgradeName: 
-  upgradeDescription: 
-  upgradeStatus: 0
+  upgradeName: Notched Rest
+  upgradeDescription: An arrow rest on the shaft makes loading arrows easier and faster.
+    Applied to all recurve bows.
+  upgradeStatus: 1

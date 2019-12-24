@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: Grip Wrap
   m_EditorClassIdentifier: 
   upgradeIcon: {fileID: 0}
-  upgradeName: 
-  upgradeDescription: 
-  upgradeStatus: 0
+  upgradeName: Grip Wrap
+  upgradeDescription: Wrapped grip provides better handling of the bow and faster
+    draw speed. Applied to all bows.
+  upgradeStatus: 3

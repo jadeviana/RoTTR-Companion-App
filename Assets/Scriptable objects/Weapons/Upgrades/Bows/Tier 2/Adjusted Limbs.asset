@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: Adjusted Limbs
   m_EditorClassIdentifier: 
   upgradeIcon: {fileID: 0}
-  upgradeName: 
-  upgradeDescription: 
-  upgradeStatus: 0
+  upgradeName: Adjusted Limbs
+  upgradeDescription: A refined set of limbs allows for more draw tension for increased
+    damage with each shot. Applied to all compound bows.
+  upgradeStatus: 1

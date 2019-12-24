@@ -18,9 +18,11 @@ MonoBehaviour:
   attachmentDescription1: 
   attachmentDescription2: 
   attachmentDescription3: 
-  weaponUpgrades: 1
-  upgradesTotal: 4
-  upgradeTier1: []
-  upgradeTier2: []
-  upgradeTier3: []
+  upgradeTier1:
+  - upgrades: {fileID: 11400000, guid: 3854b96be8fec634bb774ed953b8cabe, type: 2}
+  - upgrades: {fileID: 11400000, guid: d23ddd775178b854280311e6a9d3f11c, type: 2}
+  upgradeTier2:
+  - upgrades: {fileID: 11400000, guid: 711bb98d3c9fdd1459cd6bccefb4fabb, type: 2}
+  upgradeTier3:
+  - upgrades: {fileID: 11400000, guid: 0de9bfa0fcc33464ab2cf41e818fff48, type: 2}
   upgradeTier4: []

@@ -9,9 +9,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fae17829a8f4c5247b99725358c9acfd, type: 3}
-  m_Name: Weapon Upgrade
+  m_Name: Reinforced Limbs
   m_EditorClassIdentifier: 
   upgradeIcon: {fileID: 0}
-  upgradeName: 
-  upgradeDescription: 
-  upgradeStatus: 0
+  upgradeName: Reinforced Limbs
+  upgradeDescription: Stronger limbs allow for increased string tension and faster
+    arrow speeds for more damage. Applied to all bows.
+  upgradeStatus: 4

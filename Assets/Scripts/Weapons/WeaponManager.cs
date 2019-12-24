@@ -49,7 +49,7 @@ public class WeaponManager : MonoBehaviour {
 	[SerializeField] private Transform Upgrade4Tier;
 
 	private int UpgradesTotal = 0;
-	private int UpgradesDone = 0;
+	private int UpgradesDone;
 
 	void Update () {
 		if (BowsList.activeSelf)
@@ -106,7 +106,9 @@ public class WeaponManager : MonoBehaviour {
 			thirdAttachment.text = selectedWeapon.attachmentDescription3;
 		}
 
-
+		//Upgrades
+		UpgradesDone = 0;
+		
 		for (int i = 0; i < selectedWeapon.upgradeTier1.Count; i++){
 			if((int)selectedWeapon.upgradeTier1[i].upgrades.upgradeStatus == 4){
 				UpgradesDone++;

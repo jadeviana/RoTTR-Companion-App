@@ -18,8 +18,6 @@ MonoBehaviour:
   attachmentDescription1: 
   attachmentDescription2: 
   attachmentDescription3: 
-  weaponUpgrades: 1
-  upgradesTotal: 11
   upgradeTier1:
   - upgrades: {fileID: 11400000, guid: e5a5477782cf87640991220db46b1efe, type: 2}
   - upgrades: {fileID: 11400000, guid: 8aa9e0ffe103e6340a83cb9523ea1d0e, type: 2}

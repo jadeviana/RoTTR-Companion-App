@@ -87,9 +87,26 @@ public class WeaponManager : MonoBehaviour {
 		if(selectedWeapon is Bow){
 			BowStats.gameObject.SetActive(true);
 			GunStats.gameObject.SetActive(false);
+
+			Bow chosenWeapon = (selectedWeapon as Bow);
+
+			BowDamageSlider.value = (float)chosenWeapon.damage;
+			DrawSpeedSlider.value = (float)chosenWeapon.drawSpeed;
+			HoldTimeSlider.value = (float)chosenWeapon.holdTime;
+			BowRateFireSlider.value = (float)chosenWeapon.rateOfFire;
+
 		}else if(selectedWeapon is Gun){
 			BowStats.gameObject.SetActive(false);
 			GunStats.gameObject.SetActive(true);
+
+			Gun chosenWeapon = (selectedWeapon as Gun);
+
+			GunDamageSlider.value = (float)chosenWeapon.damage;
+			RecoilSlider.value = (float)chosenWeapon.accuracy;
+			ReloadSlider.value = (float)chosenWeapon.reloadSpeed;
+			AmmoCapacitySlider.value = (float)chosenWeapon.ammoCapacity;
+			GunRateFireSlider.value = (float)chosenWeapon.rateOfFire;
+
 		}else if(selectedWeapon is Axe){
 			BowStats.gameObject.SetActive(false);
 			GunStats.gameObject.SetActive(false);

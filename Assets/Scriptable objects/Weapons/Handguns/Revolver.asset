@@ -30,8 +30,8 @@ MonoBehaviour:
   - upgrades: {fileID: 11400000, guid: 9fde85da5bda02e4a96d5de6c6771624, type: 2}
   upgradeTier4:
   - upgrades: {fileID: 11400000, guid: a8a780f8e244d814884fa286454be6f5, type: 2}
-  damage: 0
-  accuracy: 0
-  reloadSpeed: 0
-  ammoCapacity: 0
-  rateOfFire: 0
+  damage: 40
+  accuracy: 50
+  reloadSpeed: 28
+  ammoCapacity: 18
+  rateOfFire: 40

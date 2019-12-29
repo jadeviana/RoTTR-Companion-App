@@ -31,7 +31,7 @@ MonoBehaviour:
   - upgrades: {fileID: 11400000, guid: 74594a9010276644cb83a59ef10f0d32, type: 2}
   upgradeTier4:
   - upgrades: {fileID: 11400000, guid: c41279136a5e49b44be96b60b37c2914, type: 2}
-  damage: 0
-  drawSpeed: 0
-  holdTime: 0
-  rateOfFire: 0
+  damage: 47
+  drawSpeed: 36
+  holdTime: 62
+  rateOfFire: 36

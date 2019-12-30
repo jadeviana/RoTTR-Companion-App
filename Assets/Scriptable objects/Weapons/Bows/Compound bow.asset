@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Compound Bow
   m_EditorClassIdentifier: 
   weaponIcon: {fileID: 21300000, guid: 664cff129ca04184e898225cecc6e8ef, type: 3}
-  weaponImage: {fileID: 0}
+  weaponImage: {fileID: 21300000, guid: 6e7100e5e188c294eb21b2f2b937c6ca, type: 3}
   weaponName: Compound bow
   weaponDescription: A technically advanced bow focused on high damage.
   attachmentDescription1: 

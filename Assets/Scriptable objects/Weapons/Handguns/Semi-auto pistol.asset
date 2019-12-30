@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Semi-auto Pistol
   m_EditorClassIdentifier: 
   weaponIcon: {fileID: 21300000, guid: dedcfe848e265744c9f11d4ab0a81249, type: 3}
-  weaponImage: {fileID: 0}
+  weaponImage: {fileID: 21300000, guid: 10232d156c6662f4eacb0f7a5c8669a4, type: 3}
   weaponName: Semi-auto pistol
   weaponDescription: Standard issue pistol focused on rapid firing speed.
   attachmentDescription1: 

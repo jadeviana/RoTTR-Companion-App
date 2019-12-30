@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Revolver
   m_EditorClassIdentifier: 
   weaponIcon: {fileID: 21300000, guid: d1e750ca95187a346afa41f6589a3d7d, type: 3}
-  weaponImage: {fileID: 0}
+  weaponImage: {fileID: 21300000, guid: 5fb49aaef45a84840b4612e6231ea927, type: 3}
   weaponName: Revolver
   weaponDescription: An older pistol balanced for a variety of situations.
   attachmentDescription1: Unknown attachment

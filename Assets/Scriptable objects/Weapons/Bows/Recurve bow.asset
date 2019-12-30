@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Recurve Bow
   m_EditorClassIdentifier: 
   weaponIcon: {fileID: 21300000, guid: a121a5a8208b48741a261df4991b7ed5, type: 3}
-  weaponImage: {fileID: 0}
+  weaponImage: {fileID: 21300000, guid: 066e498364e53234386d0a8ed8829830, type: 3}
   weaponName: Recurve bow
   weaponDescription: A hand-crafted bow balanced for effectiveness in all situations.
   attachmentDescription1: 

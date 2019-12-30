@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Goldenfang
   m_EditorClassIdentifier: 
   weaponIcon: {fileID: 21300000, guid: 2cdd37c0202385c4cb15e54b5cb84a0c, type: 3}
-  weaponImage: {fileID: 0}
+  weaponImage: {fileID: 21300000, guid: e4a40ac849f26654d9a9d5429719ed98, type: 3}
   weaponName: Goldenfang
   weaponDescription: Gilded bolt action rifle that strikes with deadly force.
   attachmentDescription1: Unknown attachment

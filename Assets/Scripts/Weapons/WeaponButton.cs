@@ -39,9 +39,8 @@ public class WeaponButton : MonoBehaviour {
 				wUpgradesDone++;
 			}
 		}
-		wUpgradesTotal = weapon.upgradeTier1.Count + weapon.upgradeTier2.Count + weapon.upgradeTier3.Count + weapon.upgradeTier4.Count;
-		Debug.Log(weapon.weaponName + " has " + wUpgradesDone.ToString() + " upgrades done and " + wUpgradesTotal.ToString() + " total upgrades.");
 
+		wUpgradesTotal = weapon.upgradeTier1.Count + weapon.upgradeTier2.Count + weapon.upgradeTier3.Count + weapon.upgradeTier4.Count;
 		completion.text = ((wUpgradesDone*100)/wUpgradesTotal).ToString() + "% complete";
 	}
 	

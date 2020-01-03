@@ -16,26 +16,34 @@ public class SkillButtonDisplay : MonoBehaviour {
 		public SkillManager manager;
 
 	// Use this for initialization
-	void Start () {
-
+	void Start (){
 		skillIcon.sprite = skill.skillIcon;
-		
-		//if the equipment state is locked, it should change the button's colour (red) and set the lock and lock bar image to active
-		if((int)skill.status == 1){
-			div.color = new Color32(123,6,27,255);
-			background.color = new Color32(123,6,27,255);
-			skillIcon.color = new Color32(123,6,27,255);
-			Lock.gameObject.SetActive(true);
-			lockedBar.gameObject.SetActive(true);
-		}
+		switch(skill.status){
+			case skillState.locked:			
+				div.color = new Color32(123,6,27,255);
+				background.color = new Color32(123,6,27,255);
+				skillIcon.color = new Color32(123,6,27,255);
+				Lock.gameObject.SetActive(true);
+				lockedBar.gameObject.SetActive(true);
+			break;
 
-		//if the equipment state is upgraded, it should change the button's colour (grey) and set the check image to active
-		else if ((int)skill.status == 3)
-		{
-			div.color = new Color32(101,101,101,255);
-			background.color = new Color32(101,101,101,255);
-			skillIcon.color = new Color32(101,101,101,255);
-			Check.gameObject.SetActive(true);
+			case skillState.available:
+				div.color = new Color32(255,255,255,255);
+				background.color = new Color32(255,255,255,255);
+				skillIcon.color = new Color32(255,255,255,255);
+				Lock.gameObject.SetActive(false);
+				lockedBar.gameObject.SetActive(false);
+				Check.gameObject.SetActive(false);
+			break;
+
+			case skillState.upgraded:
+				div.color = new Color32(101,101,101,255);
+				background.color = new Color32(101,101,101,255);
+				skillIcon.color = new Color32(101,101,101,255);
+				Lock.gameObject.SetActive(false);
+				lockedBar.gameObject.SetActive(false);
+				Check.gameObject.SetActive(true);
+			break;
 		}
 	}
 	public void SetCardScreen(){

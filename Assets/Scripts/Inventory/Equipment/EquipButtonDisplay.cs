@@ -6,17 +6,17 @@ using UnityEngine.UI;
 public enum equipState {locked = 1, unavailable = 2, available = 3, upgraded = 4};
 public class EquipButtonDisplay : MonoBehaviour {
 
-		public EquipItem item;
-		[SerializeField] private Image Lock;
-		[SerializeField] private Image Check;
-		[SerializeField] private Image equipIcon;
-		[SerializeField] private Image background;
-		[SerializeField] private Image div;
-		[SerializeField] private Image lockedBar;
+	public EquipItem item;
+	[SerializeField] private Image Lock;
+	[SerializeField] private Image Check;
+	[SerializeField] private Image equipIcon;
+	[SerializeField] private Image background;
+	[SerializeField] private Image div;
+	[SerializeField] private Image lockedBar;
 
-		private equipState status;
+	private equipState status;
 
-		public EquipManager manager;
+	public EquipManager manager;
 
 
 	// Use this for initialization
@@ -24,9 +24,9 @@ public class EquipButtonDisplay : MonoBehaviour {
 		SetEquipStatus();
 		equipIcon.sprite = item.equipIcon;
 		
-		switch((int)status){
+		switch(status){
 
-			case 1: //Equipment is locked
+			case equipState.locked:
 				div.color = new Color32(123,6,27,255);
 				background.color = new Color32(123,6,27,255);
 				equipIcon.color = new Color32(123,6,27,255);
@@ -36,7 +36,7 @@ public class EquipButtonDisplay : MonoBehaviour {
 				Check.gameObject.SetActive(false);
 			break;
 
-			case 2: //Equipment is unavailable
+			case equipState.unavailable:
 				div.color = new Color32(123,6,27,255);
 				background.color = new Color32(123,6,27,255);
 				equipIcon.color = new Color32(123,6,27,255);
@@ -46,7 +46,7 @@ public class EquipButtonDisplay : MonoBehaviour {
 				Check.gameObject.SetActive(false);
 			break;
 
-			case 3: //Equipment is available
+			case equipState.available:
 				div.color = new Color32(255,255,255,255);
 				background.color = new Color32(255,255,255,255);
 				equipIcon.color = new Color32(255,255,255,255);
@@ -56,7 +56,7 @@ public class EquipButtonDisplay : MonoBehaviour {
 				Check.gameObject.SetActive(false);
 			break;
 
-			case 4: //Equipment is upgraded
+			case equipState.upgraded:
 				div.color = new Color32(101,101,101,255);
 				background.color = new Color32(101,101,101,255);
 				equipIcon.color = new Color32(101,101,101,255);

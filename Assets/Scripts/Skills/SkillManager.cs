@@ -6,23 +6,17 @@ using TMPro;
 
 public class SkillManager : MonoBehaviour {
 
-	//Player Skill points
+	[Header ("Player data")]
 	[SerializeField] private int playerSkillPoints;
 
-	[Space(18)]
-
-	//Screen objects
+	[Space(18)][Header ("Screen objects")]
 	[SerializeField] private GameObject SkillListObject;
 	[SerializeField] private GameObject SkillDescriptionObject;
 
-	[Space(18)] 
-
-	//Skills List screen elements
+	[Space(18)][Header ("List screen elements")] 
 	[SerializeField] private TextMeshProUGUI skillPointsAvailable;
 
-	[Space(18)]
-
-	//Skill Description screen elements
+	[Space(18)][Header ("Description screen elements")]
 	[SerializeField] private Image skillIcon;
 	[SerializeField] private Image Lock;
 	[SerializeField] private TextMeshProUGUI barTitle;
@@ -54,9 +48,9 @@ public class SkillManager : MonoBehaviour {
 		SkillListObject.gameObject.SetActive(false);
 
 		//Skill status and Requirements
-		switch((int)currentSkill.status){
+		switch(currentSkill.status){
 
-			case 1: // Skill is locked
+			case skillState.locked:
 				upgradeBtn.GetComponent<Button>().interactable = false;
 				upgradeBtnText.color = new Color32(255,255,255,125);
 
@@ -73,7 +67,7 @@ public class SkillManager : MonoBehaviour {
 				}
 			break;
 
-			case 2: // Skill is available
+			case skillState.available:
 				firstRequirementText.text = "none";
 				firstRequirementText.color = new Color32(255,255,255,255);
 				Lock.color = new Color32(255,255,255,0);
@@ -82,7 +76,7 @@ public class SkillManager : MonoBehaviour {
 				upgradeBtnText.color = new Color32(255,255,255,255);
 			break;
 
-			case 3: // Skill is mastered
+			case skillState.upgraded:
 				firstRequirementText.text = "mastered";
 				firstRequirementText.color = new Color32(255,255,255,255);
 				Lock.color = new Color32(255,255,255,0);
@@ -94,17 +88,17 @@ public class SkillManager : MonoBehaviour {
 		}
 
 		//Top bar title
-		switch((int)currentSkill.type){
+		switch(currentSkill.type){
 
-			case 1:
+			case skillType.brawler:
 				barTitle.text = "brawler skill";
 			break;
 
-			case 2:
+			case skillType.hunter:
 				barTitle.text = "hunter skill";
 			break;
 
-			case 3:
+			case skillType.survivor:
 				barTitle.text = "survivor skill";
 			break;
 

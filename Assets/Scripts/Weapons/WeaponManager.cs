@@ -42,11 +42,12 @@ public class WeaponManager : MonoBehaviour {
 
 	[Space(18)][Header ("Upgrades")]
 	[SerializeField] private TextMeshProUGUI UpgradeNumbers;
-	[SerializeField] private GameObject upgButton;
-	[SerializeField] private Transform Upgrade1Tier;
-	[SerializeField] private Transform Upgrade2Tier;
-	[SerializeField] private Transform Upgrade3Tier;
-	[SerializeField] private Transform Upgrade4Tier;
+	[SerializeField] private Transform Tier1Grid;
+	[SerializeField] private Transform Tier2Grid;
+	[SerializeField] private Transform Tier3Grid;
+	[SerializeField] private Transform Tier4Grid;
+	[SerializeField] private Button UpgradeButton;
+
 
 	private int UpgradesTotal = 0;
 	private int UpgradesDone;
@@ -67,6 +68,9 @@ public class WeaponManager : MonoBehaviour {
 		if (AxeList.activeSelf)
 		{
 			lastWeaponList = AxeList;
+		}
+		if(WeaponScreen.activeSelf == false){
+
 		}
 	}
 
@@ -125,24 +129,28 @@ public class WeaponManager : MonoBehaviour {
 
 		//Upgrades
 		UpgradesDone = 0;
-		
 		for (int i = 0; i < selectedWeapon.upgradeTier1.Count; i++){
-			if((int)selectedWeapon.upgradeTier1[i].upgrades.upgradeStatus == 4){
+			Instantiate(UpgradeButton,Tier1Grid);
+			//weaponUpgradeDisplay.InstantiateUpgrades(selectedWeapon.upgradeTier1[i].upgrades);
+			if(selectedWeapon.upgradeTier1[i].upgrades.upgradeStatus == status.locked){
 				UpgradesDone++;
 			}
 		}
 		for (int i = 0; i < selectedWeapon.upgradeTier2.Count; i++){
-			if((int)selectedWeapon.upgradeTier2[i].upgrades.upgradeStatus == 4){
+			Instantiate(UpgradeButton,Tier2Grid);
+			if(selectedWeapon.upgradeTier2[i].upgrades.upgradeStatus == status.locked){
 				UpgradesDone++;
 			}
 		}
 		for (int i = 0; i < selectedWeapon.upgradeTier3.Count; i++){
-			if((int)selectedWeapon.upgradeTier3[i].upgrades.upgradeStatus == 4){
+			Instantiate(UpgradeButton,Tier3Grid);
+			if(selectedWeapon.upgradeTier3[i].upgrades.upgradeStatus == status.locked){
 				UpgradesDone++;
 			}
 		}
 		for (int i = 0; i < selectedWeapon.upgradeTier4.Count; i++){
-			if((int)selectedWeapon.upgradeTier4[i].upgrades.upgradeStatus == 4){
+			Instantiate(UpgradeButton,Tier4Grid);
+			if(selectedWeapon.upgradeTier4[i].upgrades.upgradeStatus == status.locked){
 				UpgradesDone++;
 			}
 		}

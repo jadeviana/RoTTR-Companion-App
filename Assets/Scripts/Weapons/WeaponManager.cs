@@ -46,7 +46,7 @@ public class WeaponManager : MonoBehaviour {
 	[SerializeField] private Transform Tier2Grid;
 	[SerializeField] private Transform Tier3Grid;
 	[SerializeField] private Transform Tier4Grid;
-	[SerializeField] private Button UpgradeButton;
+	[SerializeField] private GameObject UpgradeButton;
 
 
 	private int UpgradesTotal = 0;
@@ -68,9 +68,6 @@ public class WeaponManager : MonoBehaviour {
 		if (AxeList.activeSelf)
 		{
 			lastWeaponList = AxeList;
-		}
-		if(WeaponScreen.activeSelf == false){
-
 		}
 	}
 
@@ -129,9 +126,9 @@ public class WeaponManager : MonoBehaviour {
 
 		//Upgrades
 		UpgradesDone = 0;
+		
 		for (int i = 0; i < selectedWeapon.upgradeTier1.Count; i++){
 			Instantiate(UpgradeButton,Tier1Grid);
-			//weaponUpgradeDisplay.InstantiateUpgrades(selectedWeapon.upgradeTier1[i].upgrades);
 			if(selectedWeapon.upgradeTier1[i].upgrades.upgradeStatus == status.locked){
 				UpgradesDone++;
 			}
@@ -160,5 +157,20 @@ public class WeaponManager : MonoBehaviour {
 
 		lastWeaponList.gameObject.SetActive(false);
 		WeaponScreen.gameObject.SetActive(true);
+	}
+
+	public void DestroyUpgrades(){
+        for(int i = Tier1Grid.transform.childCount -1; i <= 0; i--){
+            GameObject.Destroy(Tier1Grid.transform.GetChild(i).gameObject);
+        }
+        for(int i = Tier2Grid.transform.childCount -1; i <= 0; i--){
+            GameObject.Destroy(Tier2Grid.transform.GetChild(i).gameObject);
+        }
+        for(int i = Tier3Grid.transform.childCount -1; i <= 0; i--){
+            GameObject.Destroy(Tier3Grid.transform.GetChild(i).gameObject);
+        }
+        for(int i = Tier4Grid.transform.childCount -1; i <= 0; i--){
+            GameObject.Destroy(Tier4Grid.transform.GetChild(i).gameObject);
+        }
 	}
 }

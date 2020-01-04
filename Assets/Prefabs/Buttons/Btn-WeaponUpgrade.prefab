@@ -71,8 +71,8 @@ GameObject:
   m_Component:
   - component: {fileID: 224477510469534392}
   - component: {fileID: 114432626885111874}
-  - component: {fileID: 114749830082200104}
   - component: {fileID: 114808077627537856}
+  - component: {fileID: 114749830082200104}
   m_Layer: 5
   m_Name: Btn-WeaponUpgrade
   m_TagString: Untagged
@@ -503,10 +503,10 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 74, y: -59}
-  m_SizeDelta: {x: 144, y: 114}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224958748976855578
 RectTransform:

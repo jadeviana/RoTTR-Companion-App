@@ -61324,7 +61324,7 @@ MonoBehaviour:
   Tier2Grid: {fileID: 1956594909}
   Tier3Grid: {fileID: 1577676196}
   Tier4Grid: {fileID: 1774880057}
-  UpgradeButton: {fileID: 114432626885111874, guid: 115bdd0b19a4f25418a2b12d2792d2c4,
+  UpgradeButton: {fileID: 1616094105103428, guid: 115bdd0b19a4f25418a2b12d2792d2c4,
     type: 2}
 --- !u!1 &2049519462
 GameObject:

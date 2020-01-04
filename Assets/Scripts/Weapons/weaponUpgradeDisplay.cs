@@ -12,9 +12,8 @@ public class weaponUpgradeDisplay : MonoBehaviour {
 	[SerializeField] private Image div;
 	[SerializeField] private Image lockedBar;
 
-	//public WeaponManager manager;
-
-	public void InstantiateUpgrades (WeaponUpgrade currentUpgrade) {
+	public void SetUpgrades (WeaponUpgrade currentUpgrade) {
+		//Debug.Log(currentUpgrade.upgradeName + " is " + currentUpgrade.upgradeStatus);
 		upgradeIcon.sprite = currentUpgrade.upgradeIcon;
 		switch(currentUpgrade.upgradeStatus){
 			case status.locked:

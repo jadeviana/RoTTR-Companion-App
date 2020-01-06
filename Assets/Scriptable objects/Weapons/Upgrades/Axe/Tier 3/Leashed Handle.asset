@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fae17829a8f4c5247b99725358c9acfd, type: 3}
   m_Name: Leashed Handle
   m_EditorClassIdentifier: 
-  upgradeIcon: {fileID: 0}
+  upgradeIcon: {fileID: 21300000, guid: f75e35b046cc44f4eaf262a6e1e5346f, type: 3}
   upgradeName: Leashed Handle
   upgradeDescription: Custom handle wrapping allows for almost instant prying of doors
     or strongboxes. Applied to all axes.

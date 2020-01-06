@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fae17829a8f4c5247b99725358c9acfd, type: 3}
   m_Name: Hair Trigger
   m_EditorClassIdentifier: 
-  upgradeIcon: {fileID: 0}
+  upgradeIcon: {fileID: 21300000, guid: 88ccd2b4888666e4bbc5dc1876007b7d, type: 3}
   upgradeName: Hair Trigger
   upgradeDescription: Increased trigger sensitivity allows for increased rate of fire.
     Applied to all pistols except heavy pistol.

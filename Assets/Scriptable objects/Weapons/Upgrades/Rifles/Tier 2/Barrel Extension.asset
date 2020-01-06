@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fae17829a8f4c5247b99725358c9acfd, type: 3}
   m_Name: Barrel Extension
   m_EditorClassIdentifier: 
-  upgradeIcon: {fileID: 0}
+  upgradeIcon: {fileID: 21300000, guid: dcdd79d59e9188d44837f2f35c3eae5e, type: 3}
   upgradeName: Barrel Extension
   upgradeDescription: A longer barrel allows for a more precise shot, resulting in
     increased damage. Applied to all rifles except smg.

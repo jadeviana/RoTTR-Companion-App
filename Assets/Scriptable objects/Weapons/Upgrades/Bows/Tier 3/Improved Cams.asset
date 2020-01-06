@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fae17829a8f4c5247b99725358c9acfd, type: 3}
   m_Name: Improved Cams
   m_EditorClassIdentifier: 
-  upgradeIcon: {fileID: 0}
+  upgradeIcon: {fileID: 21300000, guid: ff28e06e97556324c90c335181d6b648, type: 3}
   upgradeName: Improved Cams
   upgradeDescription: Cams are refined to increase draw tension fall off, making for
     increased hold time at full draw. Applied to all compound bows.

@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fae17829a8f4c5247b99725358c9acfd, type: 3}
   m_Name: Hollowed Hammer
   m_EditorClassIdentifier: 
-  upgradeIcon: {fileID: 0}
+  upgradeIcon: {fileID: 21300000, guid: 8ea4e6cfe4cf93142977c7d295f5af51, type: 3}
   upgradeName: Hollowed Hammer
   upgradeDescription: A lighter hammer allows for less jamming, resulting in a higher
     rate of fire. Applied to all pistols.

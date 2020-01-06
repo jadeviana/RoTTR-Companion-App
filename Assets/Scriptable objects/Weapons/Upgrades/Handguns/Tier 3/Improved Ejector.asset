@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fae17829a8f4c5247b99725358c9acfd, type: 3}
   m_Name: Improved Ejector
   m_EditorClassIdentifier: 
-  upgradeIcon: {fileID: 0}
+  upgradeIcon: {fileID: 21300000, guid: bd4f0cd3a88d20847961c22d2cde9749, type: 3}
   upgradeName: Improved Ejector
   upgradeDescription: The shell ejector is improved to decrease jamming and improve
     rate of fire. Applied to all pistols with magazines.

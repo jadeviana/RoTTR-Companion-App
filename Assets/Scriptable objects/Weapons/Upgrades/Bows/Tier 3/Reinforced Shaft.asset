@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fae17829a8f4c5247b99725358c9acfd, type: 3}
   m_Name: Reinforced Shaft
   m_EditorClassIdentifier: 
-  upgradeIcon: {fileID: 21300000, guid: b600392569fcad5498fc157011a3a405, type: 3}
+  upgradeIcon: {fileID: 21300000, guid: dcdd79d59e9188d44837f2f35c3eae5e, type: 3}
   upgradeName: Reinforced Shaft
   upgradeDescription: Better shaft backing allows for increased draw weight which
     increases damage. Applied to all recurve bows.

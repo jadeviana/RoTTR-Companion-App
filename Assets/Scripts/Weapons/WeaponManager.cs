@@ -129,6 +129,7 @@ public class WeaponManager : MonoBehaviour {
 		
 		for (int i = 0; i < selectedWeapon.upgradeTier1.Count; i++){
 			Instantiate(UpgradeButton,Tier1Grid);
+			//UpgradeButton.GetComponent<weaponUpgradeDisplay>().SetUpgrades(selectedWeapon.upgradeTier1[i].upgrades);
 			if(selectedWeapon.upgradeTier1[i].upgrades.upgradeStatus == status.locked){
 				UpgradesDone++;
 			}

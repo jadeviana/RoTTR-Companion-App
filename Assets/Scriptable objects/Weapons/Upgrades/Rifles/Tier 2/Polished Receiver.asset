@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fae17829a8f4c5247b99725358c9acfd, type: 3}
   m_Name: Polished Receiver
   m_EditorClassIdentifier: 
-  upgradeIcon: {fileID: 0}
+  upgradeIcon: {fileID: 21300000, guid: 88ccd2b4888666e4bbc5dc1876007b7d, type: 3}
   upgradeName: Polished Receiver
   upgradeDescription: A polished firing mechanism results in less jams for a faster
     rate of fire. Applied to all assault and military rifles.

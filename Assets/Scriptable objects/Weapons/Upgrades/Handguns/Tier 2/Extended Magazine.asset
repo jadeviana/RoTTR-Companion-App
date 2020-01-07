@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fae17829a8f4c5247b99725358c9acfd, type: 3}
   m_Name: Extended Magazine
   m_EditorClassIdentifier: 
-  upgradeIcon: {fileID: 0}
+  upgradeIcon: {fileID: 21300000, guid: f6b04189438373e49ba1181829f6db39, type: 3}
   upgradeName: Extended Magazine
   upgradeDescription: A larger magazine allows more shots to be fired before the need
     to reload. Applied to all pistols with magazines.

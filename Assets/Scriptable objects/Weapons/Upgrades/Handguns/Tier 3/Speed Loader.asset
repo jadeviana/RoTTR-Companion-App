@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fae17829a8f4c5247b99725358c9acfd, type: 3}
   m_Name: Speed Loader
   m_EditorClassIdentifier: 
-  upgradeIcon: {fileID: 0}
+  upgradeIcon: {fileID: 21300000, guid: 205489c74ba59cc49aec9364203c566d, type: 3}
   upgradeName: Speed Loader
   upgradeDescription: The custom loader increases reload speed by allowing reloading
     of multiple bullets at once. Applied to all pistols with a cylinder.

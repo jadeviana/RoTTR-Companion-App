@@ -84,7 +84,7 @@ public class WeaponManager : MonoBehaviour {
 		weaponTitle.text = selectedWeapon.weaponName;
 		description.text = selectedWeapon.weaponDescription;
 
-		//Stats states
+		//Stats
 		if(selectedWeapon is Bow){
 			BowStats.gameObject.SetActive(true);
 			GunStats.gameObject.SetActive(false);
@@ -128,26 +128,25 @@ public class WeaponManager : MonoBehaviour {
 		UpgradesDone = 0;
 		
 		for (int i = 0; i < selectedWeapon.upgradeTier1.Count; i++){
-			Instantiate(UpgradeButton,Tier1Grid);
-			//UpgradeButton.GetComponent<weaponUpgradeDisplay>().SetUpgrades(selectedWeapon.upgradeTier1[i].upgrades);
+			Instantiate(UpgradeButton,Tier1Grid).GetComponent<weaponUpgradeDisplay>().SetUpgrades(selectedWeapon.upgradeTier1[i].upgrades);
 			if(selectedWeapon.upgradeTier1[i].upgrades.upgradeStatus == status.locked){
 				UpgradesDone++;
 			}
 		}
 		for (int i = 0; i < selectedWeapon.upgradeTier2.Count; i++){
-			Instantiate(UpgradeButton,Tier2Grid);
+			Instantiate(UpgradeButton,Tier2Grid).GetComponent<weaponUpgradeDisplay>().SetUpgrades(selectedWeapon.upgradeTier2[i].upgrades);
 			if(selectedWeapon.upgradeTier2[i].upgrades.upgradeStatus == status.locked){
 				UpgradesDone++;
 			}
 		}
 		for (int i = 0; i < selectedWeapon.upgradeTier3.Count; i++){
-			Instantiate(UpgradeButton,Tier3Grid);
+			Instantiate(UpgradeButton,Tier3Grid).GetComponent<weaponUpgradeDisplay>().SetUpgrades(selectedWeapon.upgradeTier3[i].upgrades);
 			if(selectedWeapon.upgradeTier3[i].upgrades.upgradeStatus == status.locked){
 				UpgradesDone++;
 			}
 		}
 		for (int i = 0; i < selectedWeapon.upgradeTier4.Count; i++){
-			Instantiate(UpgradeButton,Tier4Grid);
+			Instantiate(UpgradeButton,Tier4Grid).GetComponent<weaponUpgradeDisplay>().SetUpgrades(selectedWeapon.upgradeTier4[i].upgrades);
 			if(selectedWeapon.upgradeTier4[i].upgrades.upgradeStatus == status.locked){
 				UpgradesDone++;
 			}
@@ -160,7 +159,7 @@ public class WeaponManager : MonoBehaviour {
 		WeaponScreen.gameObject.SetActive(true);
 	}
 
-	public void DestroyUpgrades(){
+	public void ClearUpgrades(){
         for(int i = Tier1Grid.transform.childCount -1; i <= 0; i--){
             GameObject.Destroy(Tier1Grid.transform.GetChild(i).gameObject);
         }

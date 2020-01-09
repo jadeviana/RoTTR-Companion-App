@@ -49,7 +49,7 @@ public class WeaponManager : MonoBehaviour {
 	[SerializeField] private GameObject UpgradeButton;
 
 
-	private int UpgradesTotal = 0;
+	private int UpgradesTotal;
 	private int UpgradesDone;
 
 	void Update () {
@@ -126,33 +126,37 @@ public class WeaponManager : MonoBehaviour {
 
 		//Upgrades
 		UpgradesDone = 0;
+		UpgradesTotal = 0;
 		
 		for (int i = 0; i < selectedWeapon.upgradeTier1.Count; i++){
 			Instantiate(UpgradeButton,Tier1Grid).GetComponent<weaponUpgradeDisplay>().SetUpgrades(selectedWeapon.upgradeTier1[i].upgrades);
-			if(selectedWeapon.upgradeTier1[i].upgrades.upgradeStatus == status.locked){
+			UpgradesTotal++;
+			if(selectedWeapon.upgradeTier1[i].upgrades.upgradeStatus == status.upgraded){
 				UpgradesDone++;
 			}
 		}
 		for (int i = 0; i < selectedWeapon.upgradeTier2.Count; i++){
 			Instantiate(UpgradeButton,Tier2Grid).GetComponent<weaponUpgradeDisplay>().SetUpgrades(selectedWeapon.upgradeTier2[i].upgrades);
-			if(selectedWeapon.upgradeTier2[i].upgrades.upgradeStatus == status.locked){
+			UpgradesTotal++;
+			if(selectedWeapon.upgradeTier2[i].upgrades.upgradeStatus == status.upgraded){
 				UpgradesDone++;
 			}
 		}
 		for (int i = 0; i < selectedWeapon.upgradeTier3.Count; i++){
 			Instantiate(UpgradeButton,Tier3Grid).GetComponent<weaponUpgradeDisplay>().SetUpgrades(selectedWeapon.upgradeTier3[i].upgrades);
-			if(selectedWeapon.upgradeTier3[i].upgrades.upgradeStatus == status.locked){
+			UpgradesTotal++;
+			if(selectedWeapon.upgradeTier3[i].upgrades.upgradeStatus == status.upgraded){
 				UpgradesDone++;
 			}
 		}
 		for (int i = 0; i < selectedWeapon.upgradeTier4.Count; i++){
 			Instantiate(UpgradeButton,Tier4Grid).GetComponent<weaponUpgradeDisplay>().SetUpgrades(selectedWeapon.upgradeTier4[i].upgrades);
-			if(selectedWeapon.upgradeTier4[i].upgrades.upgradeStatus == status.locked){
+			UpgradesTotal++;
+			if(selectedWeapon.upgradeTier4[i].upgrades.upgradeStatus == status.upgraded){
 				UpgradesDone++;
 			}
 		}
 
-		UpgradesTotal = selectedWeapon.upgradeTier1.Count + selectedWeapon.upgradeTier2.Count + selectedWeapon.upgradeTier3.Count + selectedWeapon.upgradeTier4.Count;
 		UpgradeNumbers.text = UpgradesDone + "/" + UpgradesTotal;
 
 		lastWeaponList.gameObject.SetActive(false);
@@ -160,17 +164,21 @@ public class WeaponManager : MonoBehaviour {
 	}
 
 	public void ClearUpgrades(){
-        for(int i = Tier1Grid.transform.childCount -1; i <= 0; i--){
-            GameObject.Destroy(Tier1Grid.transform.GetChild(i).gameObject);
-        }
-        for(int i = Tier2Grid.transform.childCount -1; i <= 0; i--){
-            GameObject.Destroy(Tier2Grid.transform.GetChild(i).gameObject);
-        }
-        for(int i = Tier3Grid.transform.childCount -1; i <= 0; i--){
-            GameObject.Destroy(Tier3Grid.transform.GetChild(i).gameObject);
-        }
-        for(int i = Tier4Grid.transform.childCount -1; i <= 0; i--){
-            GameObject.Destroy(Tier4Grid.transform.GetChild(i).gameObject);
-        }
+		foreach (Transform child in Tier1Grid)
+		{
+			Destroy(child.gameObject);
+		}
+		foreach (Transform child in Tier2Grid)
+		{
+			Destroy(child.gameObject);
+		}
+		foreach (Transform child in Tier3Grid)
+		{
+			Destroy(child.gameObject);
+		}
+		foreach (Transform child in Tier4Grid)
+		{
+			Destroy(child.gameObject);
+		}
 	}
 }

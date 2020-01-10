@@ -33,7 +33,6 @@ public class SkillManager : MonoBehaviour {
 	[SerializeField] private TextMeshProUGUI cost;
 	[SerializeField] private TextMeshProUGUI skillPoint;
 	[SerializeField] private Button upgradeBtn;
-	[SerializeField] private TextMeshProUGUI upgradeBtnText;
  
 
 	private void Start() {
@@ -52,7 +51,7 @@ public class SkillManager : MonoBehaviour {
 
 			case skillState.locked:
 				upgradeBtn.GetComponent<Button>().interactable = false;
-				upgradeBtnText.color = new Color32(255,255,255,125);
+				upgradeBtn.GetComponentInChildren<TextMeshProUGUI>().color = new Color32(255,255,255,125);
 
 				firstRequirementText.color = new Color32(123,6,27,255);
 
@@ -73,7 +72,7 @@ public class SkillManager : MonoBehaviour {
 				Lock.color = new Color32(255,255,255,0);
 				Requirement2.gameObject.SetActive(false);
 				upgradeBtn.GetComponent<Button>().interactable = true;
-				upgradeBtnText.color = new Color32(255,255,255,255);
+				upgradeBtn.GetComponentInChildren<TextMeshProUGUI>().color = new Color32(255,255,255,255);
 			break;
 
 			case skillState.upgraded:
@@ -82,7 +81,7 @@ public class SkillManager : MonoBehaviour {
 				Lock.color = new Color32(255,255,255,0);
 				Requirement2.gameObject.SetActive(false);
 				upgradeBtn.GetComponent<Button>().interactable = false;
-				upgradeBtnText.color = new Color32(255,255,255,125);
+				upgradeBtn.GetComponentInChildren<TextMeshProUGUI>().color = new Color32(255,255,255,125);
 			break;
 
 		}

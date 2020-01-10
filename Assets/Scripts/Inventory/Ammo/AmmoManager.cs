@@ -44,7 +44,6 @@ public class AmmoManager : MonoBehaviour {
     [Space(18)]
 
     [SerializeField] private Button CraftButton;
-    [SerializeField] private TextMeshProUGUI CraftButtonText;
 
 	public void OpenAmmoScreen(AmmoItem selectedAmmo){
         InventoryScreenObject.gameObject.SetActive(false);
@@ -137,18 +136,18 @@ public class AmmoManager : MonoBehaviour {
         if(selectedAmmo.thirdItem != null){
             if (selectedAmmo.hasRequirement == false && selectedAmmo.firstItem.playerQuantity > selectedAmmo.firstItemCost && selectedAmmo.secondItem.playerQuantity > selectedAmmo.secondItemCost && selectedAmmo.thirdItem.playerQuantity > selectedAmmo.thirdItemCost){
                 CraftButton.GetComponent<Button>().interactable = true;
-                CraftButtonText.color = new Color32(255,255,255,255);
+                CraftButton.GetComponentInChildren<TextMeshProUGUI>().color = new Color32(255,255,255,255);
             }
         } 
         else if (selectedAmmo.thirdItem = null){
             if (selectedAmmo.hasRequirement == false && selectedAmmo.firstItem.playerQuantity > selectedAmmo.firstItemCost && selectedAmmo.secondItem.playerQuantity > selectedAmmo.secondItemCost){
                 CraftButton.GetComponent<Button>().interactable = true;
-                CraftButtonText.color = new Color32(255,255,255,255);
+                CraftButton.GetComponentInChildren<TextMeshProUGUI>().color = new Color32(255,255,255,255);
             }
         }
         else {
             CraftButton.GetComponent<Button>().interactable = false;
-            CraftButtonText.color = new Color32(255,255,255,125);
+            CraftButton.GetComponentInChildren<TextMeshProUGUI>().color = new Color32(255,255,255,125);
         }
 
         AmmoScreenObject.gameObject.SetActive(true);

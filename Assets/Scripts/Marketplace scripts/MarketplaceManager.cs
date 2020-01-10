@@ -24,6 +24,7 @@ public class MarketplaceManager : MonoBehaviour {
     [SerializeField] private TextMeshProUGUI CardScreenTitle;
     [SerializeField] private TextMeshProUGUI CardScreenDescription;
     [SerializeField] private TextMeshProUGUI CardScreenValue;
+    [SerializeField] private Button buyButton;
 
     [Space(18)]
 
@@ -66,6 +67,14 @@ public class MarketplaceManager : MonoBehaviour {
         PopUpPlayerCredit.text = PlayerCredits.ToString();
 
 		CardScreenObject.gameObject.SetActive(true);
+
+        if(selectedCard.credit > PlayerCredits){
+            buyButton.interactable = false;
+            buyButton.GetComponentInChildren<TextMeshProUGUI>().color = new Color32(255,255,255,125);
+        } else {
+            buyButton.interactable = true;
+            buyButton.GetComponentInChildren<TextMeshProUGUI>().color = new Color32(255,255,255,255);
+        }
 	}
     public void decreaseQuantity(){
         --quantity;
@@ -73,6 +82,10 @@ public class MarketplaceManager : MonoBehaviour {
     }
     public void increaseQuantity(){
         ++quantity;
+        calculator();
+    }
+    public void resetQuantity(){
+        quantity = 1;
         calculator();
     }
 
@@ -90,8 +103,6 @@ public class MarketplaceManager : MonoBehaviour {
 			increase.interactable = true;
 		}
     }
-
-
 
     //Add-On Screen methods
 	public void OpenAddOnScreen(MKTAddOn selectedAddOn){

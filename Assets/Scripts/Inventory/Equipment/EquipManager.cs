@@ -52,7 +52,6 @@ public class EquipManager : MonoBehaviour {
 	[Space(18)]
 
 	[SerializeField] private Button UpgradeButton;
-    [SerializeField] private TextMeshProUGUI UpgradeButtonText;
 
 	public void OpenEquipScreen(EquipItem selectedEquip){
 		InventoryScreenObject.gameObject.SetActive(false);
@@ -145,34 +144,34 @@ public class EquipManager : MonoBehaviour {
 		//Craft Button
 		if(selectedEquip.firstItem == null && selectedEquip.secondItem == null){
 			UpgradeButton.GetComponent<Button>().interactable = false;
-			UpgradeButtonText.color = new Color32(255,255,255,125);
+			UpgradeButton.GetComponentInChildren<TextMeshProUGUI>().color = new Color32(255,255,255,125);
 		}
 		else if(selectedEquip.thirdItem != null){
 			if(selectedEquip.firstRequirement != ""){
 				UpgradeButton.GetComponent<Button>().interactable = false;
-				UpgradeButtonText.color = new Color32(255,255,255,125);
+				UpgradeButton.GetComponentInChildren<TextMeshProUGUI>().color = new Color32(255,255,255,125);
 			}
 			if(selectedEquip.firstItemCost > selectedEquip.firstItem.playerQuantity || selectedEquip.secondItemCost > selectedEquip.secondItem.playerQuantity || selectedEquip.thirdItemCost > selectedEquip.thirdItem.playerQuantity){
 				UpgradeButton.GetComponent<Button>().interactable = false;
-				UpgradeButtonText.color = new Color32(255,255,255,125);
+				UpgradeButton.GetComponentInChildren<TextMeshProUGUI>().color = new Color32(255,255,255,125);
 			} 
 			else {
 				UpgradeButton.GetComponent<Button>().interactable = true;
-				UpgradeButtonText.color = new Color32(255,255,255,255);
+				UpgradeButton.GetComponentInChildren<TextMeshProUGUI>().color = new Color32(255,255,255,255);
 			}
 		} 
 		else{
 			if(selectedEquip.firstRequirement != ""){
 				UpgradeButton.GetComponent<Button>().interactable = false;
-				UpgradeButtonText.color = new Color32(255,255,255,125);
+				UpgradeButton.GetComponentInChildren<TextMeshProUGUI>().color = new Color32(255,255,255,125);
 			}
 			if(selectedEquip.firstItemCost > selectedEquip.firstItem.playerQuantity || selectedEquip.secondItemCost > selectedEquip.secondItem.playerQuantity){
 				UpgradeButton.GetComponent<Button>().interactable = false;
-				UpgradeButtonText.color = new Color32(255,255,255,125);
+				UpgradeButton.GetComponentInChildren<TextMeshProUGUI>().color = new Color32(255,255,255,125);
 			} 
 			else {
 				UpgradeButton.GetComponent<Button>().interactable = true;
-				UpgradeButtonText.color = new Color32(255,255,255,255);
+				UpgradeButton.GetComponentInChildren<TextMeshProUGUI>().color = new Color32(255,255,255,255);
 			}
 		}
 
